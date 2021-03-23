@@ -5,7 +5,7 @@ title: 3个节点的区块链网络的实现
 #### &#8195;从单个节点开始构建区块链网络              
 #### &#8195;已实现的3节点区块链网络         
 <!-- more -->
-###1.基本使用方式               
+### 1.基本使用方式               
 原项目文件备份地址：https://github.com/An-Cheon/a_blockchain_nerwork/blob/master/blockchain-python-master.zip        
 #### 使用方法：                        
 使用指导：
@@ -70,7 +70,7 @@ $ python console tx list
 | tx       |  list      |  NONEED         
                                
 
-###2.三节点区块链网络使用方式                                   
+### 2.三节点区块链网络使用方式                                   
 3节点网络地址https://github.com/An-Cheon/a_blockchain_nerwork                
 该网络使用方法：                    
 在3008目录中：               
