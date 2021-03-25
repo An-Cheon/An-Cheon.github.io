@@ -37,7 +37,7 @@ $ python console blockchain list
 - 启动新节点   
 ```
 $ cd {another_blockchain_directory}
-$ python console node add 127.0.0.1:3008 
+$ python console node add 127.0.0.1:3008
 $ python console node run 3009
 ```
 - 回到初始的源码目录下，要保证挖矿正在进行当中，然后添加新的节点：   
@@ -57,17 +57,7 @@ $ python console [module] [action] params...
 $ python console tx list
 ```
 
-|  Module  |  Action    |  Params                            |  Desc                                            |
-|----------|------------|------------------------------------|--------------------------------------------------|
-| account  |  create    |  NONEED                            |  建立新帐户                                       |
-| account  |  get       |  NONEED                            |  显示所有帐户                                     |
-| account  |  current   |  NONEED                            |  矿工奖励账户                                     |
-| miner    |  start     |  ip:port/port                      |  如3008或127.0.0.1:3008                          |
-| node     |  run       |  ip:port/port                      |  如3008或127.0.0.1:3008                          |
-| node     |  list      |  NONEED                            |  显示将广播到的所有节点                            |
-| node     |  add       |  ip:port                           |  添加一个将广播到的节点                            |
-| tx       |  transfer  |  from_address to_address   amount  |  coin从from_address转移到to_address               |
-| tx       |  list      |  NONEED         
+更详细的说明在压缩文件中的说明表格中                 
                                
 
 ### 2.三节点区块链网络使用方式                                   
