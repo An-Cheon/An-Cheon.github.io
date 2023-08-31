@@ -57,7 +57,8 @@ baseurl: ""
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v1.2.0
+# Changed on 20230831
+version: v4.3.2
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -94,3 +95,6 @@ paginate : 15
 # The destination of the pagination pages
 #
 paginate_path: "page:num"
+
+# Myself setting
+future: true
