@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The Good Life
+title:  Superconnect Harnessing the Power of Networks and the Strength of Weak Links
 ---
 #### 广告是电视和互联网的商业命脉。
 #### 阶层越低，强联系的频率就越高。-马克·格兰诺维特
