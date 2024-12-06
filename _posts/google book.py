@@ -1,6 +1,6 @@
 import re
 
-path = '2024-11-29-Wisdom of Insecurity.md'
+path = 'google notes.txt'
 lineList = []
 matchPattern = re.compile(r' 页 - ')
 matchPattern1 = re.compile(r'默认集合')
