@@ -2,7 +2,7 @@ import re
 
 path = 'google notes.txt'
 lineList = []
-matchPattern = re.compile(r' 页 - ')
+matchPattern = re.compile(r'页 –')
 matchPattern1 = re.compile(r'默认集合')
 matchPattern2 = re.compile(r' 项标注')
 file = open(path,'r',encoding='UTF-8')
