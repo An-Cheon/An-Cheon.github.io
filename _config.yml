@@ -14,7 +14,7 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: An Cheon # the main title
 
 tagline: 我已不再相信自己的绝对正确，这就是我迷失的原因。-《中午的黑暗》 # it will display as the subtitle
 
@@ -29,7 +29,7 @@ github:
   username: An-Cheon # change to your GitHub username
 
 twitter:
-  username: 安辰 # change to your Twitter username
+  username: realAnCheon # change to your Twitter username
 
 social:
   # Change to your full name.
