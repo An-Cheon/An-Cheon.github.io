@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Power of Parting
+categories: [Books, PUA]
+tags: [pua, gaslighting, narcissism, family, relationships, psychology]
 ---
 #### 一个事实：我们的首要责任是照顾好自己，他们的责任也是如此。如果他们无力做到这一点并危及我们的自我照顾，我们就必须离开。
 #### 相互依赖的一部分就是将这种行为合理化——告诉自己我们在做“正确的事”，或者我们正在减轻亲人的负担，或者施虐者如果没有我们的帮助就会死去。

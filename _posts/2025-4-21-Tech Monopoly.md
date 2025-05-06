@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Tech Monopoly
+categories: [Books, Politics]
+tags: [monopoly, politics, finance, psychology, economics]
 ---
 #### 反垄断法关注的是市场权力(Market Power)，即企业通过将价格提高到高于成本来获利的能力。而不会因客户流失或竞争对手扩张而导致大量损失，以至于必须逆转价格上涨。
 #### 垄断并不违反反垄断法。规模本身也不违法。相反，违法需要证明存在市场权力和反竞争行为。
