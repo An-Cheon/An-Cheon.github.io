@@ -2,7 +2,7 @@
 layout: post
 title: 不被理解的生命
 categories: [My Poems, Death]
-tags: [Depression, Death]
+tags: [depression, death]
 ---
 
 曾经占据了灵魂的失落  

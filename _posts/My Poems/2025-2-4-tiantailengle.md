@@ -2,7 +2,7 @@
 layout: post
 title: 天太冷了、风太冷了、人太冷了
 categories: [My Poems, Death]
-tags: [Depression, Death]
+tags: [depression, death]
 ---
 
 活着不过是一场葬礼，  
