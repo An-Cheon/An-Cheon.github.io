@@ -2,7 +2,7 @@
 layout: post
 title: 十三岁
 categories: [My Poems, Death]
-tags: [politics, depression, death]
+tags: [depression, death]
 ---
 
 我不会失望-  
