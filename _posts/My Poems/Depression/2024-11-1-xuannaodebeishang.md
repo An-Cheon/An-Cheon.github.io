@@ -2,7 +2,7 @@
 layout: post
 title: 喧闹的悲伤
 categories: [My Poems, Depression]
-tags: [depression, death]
+tags: [depression]
 ---
 
 如果你  

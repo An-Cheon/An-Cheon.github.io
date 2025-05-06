@@ -2,7 +2,7 @@
 layout: post
 title: 被月光划破的伤口
 categories: [My Poems, Depression]
-tags: [depression, death]
+tags: [depression]
 ---
 
 世界冻结在淡黄色的阴影里，  

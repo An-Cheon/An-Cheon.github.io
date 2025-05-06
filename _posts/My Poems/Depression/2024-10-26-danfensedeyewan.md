@@ -2,7 +2,7 @@
 layout: post
 title: 淡粉色的夜晚
 categories: [My Poems, Depression]
-tags: [depression, death]
+tags: [depression]
 ---
 
 失落的晚风倚靠在栏杆上，  

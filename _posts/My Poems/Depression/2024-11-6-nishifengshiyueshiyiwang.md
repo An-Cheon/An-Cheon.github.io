@@ -2,7 +2,7 @@
 layout: post
 title: 你是风、是月、是遗忘
 categories: [My Poems, Depression]
-tags: [depression, death]
+tags: [depression]
 ---
 
 窗外的你是回忆的倒影，  
