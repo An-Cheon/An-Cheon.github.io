@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  The Alchemy of Finance
-categories: notes
-tags: jekyll
+categories: [Books, Politics]
+tags: [politics, finance, psychology, economics]
 ---
 #### 相对于近期赢利，我更关心基金资本的保全。
 #### 量子基金（Quantum Fund ）是一种独特的投资工具：它应用了杠杆原理，在诸多市场中运作；最重要的是，我管理它仿佛――在很大程度上――那就是我自己的钱。许多基金具备上述某一特征，但我从没听说有谁能将它们合为一体。
