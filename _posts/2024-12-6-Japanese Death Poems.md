@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Japanese Death Poems
+categories: [Poems, Death]
+tags: [death]
 ---
 #### 如果你害怕死亡，现在去死吧！已经死过一次了，你不会再死了。
 #### 死亡就像天空中飘浮的一轮月亮。如果你对它们的意义想得太多，你就会永远被束缚，就像驴子被绑在木桩上一样。
