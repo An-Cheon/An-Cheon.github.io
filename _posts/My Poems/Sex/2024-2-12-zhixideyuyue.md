@@ -2,7 +2,7 @@
 layout: post
 title: 窒息的愉悦
 categories: [My Poems, Sex]
-tags: [sex， love]
+tags: [sex, love]
 ---
 
 在你抱着我的犹豫、  

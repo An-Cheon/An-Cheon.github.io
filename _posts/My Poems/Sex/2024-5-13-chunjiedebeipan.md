@@ -2,7 +2,7 @@
 layout: post
 title: 纯洁的背叛
 categories: [My Poems, Sex]
-tags: [sex， love]
+tags: [sex, love]
 ---
 
 就剩下我们两个人了-  
