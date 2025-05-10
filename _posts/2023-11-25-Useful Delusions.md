@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Useful Delusions
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 对于世上的大多数人来说，不去自我欺骗就等于任由自己堕落、陷入绝望。
 #### 看清事实只会令我们的生活更糟，而不是更好。我们的眼睛和大脑不是为了真实性，而是为了功能性而存在的。

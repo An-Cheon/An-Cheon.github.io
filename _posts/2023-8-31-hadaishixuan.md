@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  哈代诗选
+categories: [Books, Poetry]
+tags: []
 ---
 #### “堕落能换得高雅的表面，”她说。
 #### 他当兵大概和我一样， 没有更多的考虑， 只为找不到活干。

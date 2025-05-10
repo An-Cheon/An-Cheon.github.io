@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Heartland
+categories: [Books, Schizophrenia]
+tags: [schizophrenia]
 ---
 #### anosognosia 。这意味着您相信自己没有患有这种疾病，这是一种疾病的症状。
 #### 耻辱的问题在于它是一个如此模糊的概念，它让我们无法采取任何措施来减少社会排斥。

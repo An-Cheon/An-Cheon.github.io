@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Get Me Out of Here 
+categories: [Books, Psychology]
+tags: [psychology, depression, biography, sex]
 ---
 #### 我以为我想死；我拨打了热线电话。但我其实并不想做任何事情。我希望我有这个勇气，但我没有。
 #### 在与我最亲近的人的关系中，“好”和“坏”的评价可能会剧烈变化，有时从一个小时到下一个小时。

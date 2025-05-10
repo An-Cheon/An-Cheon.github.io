@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Plays Well with Others
+categories: [Books, Connections]
+tags: [connections, marriage]
 ---
 #### 想一想哈佛大学医学院的格兰特研究，它对268名男子进行了长达几十年的跟踪。乔治·瓦兰特花了很多年领导这项研究，当被问及他从对这些人的研究中学到了什么时，他只回答了一句话：“生活中唯一真正重要的事情，是你与他人的关系。”
 #### 第一印象一般来说是准确的，只是第一印象一旦形成就很难改变。

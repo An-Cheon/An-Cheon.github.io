@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Complex PTSD
+categories: [Books, Psychology]
+tags: [pua, psychology, narcissism]
 ---
 #### 复杂性创伤后应激障碍（Complex Post-Traumatic Stress Disorder，CPTSD）：复杂性创伤后应激障碍是一种暴露于单个或一系列极端威胁或恐怖的事件后可能发生的障碍。
 #### 绝大多数的CPTSD患者所经历的创伤是自童年时代起就反复遭遇的创伤。

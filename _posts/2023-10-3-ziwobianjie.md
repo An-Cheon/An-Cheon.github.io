@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  自我边界
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 所谓边界，就是让你的事归你，我的事归我。
 #### 当我们不尊重他人对问题的所有权，把别人的问题当成自己的，我们就是完全弱化了他人的存在，而把自己当成了主角。

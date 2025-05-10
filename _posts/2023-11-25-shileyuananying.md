@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  失乐园暗影
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我们再也看不见了甚至连坟墓都支撑不了多久
 #### 它的暴行是温柔的

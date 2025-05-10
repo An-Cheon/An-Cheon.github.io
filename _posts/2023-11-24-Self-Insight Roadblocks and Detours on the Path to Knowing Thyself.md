@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Self-Insight Roadblocks and Detours on the Path to Knowing Thyself
+categories: [Books, Psychology]
+tags: [psychology, schizophrenia]
 ---
 #### 别⼈对我们的看法也往往⽐我们对⾃⼰的看法与客观结果的相关性更⾼。
 #### 平均⽽⾔，⼈们往往对⾃⼰抱有过于乐观的看法。他们⾼估 了⾃⼰的技能、知识、道德品质以及在社会阶梯上的地位。讽刺的是，他们甚⾄⾼估了 ⾃⼰对⾃⼰做出真实、公正判断的能⼒。

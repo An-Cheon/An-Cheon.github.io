@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  We Need to Talk
+categories: [Books, Relationships]
+tags: [relationships, career]
 ---
 #### 很多事情都取决于看似微不足道的聊天。
 #### 一些最有效的销售人员、销售最多的销售人员是那些能够倾听和回应的人。那些能够进行良好、平衡的对话的人最终能够达成交易。

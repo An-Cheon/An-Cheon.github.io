@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  思考,快与慢
+categories: [Books, Philosophy]
+tags: [philosophy, finance]
 ---
 #### 系统1的运行是无意识且快速的，不怎么费脑力，没有感觉，完全处于自主控制状态。
 #### 我们会忽视显而易见的事，也会忽视自己屏蔽了这些事的事实。

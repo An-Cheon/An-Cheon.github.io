@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  I Am Not Sick I Don't Need Help
+categories: [Books, Psychology]
+tags: [psychology, schizophrenia]
 ---
 #### 一般来说，与其他阴性症状一样，失认症似乎对药物治疗有抵抗力。
 #### 最重要的一点是：倾听并感同身受，他们会询问你的意见。这最终就是你希望发生的事情，因为被询问的意见比强加给与你争论的人的意见更有分量。

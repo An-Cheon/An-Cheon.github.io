@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Very Bad People
+categories: [Books, Politics]
+tags: [politics, career]
 ---
 #### 战争需要金钱。如果我们能查明战争费用是如何支付的，那么也许我们可以切断货币供应。
 #### 如果你跟着钱走，你就能解决大部分事情。

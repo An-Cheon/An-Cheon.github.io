@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Putinomics
+categories: [Books, Politics]
+tags: [russia, politics, economics]
 ---
 #### 这位总统声称拥有民主合法性，部分原因是他有能力迫使大企业和寡头遵守他的规则，无论是通过公平的还是肮脏的手段。
 #### 自普京时代开始以来，俄罗斯领导人的目标按优先顺序排列如下：维持权力、扩大俄罗斯海外影响力以及发展俄罗斯国内经济。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Cow in the Parking Lot
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### 我们就是我们所想的。 我们所有的一切都来自我们的想法。
 #### 愤怒的原因很简单：当我们的需求未得到满足时，就会产生愤怒。

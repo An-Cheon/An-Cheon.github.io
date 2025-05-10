@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Office Politics
+categories: [Books, Career]
+tags: [career, politics]
 ---
 #### 绝大多数服务行业的职业情况完全不同。没有客观的指标，也没有玩偶的数量，可以用来衡量您的贡献。
 #### 在服务行业，您与老板的关系不是客观衡量标准，而是您与老板的关系对您的评估至关重要，他们的主观评价至关重要。
