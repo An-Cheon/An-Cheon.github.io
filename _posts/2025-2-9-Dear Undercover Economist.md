@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Dear Undercover Economist
+categories: [Books, Economics]
+tags: [economics, marriage]
 ---
 #### 男人喜欢年轻女性，而女人喜欢有钱男人。
 #### 女人被有钱的男人所吸引，但是出于某些原因，男人更喜欢收入一般的女人。

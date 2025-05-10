@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  30 Covert Emotional Manipulation Tactics
+categories: [Books, PUA]
+tags: [pua, abuse, narcissism, family, relationships, psychology]
 ---
 #### “除非你意识到你的思想是多么容易被操纵，否则你只是别人游戏的傀儡。”-艾薇塔·奥切尔
 #### 通过隐蔽操纵来控制你的感情和行为的人不重视或尊重你，也不关心你的幸福。尽可能离开这段关系。

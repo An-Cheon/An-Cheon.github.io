@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  The Four Foundations of Mindfulness in Plain 
+categories: [Books, Philosophy]
+tags: [buddhism, philosophy, duḥkha]
 ---
+#### 贪婪和痛苦几乎是相同的。
 #### 欲望无处不在。每个生物都有活下去的欲望。
 #### 欲望当然是必要的。没有欲望，就不会有生命。
-#### 贪婪和痛苦几乎是相同的。
 #### 自己的贪婪、仇恨和妄想是我们不快乐的根源。
 #### 我执着是因为我忘记了一切都是无常的。愚蠢的是，我认为我执着的对象会给我带来持久的幸福、快乐或安全感。
 #### 佛陀清楚地看到了亿万众生的痛苦，但他从不哭泣，因为他知道他的悲伤无法减轻痛苦。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Undercover Economist Strikes Back
+categories: [Books, Economics]
+tags: [economics, politics]
 ---
 #### 出生在津巴布韦或厄立特里亚的普通家庭，除非你能移民，否则无论多有天分，都将注定贫困。
 #### 如此高的离职率深层的问题在于福特工人对工作非常不满：工时过长，工作单调乏味，工资很差，工厂老板们——根据内部资料显示——蠢得讨厌。

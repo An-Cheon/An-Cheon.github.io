@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Logic of Life
+categories: [Books, Economics]
+tags: [monopoly ,economics, politics]
 ---
 #### 他们在做选择之前，拥有大量机会进行讨论。当然，他们在讨论时全都同意合作，表示会选择甲。但是，26名学生中有22名做了自私的人，选择了“乙”，同时还抱着其他学生会选择“甲”的希望。
 #### 你为自己做的选择跟你打算与大家分享时做的选择是不同的。在不记名的情况下，尤为如此。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Lost Connections
+categories: [Books, Psychology]
+tags: [psychology, depression]
 ---
 #### 孤独并不是其他人的身体缺席——而是你没有与任何人分享任何重要的事情的感觉。
 #### 焦虑很大程度上存在于这个世界以及我们的生活方式中。

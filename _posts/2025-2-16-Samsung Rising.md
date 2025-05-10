@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Samsung Rising
+categories: [Books, Politics]
+tags: [politics, business, technology]
 ---
 #### 在三星，善于沟通 是取得成功的关键。
 #### 善于沟通是韩国人的一种艺术，即即使对方什么都不说，也能判断对方的情绪。

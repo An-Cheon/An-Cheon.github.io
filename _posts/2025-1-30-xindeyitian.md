@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  新的一天
+categories: [Books, Poetry]
+tags: []
 ---
 #### 线长说，都是出来打工的 没人逼你
 #### 多少黑夜 我就那样，站着入睡

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Focus The ASML way
+categories: [Books, Business]
+tags: [business, technology, politics]
 ---
 #### 摩尔定律已经走到尽头。按照目前的速度，每两年增加一倍晶体管的数量根本无法持续。ASML 研究总监 Jos Benschop 表示，发展受限于经济因素而非物理因素 。
 #### 芯片行业正迅速接近一个临界点，即进一步缩小尺寸所需的投资变得太大而无法收回——这是真正的极限。

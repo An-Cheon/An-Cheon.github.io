@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Undercover Economist
+categories: [Books, Economics]
+tags: [monopoly ,economics, politics]
 ---
 #### 利润来自稀缺，例如，拥有稀缺的土地（得到法定权力的保护）、稀缺的品牌（由商标来保护）。只有经济变革增加企业控制稀缺资源的程度时，股价才应该上涨。
 #### 只有新的供应者无法轻易进入市场时，卡特尔才拥有稀缺力量。

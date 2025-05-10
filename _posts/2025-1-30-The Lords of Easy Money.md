@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Lords of Easy Money
+categories: [Books, Politics]
+tags: [politics, economics, finance]
 ---
 #### 鲍威尔表示，只要物价通胀率在较长时间内不超过 2%，美联储就会继续干预。
 #### 全球化可能与通缩有关。美联储过去的成功可能也发挥了一定作用，因为他们将未来通胀预期保持在低位。

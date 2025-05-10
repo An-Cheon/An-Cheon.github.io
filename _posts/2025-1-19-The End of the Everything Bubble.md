@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The End of the Everything Bubble
+categories: [Books, Politics]
+tags: [politics, economics, finance]
 ---
 #### 预测市场顶部是一件危险的事，尤其是在各国央行投入巨资试图维持高估值的情况下。
 #### 在大多数情况下，低利率是资产价格上涨的关键因素之一。

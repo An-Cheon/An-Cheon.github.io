@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Davos Man
+categories: [Books, Politics]
+tags: [politics, economics, finance]
 ---
 #### 亿万富翁们掌握了道德炼金术的秘诀，把他们获利的东西伪装成对社会有益的东西。
 #### 马克龙本科毕业论文的主题是马基雅维利。
