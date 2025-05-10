@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Real North Korea
+categories: [Books, Politics]
+tags: [politics, cults]
 ---
 #### 朝鲜士兵和水手的生命对平壤决策者来说毫无价值：他们的后代不参军，而是在巴黎购物。
 #### 即使是中国对于普通朝鲜人来说也看起来像一个真正的民主国家。

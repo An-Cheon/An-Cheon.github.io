@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Pimp Guide
+categories: [Books, PUA]
+tags: [pua, crime]
 ---
 #### 对于职业罪犯来说，监狱和监狱就像兄弟会。监狱被称为“学院”。监狱也被称为“假期”。
 #### 要赶走一个女人，或者引导或误导一个人，找到他们的欲望，抓住他们或抓住他们的地图，然后把 Ho 带到你想让他们去的地方。

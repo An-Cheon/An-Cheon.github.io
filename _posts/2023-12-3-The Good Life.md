@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Good Life
+categories: [Books, Psychology]
+tags: [psychology, philosophy, stoicism]
 ---
 #### 注意力是你最宝贵的资产，决定如何投资你的注意力是你能做出的最重要的决定之一。
 #### “思考尚未发生的事情的能力，”“是一种以情绪消耗为代价的认知成就。”

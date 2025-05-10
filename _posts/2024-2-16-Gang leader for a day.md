@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Gang leader for a day
+categories: [Books, Business]
+tags: [business, crime, politics]
 ---
 #### 帮派老大有着一份艰难的工作：激励年轻人在低工资和升迁的可能性极小的情况下甘冒出售毒品的风险。
 #### 他们似乎对回答我的问题不感兴趣，而更愿意自顾聊着性、权力和金钱。

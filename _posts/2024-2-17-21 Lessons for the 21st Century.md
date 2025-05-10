@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  21 Lessons for the 21st Century
+categories: [Books, Politics]
+tags: [politics, economics, philosophy]
 ---
 #### 人类思考用的是故事，而不是事实、数据或方程式，而且故事越简单越好。每个人、每个团体、每个国家，都有自己的故事和神话。
 #### 执政的寡头特权阶级一旦垄断媒体，便能不断将自身的失败归咎于他人，并将公民的注意力引导到外部的威胁——无论是真有其事或仅仅是空穴来风。

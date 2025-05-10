@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Fail Fast, Fail Often How Losing Can Help You Win
+categories: [Books, Business]
+tags: [business, failure]
 ---
 #### 解决拖延很简单：每天花时间处理最重要的项目。
 #### 我很早就开始接受教育——事实上，就在我大学毕业后。—温斯顿·丘吉尔

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  We Should Get Together
+categories: [Books, Relationships]
+tags: [relationships, career]
 ---
 #### 您为任何关系所付出的努力，无论是柏拉图式的、浪漫的还是家庭的，都是一种投资。并不是所有的投资都会有回报，但对于那些有回报的投资来说，回报是丰厚的。
 #### 作为一个成年人，交朋友是一种工作。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Spiderweb Capitalism
+categories: [Books, Politics]
+tags: [politics, economics]
 ---
 #### 对资本网络扩张最关键的三个过程：筹集资金、寻找交易以及达成有吸引力的交易。
 #### 商学院教授浪费大量时间教学生如何构建预测模型来预测或计算市场风险或绩效。但这都是“废话”，因为越南有太多不可预测的变数。

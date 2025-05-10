@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Odd Girl Out
+categories: [Books, PUA]
+tags: [pua, relationships, abuse]
 ---
 #### 对女孩们来说，连日常冲突都会终结一段关系，更别提突然爆发严重的攻击了，她们甚至拒绝最基本的冲突形式。她们心中有个很简单的等式：冲突 = 损失。
 #### 女孩会不惜一切代价避免孤身一人，其中就包括维持一段施虐友谊。

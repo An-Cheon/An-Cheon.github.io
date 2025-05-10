@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  茨维塔耶娃诗选
+categories: [Books, Poetry]
+tags: []
 ---
 #### 要活下去，只能靠幻想！
 #### 人间所有美女都一样，全都在纯洁地背叛。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Superconnect Harnessing the Power of Networks and the Strength of Weak Links
+categories: [Books, Career]
+tags: [relationships, career]
 ---
 #### 广告是电视和互联网的商业命脉。
 #### 阶层越低，强联系的频率就越高。-马克·格兰诺维特

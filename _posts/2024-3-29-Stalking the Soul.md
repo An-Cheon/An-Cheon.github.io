@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Stalking the Soul
+categories: [Books, PUA]
+tags: [pua, narcissism, relationships, family, abuse]
 ---
 #### 达尼尔阿姨使出施虐者惯用的伎俩，讲起话来指桑骂槐、含沙射影，还经常说谎欺骗，以言语羞辱他人，让人无所适从。
 #### 她的段数很高，轻而易举就能颠倒情势，以受虐者的姿态出现，而令她的家人成为施虐者。

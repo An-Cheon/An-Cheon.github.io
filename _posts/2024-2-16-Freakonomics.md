@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Freakonomics
+categories: [Books, Psychology]
+tags: [psychology, crime]
 ---
 #### 往往，我们公开宣称的信息和我们心知肚明的真实信息之间有着巨大的鸿沟。
 #### 我们所听说的骗局被拆穿的案例只是沧海一粟。多数侵占公款之徒不为人知，理论上仍然过着逍遥自在的生活，因为盗用公司财产的员工很少被发现。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Super Freakonomics
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 《魔鬼经济学》的主题为刺激（在某种动机驱使）之下，人们会做出反应。
 #### 在印度一项针对全国国民的医疗调查中，51%的印度男性声称，在某些情况下，比如说，妻子把饭烧糊或未经允许离开家门，殴打妻子是合情合理的；而更不可思议的是，竟然有54%的印度女性认同上述说法。

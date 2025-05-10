@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Daily Stoic Journal
+categories: [Books, Philosophy]
+tags: [philosophy, crime, stoicism]
 ---
 #### 不在我们掌控之内的：身体和身体的各个器官、财富、父母、兄弟姐妹、子女和国家—— 一切可能与我们有关的东西。——爱比克泰德
 #### 通往幸福的路径，只有一条，在于把你选择范围之外的一切都放弃，把其他一切都视作身外之物，交给神灵和命运处置。——爱比克泰

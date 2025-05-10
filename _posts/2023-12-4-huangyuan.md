@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  荒原
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我终年到处流浪，以形形式式的身份、排场，从大马士革到奥马哈。
 #### 人类难以接受太多的现实。

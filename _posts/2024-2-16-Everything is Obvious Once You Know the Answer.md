@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Everything is Obvious Once You Know the Answer
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 预测的真正问题不是我们常说的擅长或不擅长做预测，而是我们很难区分哪些事情我们可以做出可靠预测，而哪些不能。
 #### 唯一靠谱的解释可能是，琳恩·特鲁斯（Lynne Truss）著的畅销书《教唆熊猫开枪的“，”》（Eats, Shoots and Leaves）的出版商在被问及该书的成功时给出的答案：“它卖得好是因为有很多人都买它。”

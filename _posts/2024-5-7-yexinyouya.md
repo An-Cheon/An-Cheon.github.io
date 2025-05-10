@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  野心优雅
+categories: [Books, Politics]
+tags: [autobiography, politics, china]
 ---
 #### 连国土资源部这种国家部委都会欠账不还钱，连司法和政府都不情愿保护契约精神，为了中国的50周年大庆华远必须承担西单文化广场这种公共事业任务。
 #### 北京的水啊比海深。

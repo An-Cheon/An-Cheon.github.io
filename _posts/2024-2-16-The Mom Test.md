@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Mom Test
+categories: [Books, Business ]
+tags: [business]
 ---
 #### 如果您没有找到一致的问题和目标，则说明您还没有足够具体的客户群。
 #### 意志力是一种有限的资源。克服困难的方法不是强行渡过难关，而是改变你的处境，减少对意志力的需求。

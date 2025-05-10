@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Think Like A Freak
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 放弃是魔鬼思考的核心。
 #### 至少有三个原因让我们先入为主地不愿放弃。第一，我们从小到大一直被那些想当丘吉尔的人们告诫：放弃是失败的标志。第二个原因是有关沉没成本的。第三个原因是人们往往把过多注意力放在了实际成本而不是机会成本上。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  相遇与埋伏
+categories: [Books, Poetry]
+tags: []
 ---
 #### 活着只是为了存在，而不是为了讲理。
 <!-- more -->

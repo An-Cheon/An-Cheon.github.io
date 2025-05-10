@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Set Boundaries, Find Peace
+categories: [Books, Psychology]
+tags: [psychology, relationships, family, pua]
 ---
 #### 满足父母的情感需求从来就不是孩子的义务。
 #### 在治疗抑郁症时，我面对的其实是患者的绝望。

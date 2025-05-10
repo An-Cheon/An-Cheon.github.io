@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Nonviolent Communication
+categories: [Books, Relationships]
+tags: [relationships]
 ---
 #### 如果真的想过上悲惨生活，就去与他人做比较。
 #### 用全身心倾听他人并不容易。法国作家西蒙娜·薇依（Simone Weil）写道：“倾听一个处于痛苦中的人，不仅十分罕见，而且非常困难。那简直是奇迹；那就是奇迹。有些人认为他们可以做到，实际上，绝大部分的人还不具备这种能力。”
