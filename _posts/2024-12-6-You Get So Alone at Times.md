@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  You Get So Alone at Times
+categories: [Books, Poetry]
+tags: []
 ---
 #### 心里有一个地方，永远不会被填满。
 #### 在那个年龄我没有其他选择。

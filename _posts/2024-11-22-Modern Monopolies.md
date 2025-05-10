@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Modern Monopolies
+categories: [Books, Politics]
+tags: [monopoly, politics, finance, technology]
 ---
 #### 平台商业模式的优势往往伴随着严重的监管风险。许多平台企业实际上是监管的看涨期权：如果企业能够经受住监管和法律挑战并占领市场，那么它将为投资者和用户带来巨大的经济利益。然而，如果平台无法克服法律现状，它很快就会被淘汰。
 #### 截至 2006 年底，黑莓手机在美国的市场份额接近 40%。

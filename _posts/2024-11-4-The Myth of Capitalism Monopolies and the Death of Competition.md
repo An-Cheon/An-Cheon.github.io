@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Myth of Capitalism Monopolies and the Death of Competition
+categories: [Books, Politics]
+tags: [monopoly, politics, finance, technology]
 ---
 #### 网络往往是赢家通吃的。每个人都想加入拥有最多用户的网络。
 #### 谷歌目前占据了全球在线搜索的 87%。它本质上是一个私人掌握的全球公用事业。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:   The Little Book That Builds Wealth
+categories: [Books, Politics]
+tags: [monopoly, politics, finance]
 ---
 #### 投资者在确定长期投资目标时，首先需要考虑的就是企业是否拥有牢固的经济护城河，即企业是否能在较长时期内实现超额收益，并随着时间的推移，通过股价体现其超过市场大盘的盈利能力。
 #### 在晨星公司评价股票价值的系统中，我们评价一只股票的等级取决于以下2个基本因素：我们对股票预期公允价值的贴现；公司护城河的规模。

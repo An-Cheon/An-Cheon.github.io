@@ -2,7 +2,7 @@
 layout: post
 title:  Shoe Dog
 categories: [Books, Business]
-tags: [business, confidence]
+tags: [business, confidence, autobiography]
 ---
 #### 我可以感觉到她融化了父亲内心的某些坚硬之处。可能是因为家庭条件不错，周围朋友都有权有势，所以她也有着那种自信，你一生中可能会碰见一两次的那种自信。
 #### “黑塞说过，”她有天晚上在用餐时说，“幸福是一种方式，而不是内容。”

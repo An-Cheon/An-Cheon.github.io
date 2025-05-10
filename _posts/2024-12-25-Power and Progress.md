@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Power and Progress
+categories: [Books, Politics]
+tags: [politics, economics, finance]
 ---
 #### 第二次世界大战后几十年实现共同繁荣的两个要素：为所有技能水平的工人创造新任务和新工作的技术方向，以及使工人能够与雇主和管理者共享生产力增长的制度框架。
 #### 在韩国，共享繁荣很大程度上归功于朝鲜的威胁和劳工运动的力量，尤其是在该国 1988 年民主化之后。

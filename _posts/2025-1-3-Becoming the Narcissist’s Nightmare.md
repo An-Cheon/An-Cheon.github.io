@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Becoming the Narcissist’s Nightmare
+categories: [Books, PUA]
+tags: [pua, abuse, narcissism, family, relationships, psychology]
 ---
 #### 我们竭力避免被拒绝，最终却拒绝了自己。
 #### 自恋者在人际关系中不是有功能的成年人。他们是长着成人身体的孩子。

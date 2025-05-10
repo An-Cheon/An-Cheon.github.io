@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Poetry Pharmacy
+categories: [Books, Poetry]
+tags: []
 ---
 #### 当人们难以应对时，他们往往会寻求比自己的感受更具破坏性的解决方案。
 #### 没有什么比感觉被困在自己的思想和冲动的牢笼中更可怕的了。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Nobody's Fool
+categories: [Books, Deception]
+tags: [deception, psychology]
 ---
 #### 停下来问自己三个问题，这可以帮助我们避免选择欺骗。
 #### 首先，问“为什么是我？”

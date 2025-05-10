@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Endless Crisis
+categories: [Books, Politics]
+tags: [politics, economics]
 ---
 #### 世界资本在危机中寻求美元，推高了美元的价值，似乎加强了美元作为霸权货币的地位，尤其是在欧元危机中。
 #### 经济增长缓慢和资本缺乏投资机会才是金融化的原因。

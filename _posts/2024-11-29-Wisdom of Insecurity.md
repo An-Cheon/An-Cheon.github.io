@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Wisdom of Insecurity
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### 对安全的渴望和不安全感是一回事。
 #### 对安全感的渴求本身就是一种痛苦和矛盾，而且我们越是追求安全感，就越是痛苦。

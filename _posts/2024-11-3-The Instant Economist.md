@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Instant Economist
+categories: [Books, Politics]
+tags: [monopoly, politics, finance]
 ---
 #### “自然垄断”。当这个产业出现规模经济现象，提供大型、稳定的企业胜过新进企业的优势时，就会发生自然垄断。
 #### 寡头垄断的本质较接近独占而非完全竞争，是指一些厂商在一个特定市场拥有大部分或全部的营业额。

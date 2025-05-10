@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  十部小说及其作者
+categories: [Books, Novel]
+tags: [novel]
 ---
 #### 喝卷心菜汤也许是和坠落冰山一样的伟大时刻。
 #### 听故事的欲望早已深深植根于人类本性之中，就像占有欲一样强烈。

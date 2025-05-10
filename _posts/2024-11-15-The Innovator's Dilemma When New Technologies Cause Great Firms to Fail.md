@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Innovator's Dilemma When New Technologies Cause Great Firms to Fail
+categories: [Books, Politics]
+tags: [politics, technology]
 ---
 #### 在大多数企业里，管理者个人没有资本进行反复尝试，以寻求正确的战略。不管是对还是错，大多数机构的管理者都认为他们不能失败。
 #### 创新者的窘境：良好的管理决策正是导致它们从行业龙头地位落马的根本原因。

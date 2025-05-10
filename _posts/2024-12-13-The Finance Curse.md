@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Finance Curse
+categories: [Books, Politics]
+tags: [politics, monopoly, economics, finance]
 ---
 #### 横向垄断。即公司收购制造或生产类似产品的竞争对手，或利用雄厚的财务储备以低于成本的价格出售产品，削弱竞争对手，迫使他们陷入困境。
 #### 纵向垄断。在这种情况下，大型制造商收购其产品的分销商和零售商，然后拒绝销售竞争对手制造商的产品。

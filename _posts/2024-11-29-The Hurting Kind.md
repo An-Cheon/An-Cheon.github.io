@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Hurting Kind
+categories: [Books, Poetry]
+tags: []
 ---
 #### 她说:如果我死了， 这真是太棒了。这也许就是她还活着的原因。
 #### 我以为权力是可以控制的东西。

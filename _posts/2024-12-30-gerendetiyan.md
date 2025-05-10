@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  个人的体验
+categories: [Books, Novel]
+tags: [novel, family]
 ---
 #### 该尽的力尽到了，也就没遗憾了。
 #### 为了尽可能用最简短的话把事情说明白，鸟把事情简单化了，他说：“孩子生出来了，但出生就死了。”

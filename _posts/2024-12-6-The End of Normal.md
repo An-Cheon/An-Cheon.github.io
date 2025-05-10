@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The End of Normal
+categories: [Books, Politics]
+tags: [politics, economics]
 ---
 #### 金融欺诈不仅仅是偶然现象。这是政治问题的解决方案。
 #### 政治不是可能性的艺术，而是在灾难与令人不快的事情之间做出选择。

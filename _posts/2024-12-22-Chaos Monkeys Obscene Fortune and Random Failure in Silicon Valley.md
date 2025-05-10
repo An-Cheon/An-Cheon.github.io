@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Chaos Monkeys Obscene Fortune and Random Failure in Silicon Valley
+categories: [Books, Business]
+tags: [business, technology, biography]
 ---
 #### 投资人是钱比时间更多的人，员工是时间比钱更多的人， 创业者只不过是把二者连接起来的中间人。创业就是用别人的钱来做实验。
 #### 空闲的头脑是魔鬼的游乐场。
