@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Midnight in Moscow A Memoir from the Front Lines of Russia's War Against the West
+categories: [Books, Politics]
+tags: [russia, politics]
 ---
 #### 俄罗斯人认为“失去脾气和自我控制”是软弱的表现。
 #### 普京说话声音柔和，散发着一种极度自信和漠不关心的气息。

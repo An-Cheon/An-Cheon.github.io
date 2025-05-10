@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  叶赛宁诗选
+categories: [Books, Poetry]
+tags: []
 ---
 #### 您已该做点正经事儿了，而我的命运——却是继续往下坠落。
 #### 我在你明眸里看见了大海，它摇曳着浅蓝色的焰光。

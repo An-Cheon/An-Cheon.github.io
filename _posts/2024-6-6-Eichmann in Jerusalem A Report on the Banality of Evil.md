@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Eichmann in Jerusalem A Report on the Banality of Evil
+categories: [Books, Psychology]
+tags: [psychology, crime]
 ---
 #### 他的行为只在溯及既往时才有罪，而且他其实一直是个守法公民；因为希特勒的命令在第三帝国具有“法律效力”，全力执行希特勒的命令是他的分内之事。
 #### 六位心理学家都证明他“正常”，其中一位心理学家据说发出了 “无论如何，艾希曼比给他做完检查的我还要正常”的惊叹。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  How to Win Friends & Influence People
+categories: [Books, Relationships]
+tags: [career, business, relationships]
 ---
 #### 在工程技术领域，收入最高的并不是那些最懂工程的人。
 #### 为人处世的三大基本原则：1.不批评，不指责，不抱怨。2.给予他人真诚的赞美。3.激发他人内心强烈的渴望。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  In an Uncertain World
+categories: [Books, Politics]
+tags: [politics, economics]
 ---
 #### 生活中唯一可以确定的事情就是没有什么是确定的。
 #### 你永远不知道生活中谁会对你产生影响。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Return of Great Power Rivalry
+categories: [Books, Politics]
+tags: [politics, china]
 ---
 #### ⼤优势不是其军事实⼒或经济实⼒，⽽是其制度。
 #### 专制领导⼈不会从听取各⽅观点中受益。他们周围往往都是“唯唯诺诺的⼈”，他们告诉独裁者他想听的话。例如，当萨达姆·侯赛因收到不受欢迎的消息时，他开枪射杀信使的情况并不少.

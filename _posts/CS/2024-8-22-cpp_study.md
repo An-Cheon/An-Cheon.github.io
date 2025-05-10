@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  C++ Fundamentals
+categories: [CS, C++]
+tags: [c++]
 ---
 <!-- more -->
 #### 逻辑运算符（Logical operators）        

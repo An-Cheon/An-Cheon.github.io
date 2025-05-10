@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Gaslight Effect
+categories: [Books, PUA]
+tags: [pua, abuse, narcissism, family, relationships, psychology]
 ---
 #### 你对外界认可的需求使你一直停留在这段煤气灯操纵式的关系里。
 #### 当别人持不同意见时，自恋的人很可能会发怒，而很多煤气灯操纵者也是如此。这种愤怒并不是因为他们怀疑自己观点的正确性，而是因为他们无法忍受不能百分之百掌控他人的感觉。

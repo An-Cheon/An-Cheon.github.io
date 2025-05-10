@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Complete Poems of Stephen Crane
+categories: [Books, Poetry]
+tags: []
 ---
 #### 真正的十字架是由英镑，美元或法郎制造。
 #### 在沙漠我看见一个人，赤裸，残忍，蹲坐在地上，捧着自己的心。

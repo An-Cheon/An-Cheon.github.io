@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Strategize to Win The New Way to Start Out, Step Up, or Start Over in Your Career
+categories: [Books, Career]
+tags: [career, business, relationships]
 ---
 #### 买家真正想要的东西。 你能做到、你愿意做到、你适合
 #### 如今，一心想在一家公司从事一份职业、做一件事，甚至二三十年甚至更长时间，已经不合常理了。

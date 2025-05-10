@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  A Banquet of Consequences RELOADED How we got into the mess we’re in, and why we need to act now
+categories: [Books, Politics]
+tags: [economics, politics]
 ---
 #### 一切都基于一个假设，那就是央行会在必要时出手来抑制波动并支撑价格。
 #### 而将房产价值和股票市场牢牢抓在手中的，则是政府官员和央行行长。

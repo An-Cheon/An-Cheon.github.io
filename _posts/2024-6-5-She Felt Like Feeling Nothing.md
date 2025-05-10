@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  She Felt Like Feeling Nothing
+categories: [Books, Poetry]
+tags: []
 ---
 #### 你的灵魂出了什么事，我看到瘀伤和伤疤，他不配触摸你的画布，你怎么忘了你是艺术。
 <!-- more -->

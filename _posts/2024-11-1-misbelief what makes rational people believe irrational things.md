@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Misbelief what makes rational people believe irrational things
+categories: [Books, Deception]
+tags: [deception, psychology]
 ---
 #### 安全依恋是在童年时期形成的；它基本上让我们在生活中知道，如果发生不好的事情，就会有人抓住我们。我们不必一直环顾四周，想知道是否有人在我们身边。
 #### 高水平的安全依恋是非常罕见的，也很难创造和获得。

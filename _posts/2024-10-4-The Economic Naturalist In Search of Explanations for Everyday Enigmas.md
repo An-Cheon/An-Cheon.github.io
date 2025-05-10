@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Economic Naturalist In Search of Explanations for Everyday Enigmas
+categories: [Books, Economics]
+tags: [economics, marriage]
 ---
 #### 凭借较高的收入，较高的教育水平，迁居的灵活性也比从前大，人们总能碰到潜在的结婚伴侣。所以，年轻时错失有魅力伴侣的机会成本，不如从前那么高了。总之，早结婚的成本提高了，收益却减少了。
 #### 要是表面上吸引人的潜在伴侣对结成关系过度热心，他们大多也会拒绝。

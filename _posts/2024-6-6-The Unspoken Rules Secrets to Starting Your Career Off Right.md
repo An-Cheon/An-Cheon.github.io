@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Unspoken Rules Secrets to Starting Your Career Off Right
+categories: [Books, Career]
+tags: [career, business, relationships]
 ---
 #### 我们一直盲目地在网上申请工作，没有意识到成功的人在幕后建立了关系。
 #### 真正的能力可能很难衡量。对于许多工作来说——你一天的大部分时间都花在与人互动上——衡量能力根本不容易。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Way of the wolf Straight line selling
+categories: [Books, Business]
+tags: [business]
 ---
 #### 人们不会理性地买东西；人们都是冲动购买，然后用逻辑思维把他们的决定合理化。
 #### 在现实生活中，销售就是一切。实际上，你要么销售要么失败。

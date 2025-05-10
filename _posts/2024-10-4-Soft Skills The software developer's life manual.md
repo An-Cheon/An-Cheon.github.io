@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Soft Skills The software developer's life manual
+categories: [Books, Career]
+tags: [career, business, confidence, relationships]
 ---
 #### 总的来说，我们总想得到自己得不到的东西，我们总想得到别人也想得到的东西。
 #### 希望越大，失望越大，你就越不可能得到。

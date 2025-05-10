@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Evil The Science Behind Humanity's Dark Side
+categories: [Books, Psychology]
+tags: [psychology, narcissism, schizophrenia, crime]
 ---
 #### 我们对越轨行为的反应最终可能更多地反映出我们自己而不是他人。
 #### “坏人”这种说法不人道。它假设有一些一群与我们不同的“坏人”。在这种二分法中，我们当然是“好人”——一群做出合乎道德决定的多元化人类。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Principles Life and Work
+categories: [Books, Psychology]
+tags: [politics, psychology, economics
 ---
 #### 我们所说的人性其实很大一部分是动物性。
 #### 有意义的工作和有意义的人际关系不仅是我们做出的美好选择，而且是我们天生的生理需求。

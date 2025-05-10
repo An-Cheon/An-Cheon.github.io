@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Principles for Dealing with the Changing World Order Why Nations Succeed and Fail
+categories: [Books, Politics]
+tags: [politics, economics]
 ---
 #### 通过研究过去500年以来的历史，我发现在财富和权力大起大落的大周期中，最重要的驱动因素是长期债务和资本市场周期。
 #### 在一个周期中，从一个极端到另一个极端的变化是常态，而不是例外。

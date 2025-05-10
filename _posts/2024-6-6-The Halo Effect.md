@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Halo Effect
+categories: [Books, Business]
+tags: [business]
 ---
 #### 好的决策不一定总是能带来好的结果，不好的结果也不一定是错误决策的产物，因此要抵制仅仅根据结果进行归因的倾向。
 #### 成败通常只发生在竞争环境中。商业成功不仅仅意味着做得好，而且还要比对手做得好。
