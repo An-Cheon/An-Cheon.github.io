@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Chaos Kings
+categories: [Books, Finance]
+tags: [politics, economics, finance]
 ---
 #### 避免巨额亏损至关重要。一次大亏损比一系列小盈利更重要。
 #### 下跌 50%。为了赚回你的钱，甚至回到平衡状态，股票价格需要上涨100%，而不是你损失的 50%。

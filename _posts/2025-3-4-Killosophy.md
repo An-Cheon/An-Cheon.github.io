@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Killosophy
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### “ 批评背后的动机往往决定了批评的有效性。关心他人的人会在必要时批评他人。嫉妒他人的人会在认为自己找到了弱点时立即批评他人。”
 #### “ 最大的也是唯一的批评者是你对别人对你的看法的看法，而不是别人对你的看法。”

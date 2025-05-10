@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Geopolitical Alpha An Investment Framework for Predicting the Future
+categories: [Books, Politics]
+tags: [politics, economics, finance]
 ---
 #### 投资者应该关注物质约束，而不是政策制定者的偏好。 偏好是可选的，并受约束，而约束既不是可选的，也不受偏好的约束 。
 #### 物质限制具有很高的诊断性。它们之所以具有诊断性，是因为它们不是可选的。

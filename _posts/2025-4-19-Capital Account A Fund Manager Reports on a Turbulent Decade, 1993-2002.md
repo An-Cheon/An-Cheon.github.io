@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Capital Account A Fund Manager Reports on a Turbulent Decade, 1993-2002
+categories: [Books, Politics]
+tags: [politics, monopoly, economics, finance]
 ---
 #### 资本周期投资方法并不能保证快速获得回报。有时，需要极大的毅力才能抵挡市场的诱惑。
 #### 资本周期分析的一条公理是，未来的需求很难预测。

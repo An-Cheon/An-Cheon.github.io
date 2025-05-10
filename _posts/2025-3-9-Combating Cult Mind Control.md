@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Combating Cult Mind Control
+categories: [Books, Cults]
+tags: [crime, cults, religion, psychology]
 ---
 #### 职业骗子表现出一种绕过人们防线的性格。他们通常很健谈，但看起来不太圆滑。圆滑会暴露他们的真面目。
 #### 邪教领袖们在不断学习中获得了对追随者的支配权。邪教领导是一种艺术，但成功实践的人相对较少。

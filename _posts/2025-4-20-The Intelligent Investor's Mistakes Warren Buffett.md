@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Intelligent Investor's Mistakes Warren Buffett
+categories: [Books, Finance]
+tags: [finance]
 ---
 #### 保险部门的现金（浮动资金）成为伯克希尔收购其他优秀企业的核心引擎。
 #### 1996 年，巴菲特购买了 1.11 亿盎司白银。这笔购买量接近当时世界年产量的四分之一。总投资额超过 6.5 亿美元。

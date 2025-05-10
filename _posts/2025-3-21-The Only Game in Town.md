@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Only Game in Town
+categories: [Books, Politics]
+tags: [politics, economics, finance]
 ---
 #### 这不是权力的争夺，也不是央行想要的结果。相反，由于政治失灵使其他拥有更好政策工具的决策者陷入瘫痪。
 #### 自身利益也在这里发挥作用。作为“城里唯一的游戏”，中央银行特别容易受到政治反弹的影响。

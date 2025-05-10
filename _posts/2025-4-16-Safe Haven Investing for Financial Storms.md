@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Safe Haven Investing for Financial Storms
+categories: [Books, Finance]
+tags: [politics, economics, finance]
 ---
 #### 正如巴菲特自己所说，“ 只有当投资者不了解自己在做什么时，才需要进行多元化投资。”更重要的是，多元化投资“表明你并不真正了解你所拥有的企业。”
 #### 本杰明·格雷厄姆宣称：“投资管理的本质是风险管理，而不是收益管理。管理良好的投资组合从这一原则开始。”
