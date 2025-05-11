@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Secret Empires. How the American Political Class Hides Corruption and Enriches Family and Friends
+categories: [Books, Politics]
+tags: [politics]
 ---
 #### 2016年绝大多数美国人在一件事上是一致的：认为腐败在华盛顿猖獗。民意调查显示，四分之三的美国人认为华盛顿存在“广泛的政府腐败”，而顽固分子可能没有注意到。对广泛存在的腐败问题的担忧正在增加。这个数字在 2009 年是三分之二。
 #### 我们已经习惯了典型的“旋转门”腐败，政府官员执行政策，然后在离任后从受益者那里得到工作。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Stoicism for Inner Peace
+categories: [Books, Philosophy]
+tags: [philosophy, stoicism]
 ---
 #### 我们生活中发生的大多数事情都超出了我们的控制范围，所以我们可以控制的事情很少。
 #### 高期望的本质是我们期望在我们无法控制的事情上获得理想的结果。

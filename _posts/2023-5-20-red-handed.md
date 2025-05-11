@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Red-Handed. How American Elites Get Rich Helping China Win
+categories: [Books, Politics]
+tags: [politics, china]
 ---
 #### 为了人民...经常被暴君当作口头禅...让暴政的仆人问心无愧。——阿尔伯特·加缪
 #### 微软向北京承诺，它将开始将美国的工作岗位外包给中国——这是一个明确的承诺。到 2000 年代初，微软有望外包 1000 个工作岗位。当中国政府批评该公司没有跟上步伐时，微软表示他们将更加努力，更快地将更多工作岗位输送到中国大陆。

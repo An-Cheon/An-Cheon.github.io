@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Bad Blood
+categories: [Books, Deception]
+tags: [deception , business]
 ---
 #### 伊丽莎白一般都是斗志昂扬的。她拥有一个创业家那种不受羁绊的乐观。
 #### 她那蓝色的大眼睛被训练得可以一眨不眨地盯着你，让你觉得自己就是世界的中心。

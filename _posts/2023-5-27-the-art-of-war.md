@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Art of War
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 所有的战争都是建立在欺骗的基础上的。
 #### 谦虚的言词和加紧的准备，是敌人要进军的征兆。粗暴的语言和攻击似的向前冲都是他将要撤退的迹象。

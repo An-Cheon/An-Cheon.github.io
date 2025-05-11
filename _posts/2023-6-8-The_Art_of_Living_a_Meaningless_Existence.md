@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Art of Living a Meaningless Existence
+categories: [Books, Psychology]
+tags: [pua, psychology]
 ---
 #### 塞内卡写道，“直到我们开始摆脱它们，我们才意识到很多事情是多么不必要。我们一直在使用它们，不是因为我们需要它们，而是因为我们拥有它们。
 #### 如果我们正在寻找幸福，现在我们必须找到幸福，因为如果我们现在不聚焦我们看待生活的镜头，那么从这一刻起我们所看到的一切都会保持在焦点之外。

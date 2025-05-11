@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Pimp Game
+categories: [Books, PUA]
+tags: [pua, psychology, crime]
 ---
 #### 只有一场比赛，比赛是拉皮条。你可以玩或被玩，这是你的选择。
 #### 如果你能让一个人相信你，你就可以成为任何你想成为的人。

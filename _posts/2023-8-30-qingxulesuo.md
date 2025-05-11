@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  情绪勒索
+categories: [Books, PUA]
+tags: [pua, psychology]
 ---
 #### 唯有你接受勒索，这场交易才会成功。
 #### 情绪勒索者的一贯做法：“要求你为他的情绪负责。”

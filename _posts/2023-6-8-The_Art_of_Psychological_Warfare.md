@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The Art of Psychological Warfare
+categories: [Books, Psychology]
+tags: [pua, psychology]
 ---
 #### 你无法避免攻击。世界会剥削你。
 #### 人们追求自身利益，会尽可能地夺走你的一切。不要以为你可以躲在某个地方并避免这种情况。

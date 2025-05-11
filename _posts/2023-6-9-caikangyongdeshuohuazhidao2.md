@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  蔡康永的说话之道2
+categories: [Books, Connections]
+tags: [connections]
 ---
 #### 《铁娘子》（The Iron Lady），讲的是英国前首相撒切尔夫人的从政生涯，片中有描述到她为了增加自己的权威感，被要求受训把声音变低沉。
 #### 《国王的演讲》（The King's Speech），讲的是说话严重结巴的英国国王乔治六世如何克服口吃，对全国发表演讲。

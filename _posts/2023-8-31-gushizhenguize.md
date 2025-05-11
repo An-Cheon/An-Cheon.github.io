@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  股市真规则
+title:  The Five Rules for Successful Stock Investing Morningstar's Guide to Building Wealth and Winning in the Market
+categories: [Books, Finance]
+tags: [finance, deception]
 ---
 #### 如果你避免了把一家好公司和一只好股票两个概念相混淆的错误（因为二者有很大的不同），你就已经比很多市场参与者领先了。
 #### 高换手率的基金通常比它们深思熟虑的同行们回报率低，相差的幅度在超过10年的时间里大约平均为每年1.5个百分点。

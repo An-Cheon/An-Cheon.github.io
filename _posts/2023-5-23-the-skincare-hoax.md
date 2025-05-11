@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The Skincare Hoax
+categories: [Books, Deception]
+tags: [deception, health]
 ---
 #### 化妆品行业在电视广播中充斥着这样的信息：女人不花越来越多的钱就不够好看。
 #### 与保湿霜接触的皮肤细胞已经死亡。滋养死组织在科学上是不可能的。

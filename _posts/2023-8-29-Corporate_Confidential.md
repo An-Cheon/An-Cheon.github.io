@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Corporate Confidential
+categories: [Books, Career]
+tags: [career, politics]
 ---
 #### 不管你的公司给你裁员的理由是什么，真正的原因很可能是他们对你失去了兴趣。不知何故，他们认为你不再值得投资，而且意见变坏了。
 #### 每家公司都有一份隐藏的不可或缺的受保护员工名单，这些员工实际上无论如何都能保证工作安全。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  取悦症
+categories: [Books, Psychology]
+tags: [pua, psychology]
 ---
 #### 埃莉诺·罗斯福曾明智地忠告我们：“没有你的允许，没人可以让你自惭形秽。”
 #### 取悦症的三个心理要素构成了一个三角形，行为、思维和情感是三条边，而且它们彼此互为原因和结果。

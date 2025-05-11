@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  顾客心理战
+categories: [Books, Business]
+tags: [business, psychology]
 ---
 #### 我们给自己讲的故事和我们给别人讲的故事一样多，而且其中很多故事都是虚构的作品。
 #### 我们的行为很少是意识思维的结果。

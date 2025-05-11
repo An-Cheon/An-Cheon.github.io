@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Machiavelli Mindset
+categories: [Books, Career]
+tags: [politics, career, marriage]
 ---
 #### 生活是一场无情的战争。
 #### 在这个世界上，你要么是有道德的人，要么是有权势的人。

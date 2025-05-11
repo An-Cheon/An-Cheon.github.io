@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The State Strikes Back. The End of Economic Reform in China?
+categories: [Books, Politics]
+tags: [politics, china, economics]
 ---
 #### 与前几十年相比，全球贸易总体上已经大幅放缓。
 #### 习主席在 2017 年 10 月第十九次党代会的长篇讲话中权威地重申了这一主题，他说：“我们将支持国有资本做强、做优、做大”（Xi 2017 ）。

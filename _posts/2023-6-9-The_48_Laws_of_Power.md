@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  The 48 Laws of Power
+categories: [Books, Career]
+tags: [politics, career]
 ---
 #### 永远让你的上司感到比你优越。
 #### 有的人以为展现和夸耀自己的才华和天赋能够赢得上司的喜爱，这是普遍而又致命的谬论。
