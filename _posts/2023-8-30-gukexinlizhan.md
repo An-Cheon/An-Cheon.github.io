@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  顾客心理战
+title:  Consumerology The Market Research Myth, the Truth About Consumers, and the Psychology of Shopping
 categories: [Books, Business]
 tags: [business, psychology]
 ---

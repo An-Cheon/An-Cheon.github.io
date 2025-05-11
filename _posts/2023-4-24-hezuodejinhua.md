@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 合作的进化
+title: The evolution of cooperation
+categories: [Books, Relationships]
+tags: [relationships, politics]
 ---
 #### 安全困境：国家往往通过那些威胁到其他国家安全的手段来寻求自身的安全。
 #### 事实上，不论一个国家如何做，另一个国家保持它的贸易壁垒总是比较有利的。

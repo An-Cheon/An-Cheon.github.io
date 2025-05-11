@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 过得刚好
+categories: [Books, Business]
+tags: [business, autobiography]
 ---
 #### 江湖子弟，拿得起来放得下。放不下，也得放。
 #### 穷人站在十字街头耍十把钢钩，钩不着亲人骨肉；有钱人在深山老林耍刀枪棍棒，打不散无义宾朋。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 一个自由主义者的良知
+title:  The Conscience of a liberal
+categories: [Books, Politics]
+tags: [politics, economics]
 ---
 #### 1980~2004年共和党连连胜选的秘密几乎可以用一句话来解释：南方白人开始为共和党投票。
 #### 根据皮尤研究中心2006年的一份民意调查，美国劳工阶层大都认为，与二三十年前相比，普通工人“必须更辛勤地工作才能过上体面生活”。

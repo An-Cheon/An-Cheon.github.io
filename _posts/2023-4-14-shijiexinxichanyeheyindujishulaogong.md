@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 世界信息产业和印度技术劳工
+title: Global "Body Shopping" An Indian Labor System in the Information Technology Industry
+categories: [Books, Business]
+tags: [business, technology]
 ---
 #### 澳大利亚的劳务公司与来的印度人形成名义上的雇佣关系，但是把他（她）发包到其他IT公司工作，并从工人的工资里抽头作为利润，而真正的IT公司给这个印度人提供工作，但是不形成劳务关系。
 #### 软件开发和软件服务是高度劳动力密集型的产业，在编程、测试和检错（排除程序设计中的错误）的阶段尤其如此。大多数被猎身到海外的印度IT工人正从事这些沉闷乏味、单调且收人偏低的所谓“驴活“。

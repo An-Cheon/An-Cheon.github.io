@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 告别情绪性进食的DBT方法
+title: The DBT Solution for Emotional Eating
+categories: [Books, Psychology]
+tags: [psychology, health]
 ---
 #### 当这些触发事件出现时，你可能无法识别它们。当你因为睡眠不足、慢性压力、抑郁等因素变得易感脆弱时，即使是看似无关紧要的事件也会成为触发因素。
 #### 当你有一个复杂的长期目标时，通常很好的方法是把它分解成更小的步骤。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 支配与抵抗艺术
+title: Domination and the Arts of Resistance Hidden Transcripts
+categories: [Books, Politics]
+tags: [politics]
 ---
 #### 这些人将其绝大多数非睡眠时间都耗费在权力负载情境（power-laden situations）之中；在此情境中，任何一个错误的姿势或口误都可能造成可怕的后果。
 #### 公开剧本并非是故事的全部。

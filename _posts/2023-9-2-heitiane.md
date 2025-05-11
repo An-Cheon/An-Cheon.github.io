@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  黑天鹅
+title:  The Black Swan
 categories: [Books, Finance]
 tags: [philosophy, finance]
 ---

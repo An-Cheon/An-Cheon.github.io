@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我们所有人
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我的生活里一直 离不开酒。我的朋友们 也喝，但他们能节制。
 #### 那时我以为 这就是生活。

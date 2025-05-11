@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The Struggle to Save the Soviet Economy
+categories: [Books, Politics]
+tags: [politics, china, russia, economics]
 ---
 #### 邓小平镇压天安门广场抗议并加倍威权统治的决定使中国走上了一条没有民主的市场经济之路。
 #### 反对经济改革的强大势力造成的政治瘫痪是苏联解体的最终原因。

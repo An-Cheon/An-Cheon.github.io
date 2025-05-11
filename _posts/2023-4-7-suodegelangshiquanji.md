@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 索德格朗诗全集
+categories: [Books, Poetry]
+tags: []
 ---
 #### 没有美，无人能生活片刻。
 <!-- more -->

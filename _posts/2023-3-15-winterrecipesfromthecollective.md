@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Winter Recipes from the Collective
+categories: [Books, Poetry]
+tags: []
 ---
 #### I try to comfort you                                       
 #### but words are not the answer;                  

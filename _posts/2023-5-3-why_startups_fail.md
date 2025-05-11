@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Why Startups Fail
+categories: [Books, Business]
+tags: [business, finance, failure]
 ---
 #### 错误的开始。 当信息服务机构 CB Insights 确定数十家近期初创企业失败的决定因素时，最常见的问题——将近一半的时间被提及——是“没有市场需求”。
 #### 误报。基于初创公司第一批客户的强烈反应，对市场需求的过度乐观也会导致一些创始人追求有缺陷的机会，在此过程中耗尽现金储备。

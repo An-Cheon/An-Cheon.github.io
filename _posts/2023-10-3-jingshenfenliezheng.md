@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  精神分裂症
+title:  Surviving Schizophrenia
 categories: [Books, Schizophrenia]
 tags: [schizophrenia]
 ---

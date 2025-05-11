@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  自我边界
+title:  I-Power The Freedom to be me
 categories: [Books, Psychology]
 tags: [psychology]
 ---

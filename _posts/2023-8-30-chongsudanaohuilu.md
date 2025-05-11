@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  重塑大脑回路
+title:  The Upward Spiral
 categories: [Books, Psychology]
 tags: [depression, psychology]
 ---

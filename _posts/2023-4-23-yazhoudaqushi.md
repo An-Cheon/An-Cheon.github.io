@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 亚洲大趋势
+title: How Asia Works
+categories: [Books, Politics]
+tags: [politics, economics, finance, china]
 ---
 #### 巴西在早年的增长中，过度依赖债务的驱动，导致其经济并不是真正具有了生产力和竞争力。
 #### 如同任何一枚硬币都具有正反两面一样，人口红利也不例外，在推动经济增长的同时，它还加快了人口老龄化进程，事实上这就意味着退休人口与劳动人口的比率越来越高。

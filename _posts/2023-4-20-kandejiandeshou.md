@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 看得见的手
+title: The Visible Hand
+categories: [Books, Business]
+tags: [business]
 ---
 #### 传统企业常是短命的，几乎全是合伙生意。其中一合伙人退休或去世，就得重新结伙或解散。
 #### 斯密接着指出，“事实上每个人在追求其个人利益的同时，他对社会的贡献，往往比他真正有意去做的贡献，还来得有效”。

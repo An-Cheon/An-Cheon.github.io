@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 繁荣的真谛
+title: A Capitalism for the People
+categories: [Books, Politics]
+tags: [business, economics, politics, career, monopoly, deception]
 ---
 #### 在意大利，哪怕是急诊科的医生要获得晋升也是以他们的政治忠诚度为根据，而非技术能力。年轻人所受到的告诫不是要努力学习，而是去给有权势的人“拎包”，以获得某些好处。母亲们把各自的女儿推向有钱有势的人的怀抱，视其为改善社会地位的唯一途径。人才选拔程序是如此失败，以至于我们经常看到非常聪明的人在从事相当卑微的工作，而极其平庸的人却占据着强势职位。
 #### 在世界大多数地方，最好的赚钱途径事实上并不是来自杰出的创意和将其付诸实践的努力，而是扶植政府同盟军。

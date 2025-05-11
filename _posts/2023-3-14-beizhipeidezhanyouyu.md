@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 被支配的占有欲
+title: Possessed Why We Want More Than We Need
+categories: [Books, Psychology]
+tags: [psychology, marriage]
 ---
 #### 在古罗马，自杀在公民中可以被接受，甚至被认为是一种高尚的行为，但对奴隶和士兵来说则是非法的，因为这些人被视为奴隶主和国家的财产，所以自杀被视为盗窃。
 #### 大多数国家认为其邻国的法律制度是不合理的。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Narconomics
+categories: [Books, Business]
+tags: [business, crime]
 ---
 #### 如果你想接触到真正庞大的消费者群体，你就必须在沃尔玛。商店知道这一点，因此能够努力压榨供应商。
 #### 通过沃尔玛销售大部分商品的供应商的平均利润率低于与沃尔玛开展业务较少的供应商。

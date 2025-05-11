@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  取悦症
+title:  The Disease To Please
 categories: [Books, Psychology]
 tags: [pua, psychology]
 ---

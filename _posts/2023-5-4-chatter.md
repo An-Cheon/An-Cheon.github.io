@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Chatter
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 我脑海中的声音是个浑蛋。—丹·哈里斯
 #### 情绪不是由你做了什么，而是由你想了什么来决定的。

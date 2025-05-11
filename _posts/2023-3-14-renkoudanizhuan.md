@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 人口大逆转
+title: The Great Demographic Reversal
+categories: [Books, Economics]
+tags: [economics, politics, china]
 ---
 #### 还有一些“未知的未知”（unknown unknowns），可能在我们未来的生活中起主导作用。
 #### 国有企业不能驱动未来经济增长。

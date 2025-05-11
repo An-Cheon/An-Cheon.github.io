@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 二十一世纪资本论
+title: Capital in the Twenty First Century
+categories: [Books, Economics]
+tags: [politics, economics]
 ---
 #### 当前在发达国家，国民资本几乎全部为私人资本：全都占90%以上，有些国家甚至超过100%。
 #### 在中国，公共资本似乎占国民资本的一半左右（据估算约占1/3~1/2）。

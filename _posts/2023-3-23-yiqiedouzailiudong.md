@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 一切都在流动
+categories: [Books, Novel]
+tags: [novel, russia, politics]
 ---
 #### 斯大林意外地死了！他的死，没有得到上级的批准。甚至斯大林同志本人也没有发出这道最高指示。这是一种自由的死亡。
 #### 这位苏维埃人民代表，这位部门委员是建立在别人的尸骨和可怕的苦唯之上的。

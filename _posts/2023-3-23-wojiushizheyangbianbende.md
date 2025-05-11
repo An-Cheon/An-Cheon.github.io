@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我就是这样变笨的
+categories: [Books, Novel]
+tags: [novel]
 ---
 #### 我曾经绝望到想自杀，现在绝望的缘由竟成了我没法杀死自己。
 #### 最好是在生命夺走我们的一切之前就死去。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 浙江村
+categories: [Books, Business]
+tags: [business, politics, china]
 ---
 #### 自20世纪90年代以来，各类认证、审批在程序上越来越透明，但是行政权力也越来越大、越来越绕不开。政府和国企重新成为大学毕业生的择业首选。
 #### 中国城镇50％以上的工人处于非正式就业状态。

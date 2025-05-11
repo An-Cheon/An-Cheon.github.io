@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 应许之地
+title: A Promised Land
+categories: [Books, Politics]
+tags: [politics, autobiography]
 ---
 #### 无论我的母亲怎么说，但是霸凌者、骗子和自吹自擂者似乎都过得很好，而那些她认为善良正直的人们却似乎过得糟透了。
 #### 我观察到有关政治人物的一切似乎都很可疑：他们在电视上出现时，刻意修整的发型、贪婪的笑容、表现得既庸俗又自我吹嘘，但私底下却讨好企业和资本家。我认为他们是某种操纵游戏中的演员。
