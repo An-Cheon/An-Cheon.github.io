@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 学习乐观
+title: Learned Optimism
+categories: [Books, Psychology]
+tags: [psychology, confidence]
 ---
 #### 乐观的人将好运归因于人格特质、能力等永久性的因素。悲观的人把好运看成与暂时性因素相关，例如情绪、努力等。
 #### 当不好的事情发生时，悲观的人怪罪自己，乐观的人怪罪旁人或环境。当好事情发生时，悲观的人归功于旁人或环境，而乐观的人归功于自己。

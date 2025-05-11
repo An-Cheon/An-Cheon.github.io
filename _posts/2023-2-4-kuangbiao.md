@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 狂飙
+categories: [Books, Novel]
+tags: [novel, china]
 ---
 #### 检举信中提到的问题大多集中在建筑领域。
 #### 你不值钱，但我看你这腰子不错。

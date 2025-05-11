@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 茶花女
+categories: [Books, Novel]
+tags: [novel, marriage, sex]
 ---
 #### 但是虚荣呀，虚荣在操纵着我们呀，要衣裙、珠宝、车子，将我们引向堕落。
 #### 在她们眼中，谈情说爱仅仅是一种职业，而非人类本能的需要。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 习得性无助
+title: Helplessness
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 内在解释更容易导致个体丧失自尊，而外在解释则更可能使个体的自尊毫发无损。
 #### 抑郁的人们会表现出诸如被动性，犹豫不决以及自杀行为等行为和动机方面的症状。除了最为日常的任务以外，他们往往无法着手做任何事情。

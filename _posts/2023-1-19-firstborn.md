@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Firstborn
+categories: [Books, Poetry]
+tags: []
 ---
 #### Birth, not death, is the hard loss. I know. I also left a skin there.
 <!-- more -->

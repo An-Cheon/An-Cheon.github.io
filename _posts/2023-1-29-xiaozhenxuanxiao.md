@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 小镇喧嚣
+categories: [Books, Business]
+tags: [business, china, politics]
 ---
 #### 乡镇的工作从吃饭和喝酒开始。
 #### 双村肖书记讲过的一句话：“你要什么数字，我给你什么数字；你要多大的数字，我给你多大的数字。”

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 长赢投资
+title: The Little Book of Common Sense Investing
+categories: [Books, Finance]
+tags: [finance]
 ---
 #### 在扣除投资成本之前，想要击败股票市场，绝对是一场零和博弈。
 #### 正如沃伦·巴菲特所言：“当华尔街从业者管理数万亿美元的资金，并收取高昂费用时，真正获利的不是客户，而是那些经理人。”

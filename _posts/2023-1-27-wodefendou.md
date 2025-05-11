@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我的奋斗
+categories: [Books, Politics]
+tags: [politics, cults]
 ---
 #### 人类的权利，实在高于国家的权利。
 #### 怯懦民族，在这世界上是不配生存的。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 贫穷的本质
+title: Poor Economics
+categories: [Books, Economics]
+tags: [economics, business, politics]
 ---
 #### 我们对18个国家的穷人生活的调查数据显示，食品消费只占农村极度贫困人口总消费的36%~79%，占城市贫困人口消费的53%~74%。
 #### 大多数人，甚至大多数非常贫穷的人，似乎都能挣够糊口的钱。这仅仅是因为，通常情况下，能提供卡路里的食品，价格都不高。

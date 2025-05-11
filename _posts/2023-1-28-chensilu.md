@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 沉思录
+title: Meditations
+categories: [Books, Philosophy]
+tags: [philosophy, stoicism]
 ---
 #### 被称为贵族的人一般是缺乏仁慈之情的。
 #### 你所做的每一件事都是最后一件。

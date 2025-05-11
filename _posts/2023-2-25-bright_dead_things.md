@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Bright Dead Things
+categories: [Books, Poetry]
+tags: []
 ---
 #### I had been dragging around for years; what’s life?
 #### I’m afraid I will be stupidly brave.

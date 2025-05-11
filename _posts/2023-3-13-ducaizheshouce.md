@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 独裁者手册
+title: The Dictator's Handbook
+categories: [Books, Politics]
+tags: [politics, china, economics, career]
 ---
 #### 首先，政治就是获得和维持政治权力。它与“我们，人民”的普遍幸福无关。其次，确保政治生存的最好方式是只依靠少数人来上位和在位。               
 #### 凡是在事关政治的地方，意识形态、国籍和文化远没有那么要紧。             

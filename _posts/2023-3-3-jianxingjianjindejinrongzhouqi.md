@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 渐行渐近的金融周期
+categories: [Books, Economics]
+tags: [economics, politics, china]
 ---
 #### 经济活动呈现周期波动的特征，没有永久的繁荣，也没有持续的衰退。
 #### 美联储前任主席保罗•天尔克（Paul Volcker）曾经讲过一句话，“过去一百年对一般消费者唯一有用的金融创新是 ATM （自动提款机），其他的金融创新都没有给老百姓带来真正的实惠”。

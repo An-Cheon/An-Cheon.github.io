@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 奥巴马演说集
+title: Barack Obama Selected Speeches
+categories: [Books, Politics]
+tags: [politics]
 ---
 #### 有希望则无所畏惧。
 #### 希望是上帝赐予我们的最好礼物，是我们这个国家的基石，是对未来的愿景，是对明天更美好的坚信。

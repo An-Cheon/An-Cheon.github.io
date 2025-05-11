@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 经济增长的迷雾
+title: The Elusive Quest for Growth
+categories: [Books, Politics]
+tags: [politics, economics]
 ---
 #### 经济学的基本原理是什么？一个年长的智者曾经告诉我：“每个人只会去做有回报的事情，赔本的买卖没人去做。”
 #### 人们会对激励做出反应，其他只是补充而已。

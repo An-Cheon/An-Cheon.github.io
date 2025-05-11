@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 叙事经济学
+title: Narrative Economics
+categories: [Books, Psychology]
+tags: [psychology, economics]
 ---
 #### 比特币大概在2011年“占领华尔街”/“我们是那99%”的抗议活动前后出现了第一次价格飞涨。
 #### RSA算法可能算得上是启动比特币革命的原始加密算法，它可以追溯至1977年。ProQuest列出了26篇提到RSA算法的文章。但这个数字完全无法与提到比特币一词的15 000多篇文章相比。

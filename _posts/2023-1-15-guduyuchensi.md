@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 孤独与沉思
+categories: [Books, Poetry]
+tags: []
 ---
 #### 体谅我的痛苦吧；拜托你，什么都不要讲。
 <!-- more -->

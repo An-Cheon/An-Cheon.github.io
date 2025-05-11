@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我将宇宙随身携带
+categories: [Books, Poetry]
+tags: []
 ---
 #### 爱就是永恒的纯真，而唯一的纯真是不思考……
 #### 阳光不知道它在做什么因此它永不犯错

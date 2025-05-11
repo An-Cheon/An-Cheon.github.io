@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 动荡的世界
+title: The Map and the Territory Risk, Human Nature, and the Future of Forecasting
+categories: [Books, Economics]
+tags: [politics, economics, china, psychology]
 ---
 #### IMF在2007年春季还报告说，“自2006年9月以来……全球的经济风险有所下降……美国经济总体上运行良好……其他地方的情况也令人欢欣鼓舞”。
 #### 摩根大通银行甚至在2008年9月12日（危机爆发前3天）还预测说，美国的GDP增长将在2009年上半年加速。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 被禁锢的头脑
+categories: [Books, Novel]
+tags: [novel, russia, politics]
 ---
 #### 那些平民百姓，尽管怀着极大的厌烦通过了哲学考试，但他们还是想办法尽快将那些不切实际而又毫无用处的东西忘掉。
 #### 在他生活的这个体制里根本没有法律，就是说，法律只是作为党的工具而存在。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 季风吹拂的土地
+title: Blood and Silk Power and Conflict in Modern Southeast Asia
+categories: [Books, Politics]
+tags: [politics, business]
 ---
 #### 今日，新加坡境内增长最快速的外籍族群来自意大利；在意大利当地，有四成青年找不到工作，于是，失业丧志的欧洲年轻人来到东南亚寻找机会。
 #### 一名在新加坡工作的阿根廷青年曾向我表示，新加坡是世界的中心，并哀叹南美洲过去的稳定与前景已“无处可寻”。

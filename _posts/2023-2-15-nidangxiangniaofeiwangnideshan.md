@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 你当像鸟飞往你的山
+title: Educated
+categories: [Books, Psychology]
+tags: [autobiography, psychology, confidence]
 ---
 #### 过去总是美好的，因为一个人从来都意识不到当时的情绪；它后来扩展开来，因此我们只对过去，而非现在，拥有完整的情绪。 ——弗吉尼亚·伍尔夫
 #### “大学教授有两种，”爸爸说，“一种知道自己在说谎，另一种认为自己在说真话。”

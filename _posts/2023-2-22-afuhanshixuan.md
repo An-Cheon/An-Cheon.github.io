@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 阿富汗诗选
+categories: [Books, Poetry]
+tags: []
 ---
 #### 经常满足的人就是人间的帝王。
 #### 他没有死，他只是睡着。

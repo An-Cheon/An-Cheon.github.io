@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 黑石的选择
+title:  The Education of an American Dreamer How a Son of Greek Immigrants Learned His Way from a Nebraska Diner to Washington, Wall Street, and Beyond
+categories: [Books, Career]
+tags: [politics, career, business]
 ---
 #### 回望过去，我遇到的机会最后都成了二选一的题目——眼前利益还是长远利益。而我的选择都是——长远利益。
 #### 我担心年轻一代的美国人可能无法享有我曾拥有的机会，我担心按照美国当前的趋势，压在后人身上的债务负担可能会限制他们的选择空间，阻碍他们的雄心壮志。

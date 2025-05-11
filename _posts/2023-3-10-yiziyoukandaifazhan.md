@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 以自由看待发展
+title:  Development as Freedom
+categories: [Books, Politics]
+tags: [politics, economics, china]
 ---
 #### 几乎找不到证据表明权威主义政治确实有利于经济的增长。实际上，大量的实证证据表明，经济增长更多地与友善的经济环境而不是严厉的政治体制相容。
 #### 饥荒在世界历史上从来没有发生在有效运行的民主体制中，不管是经济富裕的国家(如当代的西欧或北美)，还是相对贫穷的国家(如独立后的印度、博茨瓦纳或津巴布韦)。
