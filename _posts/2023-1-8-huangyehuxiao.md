@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 荒野呼啸
+categories: [Books, Poetry]
+tags: []
 ---
 #### 当你最终被吞噬一切的时间的潮水所隔绝，我唯一的爱，我何曾忘了爱你？
 <!-- more -->

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 当感受涌现时
+title: The Feeling of What Happens
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 用T. S.艾略特的话来说，有时思想不过是“半信半疑的暗示”、一个“半懂的礼物”。
 #### 情绪无论好坏，都是推理和决策过程的组成部分。

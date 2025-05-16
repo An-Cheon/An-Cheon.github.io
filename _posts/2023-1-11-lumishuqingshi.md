@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 鲁米抒情诗
+categories: [Books, Poetry]
+tags: []
 ---
 #### 这世界是我们的牢狱，它的毁灭带来欢乐。
 #### 贪婪是一切痛苦的原因。

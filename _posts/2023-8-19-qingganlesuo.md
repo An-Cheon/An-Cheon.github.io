@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  情感勒索
+title:  Emotional Blackmail
 categories: [Books, PUA]
 tags: [pua, psychology]
 ---

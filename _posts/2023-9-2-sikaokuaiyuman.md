@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  思考,快与慢
+title:  Thinking, Fast and Slow
 categories: [Books, Philosophy]
 tags: [philosophy, finance]
 ---

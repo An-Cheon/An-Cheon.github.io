@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 美元真相
+title: The Almighty Dollar
+categories: [Books, Economics]
+tags: [economics]
 ---
 #### 虽然美国经济总量占世界经济总量不到1/4，但是在以外币作为支付媒介的交易中，美元所占的份额高达87%。
 #### 世界的财富可以流经一些国家，却未给那些国家的大部分人民带来任何好处。

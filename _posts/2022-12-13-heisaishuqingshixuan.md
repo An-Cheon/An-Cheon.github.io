@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 黑塞抒情诗选
+categories: [Books, Poetry]
+tags: []
 ---
 #### 昨天还很繁盛的，今天已濒临死亡。
 #### 我们站在你墓旁，满怀忧思，我们来得太迟。你已经消逝了。

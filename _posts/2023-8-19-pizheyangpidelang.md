@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  披着羊皮的狼
+title:  In Sheep's Clothing
 categories: [Books, PUA]
 tags: [pua, psychology]
 ---

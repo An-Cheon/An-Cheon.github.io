@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 疑问集
+categories: [Books, Poetry]
+tags: []
 ---
 #### 玫瑰当真赤裸身体&emsp;&emsp;或者那是它仅有的衣服？
 #### 那些从未碰触过我血液的人&emsp;&emsp;会怎样说我的诗？

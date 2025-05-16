@@ -2,7 +2,7 @@
 layout: post
 title:  汉武的帝国
 categories: [Books, History]
-tags: [history, china]
+tags: [history, politics, china]
 ---
 #### 吕后驾崩，平衡就被打破。所有的政治力量都要重新洗牌，进行权力的再分配。
 #### 事实上，汉武帝从来就不是真儒家，更非纯儒。他迷信巫术，重用酷吏，都不是儒家赞成的事。他大张旗鼓招聘儒生时，大臣汲黯（读如急暗）就当面直言：陛下内心世界充满欲望，又何必装模作样讲什么仁义呢？

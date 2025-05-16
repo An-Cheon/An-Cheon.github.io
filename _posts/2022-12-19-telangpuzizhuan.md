@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 特朗普自传
+title: The Art of the Deal
+categories: [Books, Business]
+tags: [autobiography, business, confidence]
 ---
 #### 我喜欢每天上班都能感受到今天较之昨天的发展，这就足矣。
 #### 我不会让个人情感影响到自己的商业判断力，就算再喜欢这家酒店，也得等到它的出价对我有利，才会出手。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 清醒思考的艺术
+title: The Art of Thinking Clearly
+categories: [Books, Philosophy]
+tags: [psychology, philosophy, failure]
 ---
 #### 墓地里音乐家的数量要比娱乐节目舞台上的多几万倍，但从来不见有哪位记者去关心这些失败者。
 #### 每位成功的作家背后都有100个作品卖不出去的作家，每个作品卖不出去的作家背后又有100个找不到出版社的作者，每个找不到出版社的作者背后又有数百个抽屉里沉睡着刚动笔的手稿的写作爱好者。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 尼希诗文集
+categories: [Books, Poetry]
+tags: []
 ---
 #### 岛上没有里程碑，你将不会有要到达的地方。
 #### 他们埋葬我们时没有棺材没有寿衣 八月我们的坟上长出了大麦。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 在水中热爱火焰
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我长时间地伫立，直到感觉我的血液变成清泉喷溅。        
 #### 你的人生是一个悲伤的故事。我的故事和你的一样。            

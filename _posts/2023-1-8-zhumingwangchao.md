@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 朱明王朝
+categories: [Books, History]
+tags: [history, china, politics]
 ---
 #### 朱元璋做过游方僧，乞讨于淮河上游一带。               
 #### 朱元璋是杀了不少功臣，而且杀起人来甚至不需要理由。比如功臣中排名第四的宋国公冯胜，便在李善长被杀五年多以后赐死，没有罪名。
