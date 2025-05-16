@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 毛泽东诗词
+categories: [Books, Poetry]
+tags: []
 ---
 #### 指点江山，激扬文字，粪土当年万户侯。
 <!-- more -->

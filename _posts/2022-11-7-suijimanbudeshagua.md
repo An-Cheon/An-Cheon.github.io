@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 随机漫步的傻瓜
+title: Fooled by Randomness
+categories: [Books, Economics]
+tags: [economics]
 ---
 #### 法国诗人瓦雷里（Paul Valery）曾经很讶异地听到有人评论他的诗，从他的诗中挖掘出他从未设想过的意义。
 #### 心理学家卡尼曼（Daniel Kahneman）和特沃斯基（Amos Tversky）指出，大部分人宁可在别人赚6万美元时，自己赚得7万美元，而不喜欢在别人赚9万美元时，自己能够赚得8万美元。           

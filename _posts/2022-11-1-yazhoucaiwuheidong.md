@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 亚洲财务黑洞
+title: Asian Financial Statement Analysis Detecting Financial Irregularities
+categories: [Books, Deception]
+tags: [deception, china]
 ---
 #### 分析师感兴趣的三张主要财务报表分别为损益表、现金流量表和资产负债表。
 #### 那些想要人为地自我美化的公司，仅操纵某一张财务报表的数据而不影响其他财务报表，或不在同一张财务报表中进行项目抵消的做法是不可行的。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 生命与希望之歌
+categories: [Books, Poetry]
+tags: []
 ---
 #### 什么也不再飞过。死神已经降落。
 #### 树木是幸福的，因为它几乎没有知觉。

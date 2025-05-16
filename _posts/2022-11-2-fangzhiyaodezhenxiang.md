@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 仿制药的真相
+title: Bottle of Lies
+categories: [Books, Deception]
+tags: [deception, china, technology, politics]
 ---
 #### 仿制药，也就是在品牌药的专利过期之后，合法仿制出来的廉价版本。
 #### 正如一位在药厂负责生产的高管所说：“当我登上一架飞机，发现小餐桌板上有咖啡渍，我就会怀疑他们没有保养过引擎。”

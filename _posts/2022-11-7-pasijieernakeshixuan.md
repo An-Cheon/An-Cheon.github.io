@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 帕斯捷尔纳克诗选
+categories: [Books, Poetry]
+tags: []
 ---
 <!-- more -->
 我在窗玻璃的昏暗中梦见一片秋光，你消失了，融入边走边吃的人群。               

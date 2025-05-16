@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 精神病的隐秘世界
+title: Into the Abyss
+categories: [Books, Psychology]
+tags: [psychology, depression]
 ---
 #### 如果你跟抑郁症患者谈论过往，那么他们所说的都是消极的事情。     
 #### 精神压力具有巨大的破坏性，会对身体产生物理影响。            

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 赌金者
+title:  When Genius Failed The Rise and Fall of Long-Term Capital Management
+categories: [Books, Economics]
+tags: [economics, failure]
 ---
 #### 债券之间的价差最终总是会逐步缩小，这就是梅里韦瑟从埃克斯坦收购案中总结的宝贵经验，也是他后来在长期资本管理基金长期依赖的经验。
 #### 如果等待形势扭转的时间太漫长，交易者很可能熬不到胜利曙光的出现就已经破产了。

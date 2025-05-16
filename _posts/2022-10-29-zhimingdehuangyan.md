@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 致命的谎言
+title:  The accidental theorist and other dispatches from the dismal science
+categories: [Books, Politics]
+tags: [economics, politics]
 ---
 #### 资本主义民主是我所知的最坏制度，但是过去那些屡经试用的制度甚至更坏。-温斯顿·丘吉尔
 #### 金钱是稀缺资源，政治资本也同样如此。如果将目光停留在占据新闻头条位置的小问题之上，那么我们就会忽视那些更有意义的大问题。

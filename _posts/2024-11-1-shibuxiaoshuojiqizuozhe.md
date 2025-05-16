@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ten Novels And Their Authors
+title:  十部小说及其作者
 categories: [Books, Novel]
 tags: [novel]
 ---

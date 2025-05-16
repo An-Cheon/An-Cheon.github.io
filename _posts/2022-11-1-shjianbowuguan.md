@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 时间博物馆
+categories: [Books, Poetry]
+tags: []
 ---
 #### 他真想一把火烧掉这办公室，而他的双唇向每个人说你好。
 #### 他被解雇了，自由了。

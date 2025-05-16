@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 救命饮食
+title: The China Study
+categories: [Books, Health]
+tags: [health]
 ---
 #### 食用低动物性蛋白质食物的老鼠，运动量明显高出许多，也不容易疲倦
 #### 电线杆越多的国家，心脏病与其他疾病的发生率都较高，因此，电线杆与心脏病是正相关，但却不能因此证明电线杆会导致心脏病——相关并不表示因果关系。

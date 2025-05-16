@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 亚洲教父
+title: Asian godfathers
+categories: [Books, Business]
+tags: [business, politics, china, marriage, deception]
 ---
 #### 至于那些有赚钱禀赋之士，即使出身清寒或中产，只要娶个有钱有势的妻子，便等于获得向上爬的社会梯阶、奠下良好的“商业基础”。       
 #### 这些“教父”大都没有可以推心置腹的朋友（有的只是“生意伙伴”），社交生活乏味枯燥，因此寻求年轻女性的性慰藉，几乎是唯一的“解闷”方法。        

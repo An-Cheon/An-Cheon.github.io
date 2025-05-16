@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 三十不立
+categories: [Books, Society]
+tags: [society]
 ---
 #### 社会总是强调这是当事人的责任。即使身陷困境，那也是自己的责任。
 #### 大部分“三十代”的流浪汉都会避免与家人联络。
