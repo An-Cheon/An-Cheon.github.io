@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  巴菲特的投资组合
+title:  The Warren Buffett Portfolio
+categories: [Books, Finance]
+tags: [finance]
 ---
 #### 巴菲特以其独特的语言风格说道：“通过指数基金定投，一个一无所知的投资者实际上能够超越大多数专业投资者。”
 #### 关注净资产收益率，而不是每股盈利。

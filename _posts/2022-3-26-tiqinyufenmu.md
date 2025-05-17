@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  提琴与坟墓
+categories: [Books, Poetry]
+tags: []
 ---
 #### 幻梦侵蚀了 青春的石头 落进我 思绪的水潭。 每一块都说： “神已远去！”
 <!-- more -->

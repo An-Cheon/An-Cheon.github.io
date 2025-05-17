@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 被伤害的空气
+categories: [Books, Poetry]
+tags: []
 ---
 #### 那条他本想上吊的绳子，他厌倦的手甚至连摸都没摸一下。
 #### 我理解这些被存在和金钱粘住的疲惫的脚。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 当你老了
+categories: [Books, Poetry]
+tags: []
 ---
 #### 人生和文学都似乎 仅是一场英雄梦。
 #### 亲爱的姑娘，只有上帝， 才因为你自身而爱你， 而不考虑你的黄发。

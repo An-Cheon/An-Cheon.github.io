@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Buffett's Alpha
+categories: [Books, Finance]
+tags: [finance]
 ---
 #### 从1998年6月30日到2000年2月29日，伯克希尔市值缩水44%，而同期股市整体却上涨了32%。
 #### 沃伦·巴菲特的高回报率来自于他的高夏普比率，以及他在高风险情形下运用杠杆实现高回报的能力。

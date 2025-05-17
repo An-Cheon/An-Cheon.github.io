@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 孤独传
+title: A Biography of Loneliness
+categories: [Books, Society]
+tags: [society]
 ---
 #### 相较于女性，男性的孤独指数更高。原因也许可以归结为单性别或同性社交，以及社会通常更鼓励女性谈论她们的感受这一事实。
 #### 在集体主义的文化中，孤独与缺乏家庭支持有关；而在个人主义文化中，孤独则意味着缺少家庭之外的联系。

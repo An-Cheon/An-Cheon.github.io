@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  哲学家死亡录
+title:  The Book of Dead Philosophers
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### 赋予我们生命的意义的不仅是对死亡本身的害怕，还包括肉身湮灭带来的无边恐怖。
 #### 伊比鸠鲁曾说，只要拥有一个大麦面包和一些水，他就敢和宙斯比幸福。

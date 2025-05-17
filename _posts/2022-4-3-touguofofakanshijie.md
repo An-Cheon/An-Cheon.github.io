@@ -2,7 +2,7 @@
 layout: post
 title: 透过佛法看世界
 categories: [Books, Philosophy]
-tags: [buddhism, marriage]
+tags: [buddhism, philosophy]
 ---
 #### 缺乏对自己的了解，令我们总是处在困惑和痛苦之中。               
 #### 如果没有强烈的“我”和“我的”的观念，“失去”的概念也会淡化，人与事的远去，不再那样难以接受、无法释怀。           

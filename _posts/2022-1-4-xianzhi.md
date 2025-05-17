@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 先知
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我们年轻、热切，然而我们孤独，无人瞧我们一眼。               
 #### 谁能够与自己的痛苦和孤寂毫无遗憾地分手呢？               

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 投资的怪圈
+title: Your Money and Your Brain
+categories: [Books, Finance]
+tags: [finance]
 ---
 #### 本杰明·格雷厄姆（Benjamin Graham）被问及如何成为一个成功的投资者时，他回答说：“人们不需要非凡的洞察力或智慧，最需要的是采取简单的原则，并坚持遵守这些原则。”
 #### 1980年1月，当黄金价格达到每盎司850美元的历史新高时，美国财政部长威廉·米勒（G. William Miller）宣布：“现在似乎不是抛售黄金的合适时机。”孰料第二天，金价下跌17%。在接下来的5年里，黄金贬值了2/3。
