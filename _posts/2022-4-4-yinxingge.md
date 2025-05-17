@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 隐性格
+title: Out of Character
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 邪恶和美好的品质在人身上是可以共存的，例如，伪善和高尚、爱情和肉欲、残酷与悲悯、忠实和欺骗、谦虚和狂妄、偏执和宽容……               
 #### 希腊斯多葛学派认为，美德来自于自我克制，来源于对感官愉悦的控制和对诱惑的抵抗能力。               

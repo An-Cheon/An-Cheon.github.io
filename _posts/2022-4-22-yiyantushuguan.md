@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 遗言图书馆
+title: Famous Last Words
+categories: [Books, Society]
+tags: [society]
 ---
 #### 愿用我的一生所有来换取一刻时间。-伊丽莎白一世
 #### 她在被诊断出患了无法治愈的癌症后自杀了，遗言： “选择用一种快速而简单的死亡来代替一种 冗长而可怕的死亡是最简单的人权。”-夏洛特·帕金斯·吉尔曼

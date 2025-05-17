@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 德国诗选
+categories: [Books, Poetry]
+tags: []
 ---
 #### 任何富人，他也不能把 我们的月亮和阳光遮住；
 #### 我是个凡人； 生出来就是要去爱，去受痛苦。

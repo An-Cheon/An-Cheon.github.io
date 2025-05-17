@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 你的生存本能正在杀死你
+title: Your Survival Instinct Is Killing You
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 虽然从短期来看，获得即时满足能够满足我们的期望，但最终会导致我们形成一种心态，即无论遇到什么问题，总是倾向于寻求短期性的解决方案。               
 #### 电子邮件、短信、网上冲浪等现代技术推高了我们的焦虑水平，并使其维持在我们难以承受的水平。               

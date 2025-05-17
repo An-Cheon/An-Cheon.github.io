@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 注意力曲线
+title: Find Your Focus Zone
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 当你处于缺乏刺激和过度刺激的状态下，是难以集中注意力的。你注意力最集中的时候也就是受到恰当程度刺激的时候。    
 #### 想要重新控制自己，需要两个步骤：首先，你必须认识到，你已经失去了控制。其次，你需要加速或减慢来重新恢复平衡。    

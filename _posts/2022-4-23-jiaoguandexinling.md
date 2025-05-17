@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 娇惯的心灵
+title: The Coddling of the American Mind How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure
+categories: [Books, Society]
+tags: [psychology, society]
 ---
 #### 最大的敌人莫过于你自己的想法，一不留神，它就会对你形或暴击。然而，一旦掌控自己的思想，那它就能成为你最大的助力。-佛陀，《法句经》
 #### 现如今的年轻人——至少那些为进入好大学而努力的中学生—承受着巨大的压力，他们不仅要在学业上表现优异，而且还要充实课外成绩的冗长清单。与此同时，当十来岁的青少年沉浸在社交媒体的空间时，他们还要面临着此前未有的骚扰、侮辱和社会竞争。

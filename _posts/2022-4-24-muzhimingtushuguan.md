@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 墓志铭图书馆
+categories: [Books, Society]
+tags: [society]
 ---
 #### 自由是一盏灯 多少人为此在黑暗中死去
 #### 我躺在圣坛门边 因为我兜里没钱 越往里面躺你得付得越多 但我躺这儿跟他们一样暖和

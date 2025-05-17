@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Live or Die
+categories: [Books, Poetry]
+tags: []
 ---
 #### My body is useless. It lies, curled like a dog on the carpet. It has given up.
 #### I am in the domain of silence, the kingdom of the crazy and the sleeper. There is blood here and I have eaten it.

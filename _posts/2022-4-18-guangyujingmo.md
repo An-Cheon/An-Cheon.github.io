@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 光与静默
+categories: [Books, Poetry]
+tags: []
 ---
 #### 生活是一位女子，用情人的泪水洗浴，身上滴着被杀者的鲜血。
 #### 人间的殡仪恰是天上的婚礼。

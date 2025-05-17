@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 长期投资
+title: Investing for the Long Term
+categories: [Books, Finance]
+tags: [finance]
 ---
 #### 投资你熟悉的领域。林奇说过，一个非投资专业人士可以在购物中心闲逛，然后发现有好货的商店。
 #### 我们要尽量避开诸如新成立的“微软”或新成立的“可口可乐”，这些公司以不切实际的营销或当月新话题为卖点，轻易就能够实现多元化经营。

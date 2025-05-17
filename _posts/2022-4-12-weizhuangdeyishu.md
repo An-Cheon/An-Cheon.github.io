@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 伪装的艺术
+title: Memoir A History
+categories: [Books, Society]
+tags: [society, biography, autobiography]
 ---
 #### 传记有一种明显的局限性，它最常与政治家和将军的成败联系在一起，与普通人没有什么关联。他写道：“正如不用的金子不能使人富裕，不能运用的知识也不能使人聪明。”               
 #### 1870年，马克·吐温评论说：“这本书展示了富兰克林只靠吃面包喝清水过活，边吃饭边研究天文——这给上百万的孩子带来了折磨，因为他们的父亲读了这本倒霉自传。”               

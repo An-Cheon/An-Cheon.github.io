@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 绝望的死亡和资本主义的未来
+title: Deaths of Despair and the Future of Capitalism
+categories: [Books, Society]
+tags: [society, suicide, politics]
 ---
 #### 对美国中年白人而言，不仅自杀率正在上升，他们的整体死亡率也在攀升。               
 #### 死亡率上升最快的三大原因包括自杀、药物过量使用和酒精性肝病。这些类型的死亡都属于自戕，无论是用枪迅速地自我了断，还是缓慢并且不那么确定地因为药物成瘾送命，抑或更缓慢地死于酒精中毒。我们开始将这三大死因统称为“绝望的死亡”。               

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 第二次诞生
+categories: [Books, Poetry]
+tags: []
 ---
 #### 草地上不再有生命，树林没有了上帝，池塘没有了心房。
 #### 一切都叫人腻烦。唯独你令人百看不厌。

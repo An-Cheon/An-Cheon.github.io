@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 如何成为斯多葛主义者
+title: How to Be a Stoic
+categories: [Books, Philosophy]
+tags: [philosophy, stoicism]
 ---
 #### 我们应该认识并区分自己所能掌控的事情和无法掌控的事情。               
 #### 神啊，请赐予我内心安宁以接受我所不能改变的，请赐予我勇气以改变我所能改变的，请赐予我智慧以分辨这二者之间的差别。               

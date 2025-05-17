@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 成为
+title: Becoming
+categories: [Books, Politics]
+tags: [politics]
 ---
 #### 他从不谈论物质话题，比如买房买车，甚至是买双新鞋。他的钱基本都花在书上。
 #### 他们的美德都有优越的背景支撑—要么没有学生贷款要偿还，要么某一天会继承家族遗产，所以不必为未来储蓄。         

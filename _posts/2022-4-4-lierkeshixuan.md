@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 里尔克诗选
+categories: [Books, Poetry]
+tags: []
 ---
 #### 她笑了笑。几乎叫人心痛。               
 #### 现在我的悲苦满了，难以名状，它充塞着我。               

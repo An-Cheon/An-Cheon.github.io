@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我的焦虑是一束火花
+categories: [Books, Poetry]
+tags: []
 ---
 #### 他生活在回声和纷乱中，他的感觉已经死去。
 #### 死亡，是他唯一的花园。

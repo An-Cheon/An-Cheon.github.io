@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 论幸福生活
+title: On the Happy Life
+categories: [Books, Philosophy]
+tags: [philosophy, stoicism]
 ---
 #### 幸福的人是判断正确的人；幸福的人是无论当下境遇如何，都满足于自己的境况并与之友好相处的人；幸福的人是得到理性对他所有境况的认可的人。
 #### 请不要要求我与至善之人等同，而是要求我比败坏之人好一点。

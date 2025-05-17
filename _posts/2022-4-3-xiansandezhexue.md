@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 闲散的哲学
+title: Idleness A Philosophical Essay
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### 奥斯卡·王尔德搬出种种理由鄙视传统，他如此评论道：“绝大多数人都是别人的傀儡。他们脑中装着别人的想法，过着亦步亦趋的生活，体验着引述而来的激情。”（《狱中记》）    
 #### 我们赋予目标价值是大错特错的，因为幸福几乎仅仅存在于我们努力实现目标的过程中。不论是什么目标，其本身都没有价值。 

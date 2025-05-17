@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我曾这样寂寞生活
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我的信念强烈、盲目，毫无根据。
 #### 我们将一无所有， 不仅两手空空， 甚至连两手都要失去。

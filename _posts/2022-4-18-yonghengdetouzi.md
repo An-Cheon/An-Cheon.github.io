@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 永恒的骰子
+categories: [Books, Poetry]
+tags: []
 ---
 #### 其实你不该对我那么好，不该如此。
 #### 其实我不知我为何悲伤……如此悲伤……！

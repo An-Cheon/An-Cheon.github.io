@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 李清照集
+categories: [Books, Poetry]
+tags: []
 ---
 #### 东篱把酒黄昏后，有暗香盈袖，莫道不销魂，帘卷西风，人比黄花瘦。
 #### 黄昏院落，凄凄惶惶，酒醒时往事愁肠。

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 沉石与火舌
+categories: [Books, Poetry]
+tags: []
 ---
 #### 音色说：自由并没有消亡，有人不向皇帝进贡。
 #### 我们必须相信很多东西，才不致突然坠入深渊！
