@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 社会工程
+title: Social Engineering
+categories: [Books, Deception]
+tags: [deception, technology, psychology]
 ---
 #### 问题是大部分人因为自信满满而对潜在的问题视而不见，觉得锁很好、门很厚、安全系统很高级，而且还有看门狗，就足以把大部分人“拒之门外”了。
 #### 没脸没皮的小黑客会为一个简单的攻击花费上百个小时，而掌握社会工程技术的高级黑客只需一小时甚至更短的时间。

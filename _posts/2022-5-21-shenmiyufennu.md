@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 神秘与愤怒
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我不再有能力死去……          
 #### 抵抗就是希望。               

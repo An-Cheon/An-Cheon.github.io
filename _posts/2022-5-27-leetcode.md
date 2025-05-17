@@ -1,6 +1,8 @@
 ---
 layout: post
 title: leetcode
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more -->
 2. 两数之和                           

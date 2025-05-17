@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 诗人在纽约
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我的痛苦在下午汩汩流血。
 #### 生命不神圣，不美好，也不高尚。         

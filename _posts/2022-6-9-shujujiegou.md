@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 数据结构
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more -->
 树

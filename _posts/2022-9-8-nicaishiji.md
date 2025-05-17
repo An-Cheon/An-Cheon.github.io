@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 尼采诗集
+categories: [Books, Poetry]
+tags: []
 ---
 #### 痛苦说：消逝吧！ 而所有快乐却都想要永恒。
 #### 如果你不想让眼与心弱化， 就要在黑暗中追寻太阳！

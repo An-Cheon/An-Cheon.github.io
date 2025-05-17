@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 唐诗三百首
+categories: [Books, Poetry]
+tags: []
 ---
 #### 朱门酒肉臭，路有冻死骨。
 #### 感时花溅泪，恨别鸟惊心。

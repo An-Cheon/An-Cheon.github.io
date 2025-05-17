@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 宋词三百首
+categories: [Books, Poetry]
+tags: []
 ---
 #### 纵有千种风情，更与何人说！
 #### 人有悲欢离合，月有阴晴圆缺，此事古难全。

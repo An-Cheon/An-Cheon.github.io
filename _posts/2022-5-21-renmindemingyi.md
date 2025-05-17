@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 人民的名义
+categories: [Books, Novel]
+tags: [china, politics, career, business]
 ---
 #### 官场上总是这样，表面上是在谈论某一件事，但在这件事背后却总是牵连着其他人和事，甚至还有山头背景、历史纠葛等等。              
 #### 我们私底下常说，婊子、票子、房子，我们总有一子能说服你！               

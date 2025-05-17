@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 浪漫主义的根源
+title: The Roots of Romanticism
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### 浪漫主义者对于创造力的信仰其实包含着对于因果关系，甚至对于逻辑的拒斥。对他们而言，理性是一种限制，而自由是意志的胜利。               
 #### 我们所有人都是诸多传统的后代，身上携带的观念都是纠缠一团的矛盾。               

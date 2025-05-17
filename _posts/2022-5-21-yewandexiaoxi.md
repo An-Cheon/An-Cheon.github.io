@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 夜晚的消息
+categories: [Books, Poetry]
+tags: []
 ---
 #### 从此，没有什么等待我，只有更漫长和更糟糕的。
 #### 苦难如同一座山，在我们身上崩塌。               

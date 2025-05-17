@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 我是个妈妈，我需要铂金包
+title: Primates of Park Avenue
+categories: [Books, Society]
+tags: [family, society, psychology, marriage, business]
 ---
 #### 我读过文学与人类学，知道人科动物要是没有归属感，不能真正融入群体，就会迷失自我。               
 #### 在上东区，孩子的朋友和玩伴可以决定你的阶层，你的阶层会更上一层楼，也或者你会被拖累。你帮孩子找到什么样的玩伴，你就是什么社会阶层。如果你地位低下，你天真可爱的孩子也会地位低下。               

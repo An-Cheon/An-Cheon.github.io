@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 女皇武则天
+categories: [Books, History]
+tags: [history, china politics, marriage]
 ---
 #### 他的自作聪明反倒提醒了李世民：如果立李泰，承乾和李治都有危险。只有立李治，才能保证三个儿子一生平安。        
 #### 她的温顺、她的隐忍、她的一颦一笑都有一个远大目标，那就是取王皇后而代之。               

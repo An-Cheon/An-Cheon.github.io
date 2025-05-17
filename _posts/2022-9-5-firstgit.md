@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Git初始化配置以及配置github
+categories: [CS, Git]
+tags: [git]
 ---
 <!-- more -->
 git config --global user.name "这里换上你的用户名"                      

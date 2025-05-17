@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 正见
+categories: [Books, Philosophy]
+tags: [philosophy, buddhism]
 ---
 #### 对大多数的人来说，这种永无休止的处理、重新安排以及更新版本，就是生活的定义。事实上，我们是在等待生命开始。     
 #### 合理的希望是存在的。而绝望，和它的反面——盲信一样，都是相信恒常的结果。               
