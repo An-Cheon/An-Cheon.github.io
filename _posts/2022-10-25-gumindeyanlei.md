@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 股民的眼泪
+categories: [Books, Deception]
+tags: [deception, china, politics, failure]
 ---
 #### 在全球，投资银行这个行业的产能过剩很严重，竞争过于激烈，同质化的重复劳动很多。
 #### 上市公司埋下的地雷一般由假账、豪言壮语和报喜不报忧混合而成。有些地雷可以持续20年甚至30年不为人知。我们常见的丑闻曝光只是地雷爆炸的极少数情况。

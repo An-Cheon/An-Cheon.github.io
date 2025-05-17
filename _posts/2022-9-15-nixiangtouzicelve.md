@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 逆向投资策略
+title: Contrarian Investment Strategies The Psychological Edge
+categories: [Books, Finance]
+tags: [finance]
 ---
 #### 诚如保罗·克鲁格曼所言：“如我所见，经济学业已误入歧途，因为经济学家争先恐后以数学作为华丽包装，而忽视了真理。”
 #### 先锋证券基金前主席约翰·博格（John Bogle），是研究证券基金投资业绩的专家，他是财务市场研究中心（Financial Markets Research Center）的领导人。该研究中心指出，在1970～2005年这36年里，1970年就存在的355家证券基金中，只有2.5%的基金跑赢了标普500指数2%以上。数量巨大的87%的基金，要么倒闭，要么跑输大盘。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 醉汉的脚步
+title: The Drunkard’s Walk How Randomness Rules Our Lives
+categories: [Books, Science]
+tags: [science, finance, business, failure]
 ---
 #### 回归是指，在任何一系列随机事件中，跟在一个不寻常的事件之后的，更可能是一个相对而言更加普通的事件，而这种情况的发生完全出于偶然。
 #### 表面上的模式：学员飞得好，表扬就没有好效果；反而是让教官高分贝地用低等灵长类来相提并论的糟糕表现，却会在训斥之后表现出进步。

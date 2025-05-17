@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 寻找斯宾诺莎
+title: Looking for Spinoza
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 快乐是一回事，引发快乐的客体是另一回事。
 #### 普通的秀丽隐杆线虫只有302个神经元和大约5000个内部神经元连接。

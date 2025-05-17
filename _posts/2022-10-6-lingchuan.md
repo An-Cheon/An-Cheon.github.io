@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 灵船
+categories: [Books, Poetry]
+tags: []
 ---
 #### 我不确定我是否始终为生活而奋斗， 生活也许并不值得为之拼搏。
 #### 一旦树叶凋落， 甚至连上帝也不能使它返回树身。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 生活的艺术
+title: The Art of Living
+categories: [Books, Philosophy]
+tags: [philosophy, stoicism]
 ---
 #### 我们都像戏剧中的演员。老天爷从来不和我们商量，就分配好了我们在世上担任的角色。
 #### 让我平静地接受我无法改变的事情；让我勇敢地改变我可以改变的事情；请赐予我识别哪些事情我可以改变，哪些事情我无法改变的智慧。

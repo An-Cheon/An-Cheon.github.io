@@ -2,7 +2,7 @@
 layout: post
 title: The signal and the noise
 categories: [Books, Deception]
-tags: [deception, psychology, economics. finance]
+tags: [deception, psychology, economics, finance]
 ---
 #### 莎士比亚时期，掌控自身命运看似已成为人们思想意识的一部分，但要做到这一点却很难，所以那些挑战命运的人总是遍体鳞伤，直至死去。
 #### 罗伯特·索洛曾经在 1987 年写道：“计算机无处不在，可生产统计中却不见其身影。

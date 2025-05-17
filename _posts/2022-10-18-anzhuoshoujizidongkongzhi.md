@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 安卓手机自动控制
+categories: [CS, JAVA]
+tags: [java]
 ---
 <!-- more -->
 win32gui库安装命令为：              

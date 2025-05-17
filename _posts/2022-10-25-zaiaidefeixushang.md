@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 在爱的废墟上
+categories: [Books, Poetry]
+tags: []
 ---
 #### 世上只剩我还活着 而我却感觉不到一丝生机
 #### 夜复一夜我的卧室变成了一个关押着精神病人的房间

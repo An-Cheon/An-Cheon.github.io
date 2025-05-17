@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 唯有孤独恒常如新
+categories: [Books, Poetry]
+tags: []
 ---
 #### 你为我写墓志铭时一定要说， 这儿躺着全世界最孤独的人。
 <!-- more -->

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 不公正的胜利
+title: he Triumph of Injustice
+categories: [Books, Economics]
+tags: [economics]
 ---
 #### 特朗普自豪地承认：“（不缴税）显得我很聪明啊。”
 #### 避税行业的爆发掩盖了收入和财富；随着全球化的发展，可被跨国公司利用的新税收漏洞出现了；国际税收竞争的螺旋式上升，导致各国纷纷降低税率。

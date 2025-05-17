@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 传道书
+title: Ecclesiastes
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### 人在日光之下的一切劳碌有什么益处呢？
 #### 以往发生的事，将来还会发生； 先前做过的事，将来也必再做。 日光之下，根本没有新事。
