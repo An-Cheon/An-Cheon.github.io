@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 自由意志
+title: A Free Will
+categories: [Books, Philosophy]
+tags: [philosophy, failure]
 ---
 #### 无论是我们打算去做某件事情的决定，还是与之相反的想法或冲动，都只是出现在我们的意识之中，而非我们意识的产物。               
 #### 自由意志观念的长期流行，只不过源于这样一个事实：我们中的大多数人觉得自己主宰着自己的所思所行。               

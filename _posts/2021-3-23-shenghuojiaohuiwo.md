@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You Learn by Living
-categories: [Books, Philosophy]
+categories: [Books, Biography]
 tags: [autobiography, philosophy]
 ---
 #### &#8195;成熟的人是思考问题并不极端的人，是即使情绪激动也能保持客观的人，是认识到所有人、所有事都有好坏两面的人，是谦逊、宽厚，知道每个人都需要爱与宽容的人。

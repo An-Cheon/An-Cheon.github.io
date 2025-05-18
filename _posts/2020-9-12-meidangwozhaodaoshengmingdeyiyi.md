@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 每当我找到生命的意义，它就又变了
+title: Every Time I Find the Meaning of Life,They Change It
+categories: [Books, Philosophy]
+tags: [philosophy, stoicism]
 ---
 #### &#8195;“莫因渴望你没有的，而错过你已拥有的；要知道，你现在拥有的，也曾是你渴望的。”——伊壁鸠鲁（前341—前270），希腊哲学家               
 #### &#8195;20世纪60年代时，我的朋友汤姆·卡斯卡特和我曾经玩过LSD（致幻药）。有一次，汤姆突然不再兴高采烈地环顾四周，而是一脸严肃地宣布：“欸，人总是可以更亢奋一点的，对吧？”               

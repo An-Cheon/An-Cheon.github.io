@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 品人录
+categories: [Books, History]
+tags: [history, china, politics]
 ---
 #### &#8195;刘邦也不是一点本事都没有。他至少还有三条流氓才有的看家本领：一是忍，二是赖，三是痞。               
 #### &#8195;刘邦能克制欲望，也能控制情绪。               

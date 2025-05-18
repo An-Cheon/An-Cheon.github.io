@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 性、谋杀及生命的意义
+title: Sex, Murder, and the Meaning of Life
+categories: [Books, philosophy]
+tags: [psychology, philosophy]
 ---
 #### &#8195;我们都身陷阴沟，却仍有人仰望星空。                          
 #### &#8195;翻开流行杂志，打开电视，或者去电影院，你就会进入一个满眼尽是美女和强人的世界。我们的研究表明，除非你已经住在好莱坞，否则这类自我娱乐的天真尝试，可能会让你觉得现实生活中的人们相形见绌，也可能会削弱你的自信心。                      

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 根道果
+categories: [Books, Philosophy]
+tags: [philosophy, buddhism]
 ---
 <!-- more -->  
 &#8195;传统佛教经典通常先提出所要检验的理论基础或哲学基础，也就是「根」（Ground)，接下来再提出种种修持方法，也是一般所称的「道」（Path）。最後以个人实验结果的分析，以及进一步研究的建议作为结论，这通常称为「果」（Fruition）。                       

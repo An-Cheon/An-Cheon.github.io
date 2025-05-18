@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 生命逝如斯
+title: Night Falls Fast Understanding Suicide
+categories: [Books, Psychology]
+tags: [psychology, suicide, depression, schizophrenia]
 ---
 #### &#8195;死亡今天出现在我面前，好像莲花的芳香，好像醉卧于香醇的酒国。死亡今天出现在我面前，好像多年深陷囹圄的人，渴望见到自己的家。               
 #### &#8195;再见了，我的朋友，不需要握手，也没有赠言，不要悲伤，不要紧锁双眉——此生，死亡不是什么新鲜事，当然，生命也往往苟活而已。               

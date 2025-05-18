@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 将mysql查询语句转化为查询树
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more --> 
 ```mysql

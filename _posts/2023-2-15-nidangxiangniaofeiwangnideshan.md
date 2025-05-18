@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Educated
-categories: [Books, Psychology]
+categories: [Books, Biography]
 tags: [autobiography, psychology, confidence]
 ---
 #### 过去总是美好的，因为一个人从来都意识不到当时的情绪；它后来扩展开来，因此我们只对过去，而非现在，拥有完整的情绪。 ——弗吉尼亚·伍尔夫

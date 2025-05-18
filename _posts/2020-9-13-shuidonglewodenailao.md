@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 谁动了我的奶酪
+title: Who Moved My Cheese?
+categories: [Books, Psychology]
+tags: [psychology]
 ---         
 #### &#8195;某些恐惧是有益的，因为它们可以帮助人们避开真正的危险。但是，唧唧意识到，自己的大多数恐惧都是不理性的，会妨碍自己在必要的时候作出改变。             
 #### &#8195;给自己找到更多的机会比在安乐窝里不问世事要安全得多。               

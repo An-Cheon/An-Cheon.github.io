@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 3种join算法的实现
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more --> 
 ```mysql

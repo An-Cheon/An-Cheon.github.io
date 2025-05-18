@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The Power of Parting
-categories: [Books, PUA]
+categories: [Books, Health]
 tags: [pua, abuse, narcissism, family, relationships, psychology]
 ---
 #### 一个事实：我们的首要责任是照顾好自己，他们的责任也是如此。如果他们无力做到这一点并危及我们的自我照顾，我们就必须离开。

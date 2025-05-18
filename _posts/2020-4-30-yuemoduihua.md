@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 与恶魔对话
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 <!-- more -->           
 &#8195;他之所以对“行窃之事”有罪恶感并感到痛苦，是因为有人将“行窃是坏事”的想法强制灌输给了他。之所以会心生痛苦，就是这个“正论”惹的祸。                     

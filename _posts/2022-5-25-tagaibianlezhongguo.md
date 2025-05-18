@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 他改变了中国
+title: The Man Who Changed China
 categories: [Books, Politics]
 tags: [politics, china, autobiography]
 ---

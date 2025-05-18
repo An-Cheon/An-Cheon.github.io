@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 极简主义
+title: Minimalism
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### 如果我们的短期行为和长期价值相符，那么我们就会在自己所做的所有事情中找到意义。
 #### 我们还对自己撒了另一个谎。我们说：“从下个月、下周或明天开始，我就会去锻炼的。”               

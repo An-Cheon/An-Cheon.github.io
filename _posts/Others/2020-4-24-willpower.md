@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 自控力提升与自我管理（课程笔记）
+categories: [Others, Quotes]
+tags: [quotes]
 ---
 <!-- more -->  
 # the first class        

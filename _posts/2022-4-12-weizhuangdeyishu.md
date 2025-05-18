@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Memoir A History
-categories: [Books, Society]
+categories: [Books, Biography]
 tags: [society, biography, autobiography]
 ---
 #### 传记有一种明显的局限性，它最常与政治家和将军的成败联系在一起，与普通人没有什么关联。他写道：“正如不用的金子不能使人富裕，不能运用的知识也不能使人聪明。”               

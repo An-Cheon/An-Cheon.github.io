@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我将敢于亲吻你
+categories: [Books, Poetry]
+tags: []
 ---
 &#8195;夜要降临，我会给你双手，              
 &#8195;可是现在被这尘世的喧嚣阻止；           
