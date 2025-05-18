@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 灰烬的光芒
+categories: [Books, Poetry]
+tags: []
 --- 
 #### &#8195;痛苦穿透我 一滴 又一滴                                         
 #### &#8195;有人的地方，就有苍蝇，也有佛                                                

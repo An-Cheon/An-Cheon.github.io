@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 边缘型人格障碍
+title: I Hate You, Don't Leave Me Understanding the Borderline Personality
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### &#8195;据最近的研究，破坏性极强的边缘型人格障碍在人群中的患病率约为6%。                   
 #### &#8195;边缘型人格障碍者对自身有一个核心信念：自己是没有价值的。               

@@ -1,10 +1,12 @@
 ---
 layout: post
 title: 3个节点的区块链存储网络
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more -->
 开发环境：win10，python 3.7.4，Flask==1.1.0，requests==2.22             
-项目地址：https://github.com/An-Cheon/a_blockchain_network_1.0           
+项目地址：[link](https://github.com/An-Cheon/a_blockchain_network_1.0)           
                          
 使用方法:            
 1. 

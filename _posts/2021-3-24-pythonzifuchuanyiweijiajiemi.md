@@ -1,6 +1,8 @@
 ---
 layout: post
 title: python字符串移位加解密
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more -->
 ```python

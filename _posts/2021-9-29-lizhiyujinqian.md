@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 理智与金钱
+title: Dollars and Sense
+categories: [Books, Psychology]
+tags: [psychology]
 --- 
 #### 机会成本正是我们在做财务决策时需要仔细考虑的事项。当下每花出去一笔钱，我们都应该好好想想，自己放弃掉的那些替代选项都有什么。
 #### 快乐这种东西，很多时候反映的并非真实的快乐本身，而是在拿自己和他人对比后才得出的情感。在大多数情况下，这种对比既不道德也不健康。

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 工作的意义
+title: Work A History of How We Spend Our Time
+categories: [Books, History]
+tags: [history]
 ---
 #### &#8195;充分掌握一项技能，并使其达到近乎本能的程度，不仅需要时间和精力，还需要做大量的工作。                    
 #### &#8195;我们不仅是祖先所做工作和所获技能的产物，而且在很大程度上，我们生来就是要工作的，我们在一生中也逐渐被所做的不同工作塑造。                                              

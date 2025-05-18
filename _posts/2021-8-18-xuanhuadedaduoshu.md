@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 喧哗的大多数
+title:  How to Think A Survival Guide for a World at Odds
+categories: [Books, Society]
+tags: [society]
 ---  
 #### &#8195;寻求认同的本能在我们这个时代被放大和强化，因为我们每天都被淹没在疯狂的信息洪流中，尽管这些信息往往是无稽之谈。                                                             
 #### &#8195;当我们不知道，或者当我们知道得还不够多的时候，我们总是倾向于以情感来代替思考。                                                     

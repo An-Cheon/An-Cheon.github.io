@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 杜弗的动与静
+categories: [Books, Poetry]
+tags: []
 --- 
 #### &#8195;确实，我是幸福的 幸福得想死。                                       
 #### &#8195;她总是笑，在已经死亡的笑声里。                                  

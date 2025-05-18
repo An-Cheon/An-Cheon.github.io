@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 我在底层的生活
+title: Nickel and Dimed Undercover in Low-wage USA
+categories: [Books, Society]
+tags: [society, career]
 --- 
 #### 在纽约、贝城、杰克逊、怀俄明、塔拉维、波土顿等这些地方，旅游者和有钱人同打扫厕所、做烤肉的人一起争夺生存空间。
 #### 后来我才认识到，任何时候都不可能依赖招聘广告找到合适的工作。我早就应该从马科斯的话中明白，招聘广告只是雇主面对低工资劳力经常转换工作现象采取的一种应对措施。

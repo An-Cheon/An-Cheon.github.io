@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 一只狼在放哨
+categories: [Books, Poetry]
+tags: []
 ---
 #### &#8195;天空是我的。大地是我的。我多富有。                                              
 #### &#8195;天堂与地狱靠得这么近。又离得那么远。                                                
