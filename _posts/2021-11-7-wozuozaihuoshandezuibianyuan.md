@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我坐在火山的最边缘
+categories: [Books, Poetry]
+tags: []
 ---
 #### 你的猫不爱，却真正了解你
 #### 当有人在冰冷的夜里独自离世，写诗是野蛮的  

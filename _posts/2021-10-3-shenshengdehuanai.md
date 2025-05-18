@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 神圣的欢爱
+title: Sacred Pleasure Sex, Myth, and the Politics of the Body
+categories: [Books, Society]
+tags: [society, sex]
 --- 
 #### 我们对人的肉体的看法极大地影响着我们对世界的看法。
 #### 我认为，我们所看到的西方宗教有一个最大的可悲之处，这就是它将人类的体验割裂开来，尤其是将虚幻的或“精神的”爱置于实在的或“肉体的”爱之上。

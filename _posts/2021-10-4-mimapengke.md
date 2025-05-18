@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 密码朋克
+title: Cypherpunks Freedom and the Future of the Internet
+categories: [Books, Society]
+tags: [society]
 --- 
 #### 互联网——我们最伟大的解放工具——已经转变成前所未见的极权主义的最危险的推进器。
 #### 国家是强制性权力在其中流动的系统。国家内的各个派别也许相互竞争以谋求支持，但这只是导致了一种民主的表象，而国家的基础是系统性地运用或规避暴力。 

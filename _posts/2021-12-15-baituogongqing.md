@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 摆脱共情
+title: Against Empathy
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 #### 通常情况下，我们都是先经由情绪做出决策，然后再去为这个决定找理由。               
 #### 一个好的领袖必然是在局势动荡时蠢萌可爱，而在局势向上时铁腕专横，因为前者可以逃脱责任，而后者可以尽揽功劳。               

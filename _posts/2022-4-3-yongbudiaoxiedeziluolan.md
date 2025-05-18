@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 永不凋谢的紫罗兰
-categories: [Books, poetry]
+categories: [Books, Poetry]
 tags: []
 ---
 #### 美丽的仙女可敬可亲，但没有爱情，对我不值一文。               

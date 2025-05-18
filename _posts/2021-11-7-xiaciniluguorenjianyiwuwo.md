@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 下次你路过，人间已无我
+categories: [Books, Poetry]
+tags: []
 ---
 #### 请在我发上留下一吻，我就不用戴虚荣的桂冠
 #### 请在我手上留下一吻，我就不用戴灿烂的指环

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 曼德尔斯塔姆诗选
-categories: [Books, poetry]
+categories: [Books, Poetry]
 tags: []
 ---
 #### 我只读一些孩子们的书，我只怀有孩子般的想望，一切大事都已远远消亡，我从深深的悲哀中脱出。      

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 月光落在左手上
+categories: [Books, Poetry]
+tags: []
 ---
 #### 就剩我和他了，许多人中途离场。    
 #### 不管厚土多厚，一个人走进去总是很轻

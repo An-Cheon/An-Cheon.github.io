@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 不存在的人
+title: The Man Who Wasn't There
+categories: [Books, Psychology]
+tags: [psychology, buddhism]
 --- 
 #### 美国心理学家威廉·詹姆斯（William James）给出了自我的至少三个面向：物质性自我，它包括所有那些被我看作是我或属于我的那些东西；社会性自我，它依赖于我和其他人的互动；精神性自我。
 #### 明确来说，一次叙述就是呈现连在一起的一系列情节。从某种意义上说，我们本身就是一个看起来严丝合缝的叙述。
