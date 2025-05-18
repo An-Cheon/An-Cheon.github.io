@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Surviving Schizophrenia
-categories: [Books, Schizophrenia]
-tags: [schizophrenia]
+categories: [Books, Psychology]
+tags: [schizophrenia, Psychology]
 ---
 #### 病人的朋友常常试图说服病人走出错觉，但极少成功。
 #### 抑郁是病程早期较为常见的症状，但它往往被忽视。一份研究报告指出，“81％的病人……表现出典型的抑郁情绪”。
