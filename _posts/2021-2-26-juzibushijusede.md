@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 橘子不是橘色的
+title: You Kant Make it Up! Strange Ideas from History's Greatest Philosophers
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### &#8195;蜜尔将快乐做了低级和高级的区分。如食色欲望的满足，是动物和人类都能感受到的低级快乐；而像友谊，尊重，艺术，音乐，诗歌这样的高级快乐，却只能以来人类独有的能力才能享受。在密尔看来，只追求低级快乐的人生就是猪一样的人生。                
 #### &#8195;请赐予我贞洁和节制，但不是现在。 -奥古斯丁                          

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 成年人的哲学指南
+title: Midlife A Philosophical Guide
+categories: [Books, Philosophy]
+tags: [philosophy, stoicism]
 ---
 #### &#8195;拉基米尔·纳博科夫在《说吧，记忆》（Speak,Memory）开头把人生比作“一隙短暂的光芒，两侧皆是永恒的黑暗”。            
 #### &#8195;幸福依赖闲暇；因为我们的奔忙是为了拥有闲暇，就像发动战争是为了得到和平生活。               

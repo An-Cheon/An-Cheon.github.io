@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 虽然想死，但还是想吃辣炒年糕
-categories: [CS, Novel]
+categories: [Books, Novel]
 tags: [depression]
 ---
 #### &#8195;就算忧郁了一整天，也会因为一件小事而会心一笑，这就是人生。                                                                             

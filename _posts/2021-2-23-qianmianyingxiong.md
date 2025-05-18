@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 千面英雄
+title: The Hero with a Thousand Faces
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### &#8195;除非已经对生命心生厌倦，那么死亡便可能带来极乐，就像之前爱情的诱惑。               
 #### &#8195;只有那些既听不到内在召唤，也不了解外在教义的人的困境才是真正令人绝望的，他们就是如今的大多数人，身处内心和外界的迷宫中。               

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 走进风月
+categories: [Books, Society]
+tags: [society, sex]
 ---
 #### &#8195;生存压力、虚荣、懒性是主要原因               
 #### &#8195;天下没有不可以沟通的人。如果你一直不得其门而入，那就是因为你没有找到沟通的合适的方法。               

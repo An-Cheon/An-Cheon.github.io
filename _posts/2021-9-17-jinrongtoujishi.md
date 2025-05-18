@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Devil Take the Hindmost: A History of Financial Speculation
+title: Devil Take the Hindmost A History of Financial Speculation
 categories: [Books, Economics]
 tags: [economics, finance, politics]
 --- 

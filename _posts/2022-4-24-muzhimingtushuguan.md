@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 墓志铭图书馆
+title: EPITAPHS A Dying Art
 categories: [Books, Society]
 tags: [society]
 ---

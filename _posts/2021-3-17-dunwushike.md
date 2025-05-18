@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 顿悟时刻
+title: In Vivo A Phenomenology of Life-Defining Moments
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### &#8195;任何生命，无论多么漫长和复杂，实际上都是由一个特定时刻组成的——一个人永远了解自己的时刻。——豪尔赫·路易斯·博尔赫斯（Jorge Luis Borges）               
 #### &#8195;大多数时候，我们的行为都遵循习惯、风俗、行为准则、社会惯例或法律条规。在所有这些情况下，我们并不是在做决定，只是在做我们该做的事。               

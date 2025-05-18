@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 我们爱过又忘记
+categories: [Books, Poetry]
+tags: []
 ---
 #### &#8195;生活是什么，是一个接一个的细节。               
 #### &#8195;爱你的时候我用完人间，坏事做绝               
