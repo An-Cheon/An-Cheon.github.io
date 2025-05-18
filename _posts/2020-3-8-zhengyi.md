@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 公正
+title: Justice What's the Right Thing to Do?
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 #### 即使我们终其一生都能成功地将我们的道德直觉和有原则的信念整合在一起，我们又能有多大的信心能说这种结果不过是一系列自圆其说的偏见呢？                                  
 #### 当我们评价一个行为的道德价值时，我们要评价产生这一行为的动机，而不是它产生的后果。<!-- more -->               

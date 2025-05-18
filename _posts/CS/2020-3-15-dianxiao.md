@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 消除笔记本电啸声
+categories: [CS, Windows]
+tags: [windows]
 ---
 <!-- more -->
 方法：关闭intel的节能技术，声音来源于CPU变频引起的电容啸叫            

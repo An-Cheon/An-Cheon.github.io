@@ -1,6 +1,8 @@
 ---
 layout: post
 title: kindle的txt格式笔记转md格式(JAVA)
+categories: [CS, JAVA]
+tags: [java]
 --- 
 <!-- more --> 
 需要先将html的pc端导出笔记复制为txt格式。        

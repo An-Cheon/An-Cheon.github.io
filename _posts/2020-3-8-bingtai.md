@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 精神病态者的科学
+title: The Psychopath Whisperer
+categories: [Books, Psychology]
+tags: [psychology, crime]
 ---
 #### 在树上连续坐3个小时，透过二楼的百叶窗的缝隙观察，等有人进入卧室脱衣服，这有多难你知道吗？”<!-- more -->                            
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在最高戒备监狱中，每4个犯人就有1个是精神病态者。               
