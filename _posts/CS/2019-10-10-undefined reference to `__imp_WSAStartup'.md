@@ -1,6 +1,8 @@
 ---
 layout: post
 title: undefined reference to `__imp_WSAStartup'   
+categories: [CS, C++]
+tags: [c++, error]
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;undefined reference to `__imp_WSAStartup'       
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in dev c++<!-- more -->      

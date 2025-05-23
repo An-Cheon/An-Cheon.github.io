@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 女人的性爱动机  
+title: Why women have sex  
+categories: [Books, Society]
+tags: [connections, marriage]
 ---   
 ## 女人倾向于选择这样的男人：一是有基因优势的男人，因为优质基因让下一代生存能力更强，更易于传宗接代；二是有资源优势的男人，因为他们能够让女人和孩子衣食无忧，有足够的安全感，从而繁衍生息。<!-- more -->               
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美是比任何语言都更加有力的推荐信。——亚里士多德（公元前384~前322年）            

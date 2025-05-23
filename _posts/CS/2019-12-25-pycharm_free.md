@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 下载并破解pycharm2018.3.3(win10)
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more -->
 pycharm2018.3.3下载链接     

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 恶女  
+title: Female Serial Killers
+categories: [Books, Psychology]
+tags: [psychology, crime]
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;她们实施残忍杀戮行径的原因和男性连环杀手如出一辙：为追逐权力、为情色欲望、为寻求快感、为掌控、为利益、为自尊、为复仇、为执迷。<!-- more -->                
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;女性连环杀手皆是商业型杀手，所涉罪行也均是谋杀。               

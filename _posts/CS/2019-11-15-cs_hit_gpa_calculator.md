@@ -1,6 +1,8 @@
 ---
 layout: post
-title: hit gpa calculator 
+title: hit gpa calculator
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more -->
 score_calculator.py

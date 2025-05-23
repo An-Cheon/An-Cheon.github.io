@@ -1,3 +1,9 @@
+---
+layout: post
+title: Java Delta Photo Compression
+categories: [CS, JAVA]
+tags: [java]
+---
 Find the difference of two pics.<!-- more -->    
      
 eg.   

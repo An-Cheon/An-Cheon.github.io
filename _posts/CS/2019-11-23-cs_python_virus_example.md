@@ -1,6 +1,8 @@
 ---
 layout: post
 title: python virus example
+categories: [CS, PYTHON]
+tags: [python]
 ---
 A virus which can copy itself to another files.<!-- more -->
 ```python

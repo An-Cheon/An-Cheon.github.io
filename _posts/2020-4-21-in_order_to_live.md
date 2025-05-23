@@ -2,7 +2,7 @@
 layout: post
 title: In Order to Live
 categories: [Books, Biography]
-tags: [biography， crime, china, politics]
+tags: [biography, crime, china, politics]
 ---
 #### 我知道人为了活命，有可能丧失一部分的人性。
 #### 从离开朝鲜到现在，每个人对我说的都是谎言。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sex, Murder, and the Meaning of Life
-categories: [Books, philosophy]
+categories: [Books, Philosophy]
 tags: [psychology, philosophy]
 ---
 #### &#8195;我们都身陷阴沟，却仍有人仰望星空。                          

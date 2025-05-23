@@ -1,3 +1,9 @@
+---
+layout: post
+title: 8 puzzle 4 ways to solve
+categories: [CS, JAVA]
+tags: [java]
+---
 example: from       
 2 | 3 |&nbsp;&nbsp;&nbsp;&nbsp;|       
 1 | 8 | 5 |         

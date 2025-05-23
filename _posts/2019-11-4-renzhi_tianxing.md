@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 认知天性  
+title: Make It Stick The Science of Successful Learning  
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 ### 耗费心血的学习才是深层次的，效果也更持久。不花力气的学习就像在沙子上写字，今天写上，明天字就消失了。<!-- more -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万千智慧始于记忆。——埃斯库罗斯，《被缚的普罗米修斯》                                        

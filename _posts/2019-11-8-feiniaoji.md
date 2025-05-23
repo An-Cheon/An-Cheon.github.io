@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 飞鸟集  
+categories: [Books, Poetry]
+tags: []
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你微微地笑着，不同我说什么话。而我觉得，为了这个，我已等待很久了。<!-- more -->                
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;神对人说：“我医治你所以伤害你，爱你所以惩罚你。”            

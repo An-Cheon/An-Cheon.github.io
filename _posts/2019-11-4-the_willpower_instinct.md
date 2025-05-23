@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 自控力  
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高自控力的最有效途径在于，弄清自己如何失控、为何失控。<!-- more -->               
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他们无法预测自己在何时何地、会由于何种原因失控。                   

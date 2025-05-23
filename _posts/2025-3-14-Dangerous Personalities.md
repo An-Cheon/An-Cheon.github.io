@@ -2,7 +2,7 @@
 layout: post
 title:  Dangerous Personalities
 categories: [Books, PUA]
-tags: [pua, abuse, crime, narcissism, relationships, psychology]
+tags: [pua, abuse, crime, narcissism, relationships, psychology, personalities]
 ---
 #### 他们在希望父母死去和害怕父母死去之间左右为难，这并不奇怪。
 #### “我想要的只是被爱。这有多难？你不知道不被母亲爱是什么感觉。当她去世时，我会感到如释重负。”

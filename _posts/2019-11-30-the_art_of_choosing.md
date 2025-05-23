@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 选择的艺术
+title: The Art of Choosing
+categories: [Books, Philosophy]
+tags: [philosophy]
 ---
 ### 伟大的艺术家米开朗琪罗曾说，他的雕塑作品原本就已经藏在石头里，他所做的只不过是凿去多余的部分。<!-- more -->                    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绝境之下的选择是必需的，而非机会。               

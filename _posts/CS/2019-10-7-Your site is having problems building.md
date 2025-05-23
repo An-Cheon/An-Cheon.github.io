@@ -1,3 +1,9 @@
+---
+layout: post
+title: Your site is having problems building
+categories: [CS, Jekyll]
+tags: [jekyll]
+---
 Tried many times for browsing an-cheon.com after upload a new .md file,but the website didn't change at all.<!-- more -->            
 Solve : When I saw setting of GitHub Pages,I found this:
      

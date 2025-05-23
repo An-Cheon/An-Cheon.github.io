@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 娱乐至死
+categories: [Books, Novel]
+tags: [politics]
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人们会逐渐爱上工业技术带来的娱乐和文化,不再思考. - 《美丽新世界》                                  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;毁掉我们的不是我们憎恨的东西,恰恰是我们热爱的东西. <!-- more -->                         

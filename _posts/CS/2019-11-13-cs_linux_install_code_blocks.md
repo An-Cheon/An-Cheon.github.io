@@ -1,6 +1,8 @@
 ---
 layout: post
-title: linux install code blocks 
+title: linux install code blocks
+categories: [CS, C++]
+tags: [c++]
 ---
 <!-- more -->
 [related web](https://launchpad.net/~damien-moore/+archive/ubuntu/codeblocks-stable)       

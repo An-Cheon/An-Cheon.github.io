@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 吉檀迦利  
+categories: [Books, Poetry]
+tags: []
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的欲望很多，我的哭泣也很可怜，但你永远用坚决的拒绝来拯救我，这刚强的慈悲已经紧密地交织在我的生命里。<!-- more -->        
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你使我一天一天地更配领受你自动的简单伟大的赐予——这天空和光明，这躯体、生命与心灵——把我从极欲的危险中拯救了出来。       

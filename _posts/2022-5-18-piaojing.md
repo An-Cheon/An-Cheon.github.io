@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 嫖经
-categories: [Books, History]
-tags: [history, china, marriage]
+categories: [Books, Poetry]
+tags: []
 ---
 #### 调情须在未合之前。允物不待已索之后。
 #### 初会处色，久会处心。困妓慕财，时妓慕俏。

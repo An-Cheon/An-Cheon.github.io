@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 我们内心的冲突
+title: Our Inner Conflicts
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 ### 看起来一切以思想和理智为行为标准，但实际上，情感才是心中最重视的东西。<!-- more -->  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;想要发现矛盾，并找到解决问题的办法，我们首先要先知道自己想要的是什么，这还不算什么，更重要的是要知道，我们到底有什么样的感情。                

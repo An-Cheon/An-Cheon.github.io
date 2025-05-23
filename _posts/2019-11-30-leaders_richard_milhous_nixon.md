@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 领袖们
+title: Leaders
+categories: [Books, Politics]
+tags: [politics, china]
 ---
 ### 马克思列宁主义有一种决定论的历史观。它的信徒们相信历史必定走向世界共产主义，相信加速历史的这种进程是他们的职责。他们这样看待自己，所以就避开道德的一切考虑。<!-- more -->                
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个领导人跻身于伟大领袖之列的可靠公式有三个要素：伟大的人物，伟大的国家和伟大的事件。              

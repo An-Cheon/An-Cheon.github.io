@@ -1,6 +1,8 @@
 ---
 layout: post
-title: jekyll context is loading all the time 
+title: jekyll context is loading all the time
+categories: [CS, Jekyll]
+tags: [jekyll]
 ---
 <!-- more -->
 To solve this problem,I used Wireshark to analyse.       

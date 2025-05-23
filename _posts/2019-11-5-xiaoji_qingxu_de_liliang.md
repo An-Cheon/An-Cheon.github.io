@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 消极情绪的力量  
+title: The Upside of Your Dark Side  
+categories: [Books, Psychology]
+tags: [psychology]
 ---
 ### 如果我们每次感到无聊时都强迫自己接受娱乐的刺激，那我们就会错过精神漫游时偶然获得的成长机会。<!-- more -->                
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是这里仍然存在一个问题：如果幸福提供了一种进化优势，而且我们对幸福如此重视，拥有数千年追求幸福的经验，那为什么幸福还是没有普及到每一个人身上呢？              

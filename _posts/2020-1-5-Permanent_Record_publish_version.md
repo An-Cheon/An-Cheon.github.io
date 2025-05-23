@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 永久档案
+title: Permanent Record
+categories: [Books, Politics]
+tags: [politics, china]
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我曾经为政府服务，但现在，我为民众服务。我花了将近三十年才明白这是有差别的。<!-- more -->                   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如今，具创造性的网络已然崩溃，因为那些美好、高难度、有个性的无数网站关闭了。便利性的承诺让大家关掉自己的个人网站，因为那需要不断、辛苦的维护，改换成脸书网页和Gmail帐号。所有权的表象让人容易搞错现实。很少人在当下即明白，我们所分享的一切都将不再属于我们。以前电子商务公司因为找不到让我们有兴趣购买的东西以致倒闭，其后继者现在找到可以贩售的新产品了。“我们”就是那个新产品。               

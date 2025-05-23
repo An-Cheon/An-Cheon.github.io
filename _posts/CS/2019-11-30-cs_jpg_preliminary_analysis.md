@@ -1,6 +1,8 @@
 ---
 layout: post
 title: jpg exif information extraction
+categories: [CS, PYTHON]
+tags: [python]
 ---
 
 Extract images with location information from a large number of jpg images.<!-- more --> 

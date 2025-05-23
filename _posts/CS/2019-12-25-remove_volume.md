@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 隐藏WIN10中误显示的EFI分区(Z盘)
+categories: [CS, Windows]
+tags: [windows]
 ---
 <!-- more -->
 本来想着直接在命令行里操作结果却显示:

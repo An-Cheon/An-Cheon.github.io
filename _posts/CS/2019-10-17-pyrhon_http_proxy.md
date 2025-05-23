@@ -1,6 +1,8 @@
 ---
 layout: post
 title: python http proxy  
+categories: [CS, PYTHON]
+tags: [python]
 ---
 <!-- more --> 
 ```python
