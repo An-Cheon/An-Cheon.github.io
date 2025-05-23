@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Losing a Parent to Suicide
-categories: [Books, Suicide]
-tags: [suicide, schizophrenia, depression, family]
+categories: [Books, Psychology]
+tags: [psychology, suicide, schizophrenia, depression, family]
 ---
 #### 自杀丧亲儿童在亲人死亡后的一个月内经历的心理社会压力因素比未自杀丧亲的儿童要少。
 #### 他们不再需要面对已故父母带来的挑战（例如，精神疾病、虐待、酗酒、暴力）。他们感到从家庭冲突和父母疾病中解脱出来，知道父母的痛苦已经结束，他们感到很平静。
