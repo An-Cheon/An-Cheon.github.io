@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Social Why Our Brains Are Wired to Connect  
-categories: [Books, Connections]
-tags: [connections]
+categories: [Books, Relationships]
+tags: [relationships]
 ---   
 ### 自我控制是我们进入社会的代价。<!-- more -->        
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是里根的幽默感使他赢得了选举的胜利，是他在辩论过程中表现出来的冷静机智以及脱口而出的妙语连珠使得他再次赢得了民众的支持，并且人气不断攀升。              

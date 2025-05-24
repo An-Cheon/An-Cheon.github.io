@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Crucial Conversations
-categories: [Books, Connections]
-tags: [connections, confidence]
+categories: [Books, Relationships]
+tags: [relationships, confidence]
 ---
 #### 关键对话有三个特征。首先，对话双方的观点有很大差距。其次，对话存在很高的风险。最后，对话双方的情绪非常激烈。
 #### 练习并不会带来完美，只有完美的练习才会带来完美。

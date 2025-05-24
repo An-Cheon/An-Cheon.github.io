@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  有话说
-categories: [Books, Connections]
-tags: [connections]
+categories: [Books, Relationships]
+tags: [relationships]
 ---
 #### 假的，它就能保证每次都好。
 #### 别管一个人年轻的时候从事什么工作，年纪大了都一样，最重要的其实就是一种参与感和实现度，一种没有被抛弃的感觉。
