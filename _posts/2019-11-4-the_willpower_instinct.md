@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 自控力  
+title: The Willpower Instinct  
 categories: [Books, Psychology]
 tags: [psychology]
 ---
