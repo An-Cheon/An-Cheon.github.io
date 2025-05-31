@@ -27,3 +27,14 @@ file = open(path, 'w',encoding='UTF-8')
 for i in lineList:
     file.write(i)
 file.close()
+'''
+---
+layout: post
+title:  book
+categories: [Books, Business]
+tags: [business, politics]
+---
+####
+<!-- more -->
+
+'''
