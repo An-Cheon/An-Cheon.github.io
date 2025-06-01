@@ -1,11 +1,10 @@
 ---
 layout: post
-title: The Visible Hand
+title: The Visible Hand The Managerial Revolution in American Business
 categories: [Books, Business]
 tags: [business]
 ---
 #### 传统企业常是短命的，几乎全是合伙生意。其中一合伙人退休或去世，就得重新结伙或解散。
-#### 斯密接着指出，“事实上每个人在追求其个人利益的同时，他对社会的贡献，往往比他真正有意去做的贡献，还来得有效”。
 #### 评定百货公司绩效的主要标准同评定批发公司的标准完全一样。除了毛利与销售额之比值以外，库存周转是基本的衡量标准。
 #### 规模的经济性和分配的经济性不在于规模的大小，而在于速度。这种经济性不是来自建造更大的商店，而是来自提高库存周转率。
 <!-- more -->

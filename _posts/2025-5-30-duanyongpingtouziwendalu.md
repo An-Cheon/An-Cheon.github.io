@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  段永平投资问答录
+title:  段永平投资问答录(投资逻辑篇)
 categories: [Books, Business]
 tags: [business, finance, failure]
 ---
