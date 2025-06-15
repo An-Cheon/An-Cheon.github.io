@@ -28,6 +28,7 @@ for i in lineList:
     file.write(i)
 file.close()
 '''
+
 ---
 layout: post
 title:  book

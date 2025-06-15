@@ -2,7 +2,7 @@
 layout: post
 title:  The Optimism Bias
 categories: [Books, Philosophy]
-tags: [philosophy, psychology, depression]
+tags: [philosophy, psychology, depression, marriage]
 ---
 #### 大多数人都认为自己比普通人优越。我们认为自己是独一无二的。
 #### 我们中的许多人没有意识到自己的乐观倾向。事实上，乐观偏见之所以如此强大，正是因为像许多其他幻觉一样，它无法完全被有意识地意识到。
