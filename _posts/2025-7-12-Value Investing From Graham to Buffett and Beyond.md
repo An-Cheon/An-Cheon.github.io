@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  book
+title:  Value Investing From Graham to Buffett and Beyond
 categories: [Books, Business]
-tags: [business, politics]
+tags: [business, finance, monopoly, failure]
 ---
 #### 账面权益回报率稳定在25%或以上被认为是企业拥有竞争优势的证据，也是企业能够为其股东创造价值的特征。
 #### 在竞争性的全球市场中，公司往往只能赚取与资本成本相当的回报，成长几乎不创造价值。
