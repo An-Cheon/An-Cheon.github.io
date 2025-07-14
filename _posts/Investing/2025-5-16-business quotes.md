@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Business Quotes
-categories: [Others, Quotes]
-tags: [quotes, business, failure]
+categories: [Others, Investing]
+tags: [investing, quotes, business, failure]
 ---
 ### 沃伦·巴菲特
 
