@@ -9,9 +9,19 @@ tags: [investing]
 
 [Samsung Electronics](https://companiesmarketcap.com/samsung/pb-ratio/)
 
+[Nongshim](https://companiesmarketcap.com/cad/nongshim/pb-ratio/)
+
 [Hyundai Motor](https://companiesmarketcap.com/hyundai/earnings/)
 
 [Kakao](https://companiesmarketcap.com/kakao/pb-ratio/)
+
+## Sweden
+
+[Spotify](https://companiesmarketcap.com/spotify/pe-ratio/)
+
+## United States
+
+[Berkshire Hathaway](https://companiesmarketcap.com/berkshire-hathaway/pb-ratio/)
 
 ## Germany
 
