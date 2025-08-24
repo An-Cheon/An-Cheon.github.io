@@ -71,10 +71,10 @@ tags: [investing]
 
 | 公司                                                         | 领域内市占率         | 过去10年平均ROE | 备注 |
 | :----------------------------------------------------------- | :------------------- | :-------------- | :--- |
-| **[Samsung Electronics](https://companiesmarketcap.com/samsung/pb-ratio/)** |                      | 12%             |      |
-| **[KT&G](https://companiesmarketcap.com/ktng-korea-tobacco/pe-ratio/)** | 在韩国占主导地位     | 9%              |      |
-| **[Coway](https://companiesmarketcap.com/coway/pe-ratio/)**  | 净水器占主导地位     | 12%             |      |
-| **[POSCO](https://companiesmarketcap.com/posco/pe-ratio/)**  | 在韩国钢铁占主导地位 | 4%              |      |
+| [Samsung Electronics](https://companiesmarketcap.com/samsung/pb-ratio/) |                      | 12%             |      |
+| [KT&G](https://companiesmarketcap.com/ktng-korea-tobacco/pe-ratio/) | 在韩国占主导地位     | 9%              |      |
+| [Coway](https://companiesmarketcap.com/coway/pe-ratio/)      | 净水器占主导地位     | 12%             |      |
+| [POSCO](https://companiesmarketcap.com/posco/pe-ratio/)      | 在韩国钢铁占主导地位 | 4%              |      |
 
 
 
