@@ -3,7 +3,6 @@ layout: post
 title: Blue chip
 categories: [Others, Investing]
 tags: [investing]
-robots: noindex, nofollow
 ---
 
 

@@ -1,0 +1,9 @@
+# 阻止指定文章页面被抓取
+User-agent: *
+Disallow: /posts/Blue-chip/
+Disallow: /posts/Small-cap-company/
+Disallow: /posts/links/
+Disallow: /posts/Stock/
+
+# 允许其他页面抓取
+Allow: /

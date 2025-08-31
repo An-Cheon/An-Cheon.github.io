@@ -3,7 +3,6 @@ layout: post
 title: Small cap company
 categories: [Others, Investing]
 tags: [investing]
-robots: noindex, nofollow
 ---
 
 ## Norway
