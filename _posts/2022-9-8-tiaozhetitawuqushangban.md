@@ -2,7 +2,7 @@
 layout: post
 title: Tap Dancing to Work Warren Buffett on Practically Everything, 1966-2012
 categories: [Books, Finance]
-tags: [finance]
+tags: [finance, value-investing]
 ---
 #### 巴菲特眼中的“好企业”要满足几个基本条件：具有较强的特许经营权；高于平均值的净资产收益率；相对较小的资金投入；释放现金流的能力。
 #### 有一次他向朋友大吐苦水说，他刚刚读完一份荒谬至极的年报，其内容充斥着管理层的欺骗误导和自私自利，“足以让你恶心得想吐”。这位朋友说：“可你还持有他们的股票呢。”他回答说：“是的，我看中这家企业是因为它太好了，连笨蛋都能赚到钱。”

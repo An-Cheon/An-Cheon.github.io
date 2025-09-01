@@ -2,7 +2,7 @@
 layout: post
 title: Poor Charlie’s Almanack
 categories: [Books, Business]
-tags: [biography, business, psychology, finance, philosophy]
+tags: [biography, business, psychology, finance, philosophy, value-investing]
 ---
 #### 有性格的人才能拿着现金坐在那里什么事也不做。我能有今天，靠的是不去追逐平庸的机会。——查理·芒格      
 #### “正如杰西·利弗莫尔说过的：‘赚大钱的诀窍不在于买进卖出……而在于等待。’”  

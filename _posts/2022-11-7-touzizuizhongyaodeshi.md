@@ -2,7 +2,7 @@
 layout: post
 title: The Most Important Thing Illuminated
 categories: [Books, Finance]
-tags: [finance, psychology, failure]
+tags: [finance, psychology, failure, value-investing]
 ---
 #### 前瞻性研究表明，多数风险都具有主观性、隐蔽性和不可量化性。     
 #### 在考虑投资组合时要牢记，极低概率事件会影响到你的大部分投资。     

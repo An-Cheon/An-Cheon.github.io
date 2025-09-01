@@ -2,7 +2,7 @@
 layout: post
 title: The Warren Buffett Way
 categories: [Books, Finance]
-tags: [finance]
+tags: [finance, value-investing]
 ---
 #### 格雷厄姆认为，如果借钱去买证券以期赚快钱，那么无论买的是股票还是债券，这都是投机。
 #### 巴菲特告诉我们，他最简单的投资智慧是：“一个伟大企业的定义至少是伟大25~30年。”

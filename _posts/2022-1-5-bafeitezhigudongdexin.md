@@ -2,7 +2,7 @@
 layout: post
 title: The Essays of Warren Buffett
 categories: [Books, Finance]
-tags: [failure, finance]
+tags: [failure, finance, value-investing]
 ---
 #### 人们见过的所有企业失败基本上都是由财务上无法形成良性循环造成的。              
 #### 伟大的投资机会往往发生在一家优秀公司遭遇一次性、可解决的问题时。           

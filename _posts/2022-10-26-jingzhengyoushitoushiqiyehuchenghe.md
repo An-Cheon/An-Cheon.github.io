@@ -2,7 +2,7 @@
 layout: post
 title: Competition Demystified A Radically Simplified Approach to Business Strategy
 categories: [Books, Business]
-tags: [business, finance, monopoly, failure]
+tags: [business, finance, monopoly, failure, value-investing]
 ---
 #### 如果没有进入壁垒，那么许多战略上的考虑都可以忽略。企业不必担心如何对付台面上的竞争对手，也不必担心如何预测并影响它们的行为。因为竞争对手太多了，根本应付不过来。
 #### 如果市场需求使得任何一家企业获得了非同寻常的高回报率，那么其他企业也将关注到同样的机会并蜂拥而至。

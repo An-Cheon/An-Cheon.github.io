@@ -2,7 +2,7 @@
 layout: post
 title:  Capital Returns
 categories: [Books, Politics]
-tags: [politics, monopoly, economics, finance]
+tags: [politics, monopoly, economics, finance, value-investing]
 ---
 #### 真正好的投资机会往往只出现在周期转折之后，也就是资本开始退出的时候。
 #### 企业盈利能力健康的主要驱动力是有利的供应面，而不是高需求增长率。

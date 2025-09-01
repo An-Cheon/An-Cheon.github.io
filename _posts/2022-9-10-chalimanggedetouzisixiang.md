@@ -2,7 +2,7 @@
 layout: post
 title: Tao of Charlie Munger
 categories: [Books, Business]
-tags: [business, finance]
+tags: [business, finance, value-investing]
 ---
 #### 芒格做的唯一一件事就是手握一大笔现金，坐等着一场金融危机。其他投资者不介入的原因是他们没有足够的现金购买任何东西。
 #### 正如芒格曾多次说过的那样，让他如此富有的并不是大脑，而是性情。
