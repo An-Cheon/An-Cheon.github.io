@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Small cap company
+title: Mid cap company
 categories: [Others, Investing]
 tags: [investing]
 ---

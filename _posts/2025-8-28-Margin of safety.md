@@ -2,7 +2,7 @@
 layout: post
 title:  Margin of safety
 categories: [Books, Finance]
-tags: [finance, failure]
+tags: [finance, failure, value-investing]
 ---
 #### 避免损失是投资获得成功最重要的先决条件。
 #### 沃伦·巴菲特喜欢说的第一条投资原则是“不要亏钱”，第二条规则是“永远也不要忘记第一条原则”。

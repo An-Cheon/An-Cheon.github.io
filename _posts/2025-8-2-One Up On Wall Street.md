@@ -2,7 +2,7 @@
 layout: post
 title:   One Up On Wall Street
 categories: [Books, Finance]
-tags: [business, finance, failure]
+tags: [business, finance, failure, value-investing]
 ---
 #### 一定要牢记一点：千万不要买入市盈率特别高的股票。只要坚决不购买市盈率特别高的股票，就会让你避免巨大的痛苦与巨大的投资亏损。
 #### 仅仅因为股价便宜就买入一只发展前景普通的公司股票是一种肯定失败的投资之道。

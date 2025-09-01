@@ -2,7 +2,7 @@
 layout: post
 title:  芒格之道
 categories: [Books, Finance]
-tags: [finance, business, politics, philosophy, failure, marriage]
+tags: [finance, business, politics, philosophy, failure, marriage, value-investing]
 ---
 #### 赚钱的秘诀是节约支出，生活简朴。沃伦和我，我们年轻的时候没钱，我们省吃俭用，把钱攒下来做投资。
 #### 你问我如何实现理想化的高复利，我的建议是，降低你的预期。我觉得，在未来的一段时间里，投资应该很难做。降低预期，让预期符合实际，这对你有好处，你不至于做傻事。

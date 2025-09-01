@@ -2,7 +2,7 @@
 layout: post
 title:  The Art of Execution
 categories: [Books, Finance]
-tags: [business, finance, failure]
+tags: [business, finance, failure, value-investing]
 ---
 #### 猎人投资人就像所有成功实践“平均成本法”的人一样，事先计划好在股价下跌时买入更多股票。所以他们并没有在第一天就全押。相反，他们一开始投资较少的资金，并留出一些现金，等待未来以更低的价格买入更多股票的机会。
 #### 成功执行伟大创意并赚取大量金钱的关键在于你在投资一个创意并发现自己亏损或盈利之后所采取的行动。

@@ -2,7 +2,7 @@
 layout: post
 title:  Investing the Templeton way
 categories: [Books, Finance]
-tags: [finance, failure]
+tags: [finance, failure, value-investing]
 ---
 #### “人们总问我何时前景最乐观，其实这个问题问错了。应该这样问：何时前景最黯淡？”
 #### “在别人沮丧地卖出时趁机买进，在别人疯狂买进时趁机卖出，这需要最大的毅力，但收获也最丰硕。”
