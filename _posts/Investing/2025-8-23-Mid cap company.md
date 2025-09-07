@@ -56,6 +56,7 @@ tags: [investing]
 | 公司                                                         | 领域内市占率                              | 10年平均ROE | 备注 |
 | :----------------------------------------------------------- | :---------------------------------------- | :---------- | :--- |
 | [RATIONAL](https://companiesmarketcap.com/rational-ag/pe-ratio/) | 组合蒸汽烤箱与多功能烹饪系统全球市占率50% | 28%         |      |
+| [Carl Zeiss Meditec](https://companiesmarketcap.com/carl-zeiss-meditec/marketcap/) | 全球眼科显微镜市占率第一                  | 11%         |      |
 
 
 
