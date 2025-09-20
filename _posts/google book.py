@@ -32,8 +32,8 @@ file.close()
 ---
 layout: post
 title:  book
-categories: [Books, Business]
-tags: [business, politics]
+categories: [Books, Finance]
+tags: [finance]
 ---
 ####
 <!-- more -->

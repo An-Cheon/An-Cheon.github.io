@@ -34,17 +34,27 @@ tags: [investing]
 
 ## United States
 
-| 公司                                                         | 领域内市占率                                                 | 10年平均ROE      | 备注                                                         |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |:--------------| :----------------------------------------------------------- |
-| [Berkshire Hathaway](https://companiesmarketcap.com/berkshire-hathaway/pb-ratio/) |                                                              | 10%           |                                                              |
-| [COST](https://companiesmarketcap.com/costco/pe-ratio/)      |                                                              | 20%           | [芒格家族的绝大部分财富投在了三个地方：伯克希尔·哈撒韦、开市客以及一只亚洲的基金。](https://an-cheon.github.io/posts/manggezhidao/) |
-| [Coca Cola](https://companiesmarketcap.com/coca-cola/pe-ratio/) | 全球软饮占比 50%                                             | 25%           |                                                              |
-| [Colgate-Palmolive](https://companiesmarketcap.com/colgate-palmolive/pe-ratio/) | 全球牙膏占有率 40%, 牙刷占有率 30%                           | 34%           |                                                              |
-| [ADP](https://www.macrotrends.net/stocks/charts/ADP/adp/pe-ratio) | 工资外包服务领域占有率30%                                    | 30%           |                                                              |
-| [Apple](https://www.macrotrends.net/stocks/charts/AAPL/apple/pe-ratio) | 利润占据全球智能手机市场83%                                  | ROA 20%       | 负债率80%                                                    |
-| [Microsoft](https://companiesmarketcap.com/microsoft/pe-ratio/) | 垄断个人操作系统市场                                         | 30%           |                                                              |
-| [Meta Platforms](https://www.macrotrends.net/stocks/charts/META/meta-platforms/roe) | 社交平台主导地位                                             | 30%           | 在AI上浪费的大量资金会体现在未来财报上                       |
-| [Intuit](https://macrotrends.net/stocks/charts/INTU/intuit/price-book) | QuickBooks（中小企业会计软件）77%，TurboTax（个人报税软件）76% | 18%           |                                                              | |
+| 公司                                                         | 领域内市占率                                                 | 10年平均ROE | 备注                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :---------- | :----------------------------------------------------------- |
+| [Berkshire Hathaway](https://companiesmarketcap.com/berkshire-hathaway/pb-ratio/) |                                                              | 10%         |                                                              |
+| [COST](https://companiesmarketcap.com/costco/pe-ratio/)      |                                                              | 20%         | [芒格家族的绝大部分财富投在了三个地方：伯克希尔·哈撒韦、开市客以及一只亚洲的基金。](https://an-cheon.github.io/posts/manggezhidao/) |
+| [Coca Cola](https://companiesmarketcap.com/coca-cola/pe-ratio/) | 全球软饮占比 50%                                             | 25%         |                                                              |
+| [Colgate-Palmolive](https://companiesmarketcap.com/colgate-palmolive/pe-ratio/) | 全球牙膏占有率 40%, 牙刷占有率 30%                           | 34%         |                                                              |
+| [ADP](https://www.macrotrends.net/stocks/charts/ADP/adp/pe-ratio) | 工资外包服务领域占有率30%                                    | 30%         |                                                              |
+| [Apple](https://www.macrotrends.net/stocks/charts/AAPL/apple/pe-ratio) | 利润占据全球智能手机市场83%                                  | ROA 20%     | 负债率80%                                                    |
+| [Microsoft](https://companiesmarketcap.com/microsoft/pe-ratio/) | 垄断个人操作系统市场                                         | 30%         |                                                              |
+| [Meta Platforms](https://www.macrotrends.net/stocks/charts/META/meta-platforms/roe) | 社交平台主导地位                                             | 30%         | 在AI上浪费的大量资金会体现在未来财报上                       |
+| [Intuit](https://macrotrends.net/stocks/charts/INTU/intuit/price-book) | QuickBooks（中小企业会计软件）77%，TurboTax（个人报税软件）76% | 18%         |                                                              |
+| [Moody's](https://companiesmarketcap.com/moodys/pe-ratio/)   | 美国证券交易委员会规定的全国公认的统计评级机构之一           |             | 特许经营权，评级业务于金融周期高度相关                       |
+| [S&P Global](https://companiesmarketcap.com/eur/sp-global/pe-ratio/) | 美国证券交易委员会规定的全国公认的统计评级机构之一           |             | 特许经营权，评级业务于金融周期高度相关                       |
+| [Dolby](https://companiesmarketcap.com/dolby/pe-ratio/)      | 美国、欧洲影音传输标准行业标准                               | 20%         | 影院设备的增长已经放缓。                                     |
+| [Copart](https://companiesmarketcap.com/copart/pe-ratio/)    | 全球线上救援车辆拍卖市场市占率60%-65%                        | 25%         |                                                              |
+| [BlackRock](https://companiesmarketcap.com/blackrock/pe-ratio/) | 资产管理规模世界第一                                         | 14%         | [受益于投资者的转换成本。拥有多元化投资组合，从而限制了市场波动对其整体管理资产水平的影响。](https://an-cheon.github.io/posts/Why-Moats-Matter/) |
+| [Rockwell Automation](https://companiesmarketcap.com/rockwell-automation/pe-ratio/) | 美国／北美工厂自动化与工业控制市场市占率约42%                | 30%         | [凭借其 Logix 自动化控制平台的高客户转换成本，拥有宽阔的经济护城河。](https://an-cheon.github.io/posts/Why-Moats-Matter/) |
+| [Exxon Mobil](https://companiesmarketcap.com/exxon-mobil/pb-ratio/) |                                                              | 10%         | [埃克森美孚的资本配置活动高度集中。因此，公司会对来自世界各地的项目进行评估，只有那些回报最具吸引力的项目才能获得资金。](https://an-cheon.github.io/posts/Why-Moats-Matter/) |
+| [Visa](https://companiesmarketcap.com/visa/pe-ratio/)        | 全球信用卡市占率40%                                          | 32%         | [Visa 的护城河源于其持卡人和商户网络。](https://an-cheon.github.io/posts/Why-Moats-Matter/) |
+| [CME Group](https://companiesmarketcap.com/cme-group/pe-ratio/) | 美国利率衍生品市场市占率第一                                 | 10%         | [在芝商所各交易所开立的仓位也必须通过同一交易所平仓，这使得芝商所能够掌控所有的交易和清算量。](https://an-cheon.github.io/posts/Why-Moats-Matter/) |
+| [Johnson & Johnson](https://companiesmarketcap.com/johnson-and-johnson/pe-ratio/) |                                                              | 24%         | [强生多元化的业务支撑着其宽阔的护城河。公司并未过度依赖某一特定部门。](https://an-cheon.github.io/posts/Why-Moats-Matter/) |
 
 
 

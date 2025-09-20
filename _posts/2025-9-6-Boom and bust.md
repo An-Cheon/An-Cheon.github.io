@@ -2,7 +2,7 @@
 layout: post
 title:  Boom and bust
 categories: [Books, Finance]
-tags: [finance, politics, china, politics, failure]
+tags: [finance, china, politics, failure]
 ---
 #### 查尔斯·金德尔伯格将泡沫描述为“价格在一段较长时间内上涨，然后破裂”。
 #### 泡沫三角描述了泡沫的必要条件——市场化、货币和信贷以及投机。

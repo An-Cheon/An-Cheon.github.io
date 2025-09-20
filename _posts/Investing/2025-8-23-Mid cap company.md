@@ -78,6 +78,7 @@ tags: [investing]
 | [Cal-Maine Foods](https://www.macrotrends.net/stocks/charts/CALM/cal-maine-foods/price-book) | 北美鸡蛋市场占有率第一            | 16%         |      |
 | [Trex](https://www.macrotrends.net/stocks/charts/TREX/trex/pe-ratio) | 木材替代地板市占率世界第一        | 25%         |      |
 | [WD-40](https://www.macrotrends.net/stocks/charts/WDFC/wd-40/pe-ratio) | 多用途润滑防锈石油制剂WD-40生产商 | 26%         |      |
+| [Corcept Therapeutics](https://www.macrotrends.net/stocks/charts/CORT/corcept-therapeutics/pe-ratio) | 垄断库欣综合征治疗美国市场        | 25%         |      |
 
 
 
