@@ -2,7 +2,7 @@
 layout: post
 title:  The Future for Investors
 categories: [Books, Finance]
-tags: [finance, value-investing]
+tags: [finance, value-investing, deception, china]
 ---
 #### 投资者回报的基本原则是： 股票的长期回报并不取决于其盈利的实际增长，而是取决于其实际盈利增长与投资者预期增长之间的差异。
 #### 一条基本规则：永远不要买入市盈率高于大盘的股票。

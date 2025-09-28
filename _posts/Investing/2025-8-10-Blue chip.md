@@ -87,10 +87,11 @@ tags: [investing]
 
 ## Japan
 
-| 公司                                                       | 领域内市占率                | 10年平均ROE      | 备注 |
-| :--------------------------------------------------------- | :-------------------------- |:--------------| :--- |
-| [Japan Tobacco](https://www.wisesheets.io/pe-ratio/2914.T) | 日本烟草行业第一            | 13%           |      |
-| [Olympus](https://www.wisesheets.io/pe-ratio/7733.T)       | 柔性内窥镜设备市占率45%左右 | 15%           |      |
+| 公司                                                       | 领域内市占率                | 10年平均ROE | 备注                     |
+| :--------------------------------------------------------- | :-------------------------- | :---------- | :----------------------- |
+| [Japan Tobacco](https://www.wisesheets.io/pe-ratio/2914.T) | 日本烟草行业第一            | 13%         |                          |
+| [Olympus](https://www.wisesheets.io/pe-ratio/7733.T)       | 柔性内窥镜设备市占率45%左右 | 15%         |                          |
+| [Toyota](https://companiesmarketcap.com/toyota/pe-ratio/)  | 汽车销量第一                | 11%         | 电动车销量严重落后比亚迪 |
 
 
 
