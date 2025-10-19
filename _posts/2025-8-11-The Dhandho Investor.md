@@ -2,7 +2,7 @@
 layout: post
 title:  The Dhandho Investor
 categories: [Books, Finance]
-tags: [business, finance]
+tags: [business, finance, value-investing]
 ---
 #### 永远不要指望能卖出好价钱。要让购买价格足够有吸引力，这样即使销售一般也能带来好结果。 —沃伦·巴菲特
 #### 进入策略实际上比退出策略更重要。 —埃迪·兰伯特

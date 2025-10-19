@@ -60,6 +60,14 @@ tags: [investing]
 
 
 
+## Canada
+
+| 公司                                                         | 领域内市占率                                                 | 10年平均ROE | 备注 |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :---------- | :--- |
+| [Constellation Software](https://companiesmarketcap.com/constellation-software/pe-ratio/) | 专注于收购和运营数百家在各自利基市场具有绝对垄断地位的小型VMS公司 | 38%         |      |
+
+
+
 ## United Kingdom
 
 | 公司                                                         | 领域内市占率                    | 10年平均ROE | 备注 |

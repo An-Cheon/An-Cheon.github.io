@@ -2,7 +2,7 @@
 layout: post
 title: Big Money Thinks Small Biases, Blind Spots, and Smarter Investing
 categories: [Books, Finance]
-tags: [finance]
+tags: [finance, value-investing]
 ---
 #### 常言道：信心更多地来源于无知，而非知识。
 #### 经济学家习惯将风险自上而下进行分类。他们用外部视角来审视市场，统计行业数据，并用蹩脚的理论去分析和解释。他们会笼统地通过某些数据的变化，去分析其对整个经济系统的影响，而不是深究这些数据变化背后的深层原因。
