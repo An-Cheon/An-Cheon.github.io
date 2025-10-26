@@ -22,8 +22,8 @@ tags: [finance, value-investing]
 #### 从1939年至今，有超过220家电视机制造商为美国市场生产电视机。其中，估计仅有23家至今仍在生产电视机。
 #### 对股票投资者而言，历史表明，如果能够持有自己的投资至少5年，特别是如果能够识别出泡沫和周期变化的迹象，投资者就真的能够享受到长期回报带来的益处。
 <!-- more -->
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/The_Long_Good_Buy1.png)
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/The_Long_Good_Buy2.png)
+![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/circle1.png)
+![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/circle2.png)
 1985年最强大的超级计算机（Cray-2）的处理能力与iPhone 4（苹果手机）相当。
  
 微软总裁布拉德·史密斯最近指出：“这个10年结束时的数据量将是这个10年开始时的25倍。”
