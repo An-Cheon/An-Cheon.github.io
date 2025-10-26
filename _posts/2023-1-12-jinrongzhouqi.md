@@ -2,7 +2,7 @@
 layout: post
 title:  The Long Good Buy Analysing Cycles in Markets
 categories: [Books, Finance]
-tags: [finance]
+tags: [finance, value-investing]
 ---
 #### 1986年美国储蓄贷款协会危机、1987年“黑色星期一”，1986年至1992年日本资产泡沫的形成和崩溃，1984年的墨西哥危机，20世纪90年代的新兴市场危机（1997年的亚洲、1998年的俄罗斯以及1998—2002年的阿根廷），1992年的ERM货币危机，2000年的科技股崩盘，以及全球金融危机——始于2007年的次贷危机和美国房地产市场的下跌，以及2010年、2011年的欧洲主权债务危机。 在过去的30年里。
 #### 投资者有时承担风险的意愿强烈，有时面对风险过度谨慎（通常是在一段时间的低回报之后），这两种状态往往会放大经济基本面对金融市场的影响，乃至形成周期和重复的行为模式。
@@ -22,6 +22,8 @@ tags: [finance]
 #### 从1939年至今，有超过220家电视机制造商为美国市场生产电视机。其中，估计仅有23家至今仍在生产电视机。
 #### 对股票投资者而言，历史表明，如果能够持有自己的投资至少5年，特别是如果能够识别出泡沫和周期变化的迹象，投资者就真的能够享受到长期回报带来的益处。
 <!-- more -->
+![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/The_Long_Good_Buy1.png)
+![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/The_Long_Good_Buy2.png)
 1985年最强大的超级计算机（Cray-2）的处理能力与iPhone 4（苹果手机）相当。
  
 微软总裁布拉德·史密斯最近指出：“这个10年结束时的数据量将是这个10年开始时的25倍。”
