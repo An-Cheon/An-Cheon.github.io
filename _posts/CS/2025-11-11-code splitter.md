@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 动态规划实现Python代码分割
-categories: [CS, Python]
+categories: [CS, PYTHON]
 tags: [python]
 ---
 
