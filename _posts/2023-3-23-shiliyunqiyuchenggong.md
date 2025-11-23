@@ -2,7 +2,7 @@
 layout: post
 title: The Success Equation
 categories: [Books, Business]
-tags: [business, deception]
+tags: [business, deception, failure]
 ---
 #### “我们是第一家针对个人电脑的软件公司，这是我们成功的至关因素。”盖茨说，“我们把握住好时机不完全靠运气，但是没有好运就没有微软的今天。”
 #### 一个系统中只要含有丝毫的运气因素，对真实实力的评估就变得非常困难。
