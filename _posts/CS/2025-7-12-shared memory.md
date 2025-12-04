@@ -147,7 +147,7 @@ int main()
 
 main_reader.cpp
 
-```
+```cpp
 #include <iostream>
 #include <string>
 #ifdef _WIN32
