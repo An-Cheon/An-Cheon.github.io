@@ -34,17 +34,18 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
-      # 【优化 1】增加 Node.js 环境及缓存
+      # 【修正】删除了 cache 选项，避免找不到 lock 文件而报错
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
+      # 【修正】将 npm ci 改为 npm i (npm install)
+      # 因为 npm ci 强制要求根目录下必须有 package-lock.json
       - name: Install NPM dependencies
-        run: npm ci
+        run: npm i
 
-      # 【优化 2】Ruby 保持已有缓存
+      # 【优化】Ruby 依然可以使用缓存，因为 Chirpy 自带了 Gemfile.lock
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -56,8 +57,7 @@ jobs:
         env:
           JEKYLL_ENV: "production"
 
-      # 【优化 3】注销掉耗时且非必须的 Test 步骤
-      # 如果你需要检查链接，建议本地运行，不要放在云端每次都跑
+      # 【优化】保持禁用测试步骤以节省 1 分钟左右的时间
       # - name: Test site
       #   run: |
       #     bundle exec htmlproofer _site \
