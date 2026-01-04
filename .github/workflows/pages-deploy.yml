@@ -34,35 +34,18 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
-      # 【修正】删除了 cache 选项，避免找不到 lock 文件而报错
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      # 【修正】将 npm ci 改为 npm i (npm install)
-      # 因为 npm ci 强制要求根目录下必须有 package-lock.json
-      - name: Install NPM dependencies
-        run: npm i
-
-      # 【优化】Ruby 依然可以使用缓存，因为 Chirpy 自带了 Gemfile.lock
+      # 仅保留 Ruby 环境，这是 Chirpy 运行的基础
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
-          bundler-cache: true
+          bundler-cache: true # 利用缓存加速
 
+      # 仅运行核心构建命令
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
-
-      # 【优化】保持禁用测试步骤以节省 1 分钟左右的时间
-      # - name: Test site
-      #   run: |
-      #     bundle exec htmlproofer _site \
-      #       --disable-external \
-      #       --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
