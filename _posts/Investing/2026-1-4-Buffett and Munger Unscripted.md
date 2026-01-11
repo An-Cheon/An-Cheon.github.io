@@ -2,7 +2,7 @@
 layout: post
 title:  Buffett and Munger Unscripted
 categories: [Others, Investing]
-tags: [investing, quotes, business, failure]
+tags: [investing, quotes, business, failure, value-investing]
 ---
 
 <!-- more -->
