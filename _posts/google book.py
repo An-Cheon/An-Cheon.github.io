@@ -35,7 +35,7 @@ title:  book
 categories: [Books, Finance]
 tags: [finance]
 ---
-####
+
 <!-- more -->
 
 '''
