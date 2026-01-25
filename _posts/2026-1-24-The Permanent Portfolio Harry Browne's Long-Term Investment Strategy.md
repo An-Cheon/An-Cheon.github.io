@@ -22,11 +22,11 @@ tags: [finance]
 #### 白银更像是工业金属，而非货币金属，因此它在遭遇政治和经济问题时不能像黄金那样提供可靠保障。白银价格与黄金价格走势可能一样，也可能不一样。
 #### 通常，购买表现最差的资产是个好主意，因为它以最低的价格出售。
 #### 布朗推荐的调整方法是根据15%和35%的调整带。
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/The_Permanent_Portfolio.png)      
+![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Permanent_Portfolio.png)
 (这段时间利率从15%降到0，是债券牛市)
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/The_Permanent_Portfolio_1.png) 
+![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Permanent_Portfolio_1.png)
 (美国股票与美国长期国债之间随时间变化的关联性)
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/The_Permanent_Portfolio_4.png) 
+![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Permanent_Portfolio_4.png)
 (2008年黄金vs.商品期货指数)
 <!-- more -->
 本书的主要内容：防患于未然的投资。或者我们应该说，按照真实市场的运行而投资。
