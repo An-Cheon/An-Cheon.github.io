@@ -29,6 +29,8 @@ tags: [finance]
 ![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Permanent_Portfolio_4.png)
 (2008年黄金vs.商品期货指数)
 <!-- more -->
+
+
 本书的主要内容：防患于未然的投资。或者我们应该说，按照真实市场的运行而投资。
 
 在过去的40年里，这种策略的年收益在9%~10%。更引人注目的是它在一年中最大的亏损大概只有5%，甚至包括最近的2008年金融危机。在这次金融危机期间，永久投资组合的盈亏基本持平，而同期股票市场价值下跌了36%以上。

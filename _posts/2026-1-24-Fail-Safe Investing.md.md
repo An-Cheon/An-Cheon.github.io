@@ -2,7 +2,7 @@
 layout: post
 title:  Fail-Safe Investing
 categories: [Books, Finance]
-tags: [finance]
+tags: [finance, career]
 ---
 #### 永远不要忘记，财富始于你的事业——你赖以谋生的方式。
 #### 除非你首先重视工作和储蓄，否则你永远无法分享投资带来的财富。
