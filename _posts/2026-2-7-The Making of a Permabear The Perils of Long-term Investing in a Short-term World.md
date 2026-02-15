@@ -2,7 +2,7 @@
 layout: post
 title:  The Making of a Permabear
 categories: [Books, Finance]
-tags: [finance, value-investing, monopoly, politics]
+tags: [finance, value-investing, monopoly, politics, confidence]
 ---
 #### 只是随着时间的推移，我才逐渐意识到，能够不必真正为金钱操心是多么幸运。
 #### 我们发现任何看起来像垄断或具有垄断性质的因素都是减缓均值回归的关键。垄断的特点是收益非常高且非常稳定。企业只有凭借专利保护、卓越的品牌或其他优势，成为价格制定者并拥有市场主导地位，才能实现这一点。否则，异常高的收益会吸引竞争对手，从而拉低收益。这种高收益正是我们所说的优质公司的特征。
