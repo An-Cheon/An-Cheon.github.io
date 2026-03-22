@@ -1,6 +1,6 @@
 ---
-layout:  ICU生死录
-title:  book
+layout:  post
+title:  ICU生死录
 categories: [Books, Relationships]
 tags: [society, relationships]
 ---
