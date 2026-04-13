@@ -45,6 +45,8 @@ tags: [finance, value-investing, failure]
 #### 大量研究发现，在概率性活动领域，成功的专业人士有一个共同特点：他们都强调过程而不是结果。
 #### 花时间建立新的人际关系。太多的人会在毕业后或结婚后停止建立人际关系，然后你会发现自己墨守成规，你唯一的人际关系代表的是你曾经的自己，而不是你想成为的人。 ——伊恩·卡塞尔
 <!-- more -->
+![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/fuli1.png) 
+![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/fuli.png) 
 我经常在生活中看到一些脱颖而出的人，他们不是最聪明的，有时甚至不是最勤奋的，但他们就像是一台能够永远运转的学习机器——他们不断学习，他们每晚睡觉的时候都会比起床时聪明一点——这真的是太有用了，尤其是在我们的人生还有很长一段路要走的时候。 ——查理·芒格
 
 巴菲特把自己许多成功的决定归功于他令人难以置信的阅读习惯。他估计，自己每天花在阅读和思考上的时间多达80%。
