@@ -111,7 +111,7 @@ def extract_notes(docx_path: str, output_path: str | None = None) -> list[dict]:
 
 if __name__ == '__main__':
     # ── 在这里修改输入/输出路径 ────────────────────────────────────────────
-    INPUT_FILE  = r"C:\Users\reala\Downloads\Notes from _合作的复杂性：基于参与者竞争与合作的模型_.docx"
+    INPUT_FILE  = r"C:\Users\reala\Downloads\Notes from _有钱，能买到快乐吗_.docx"
     OUTPUT_FILE = r"C:\Users\reala\Downloads\notes_output.txt"
     # ──────────────────────────────────────────────────────────────────────
 
