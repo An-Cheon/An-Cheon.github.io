@@ -1,8 +1,8 @@
 ---
-layout:post
-title:The Laws of Wealth
-categories:[Books,Finance]
-tags:[finance, failure, marriage, value-investing]
+layout:  post
+title:  The Laws of Wealth
+categories:  [Books,Finance]
+tags:  [finance, failure, marriage, value-investing]
 ---
 #### 沃伦·巴菲特关于投资的第一条法则是“不要亏损”，第二条法则是“千万不要忘记第一条法则”。
 #### 正如巴菲特所说：“投资者不需要做太多对的事情，只要保证不犯下大错就行了。”
