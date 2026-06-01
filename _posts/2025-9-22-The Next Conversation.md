@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The Next Conversation
-categories: [Books, PUA]
+categories: [Books, Relationships]
 tags: [pua, narcissism, confidence, psychology, relationships]
 ---
 #### 自信并不意味着你不害怕，而是意味着你即使害怕也会去做。

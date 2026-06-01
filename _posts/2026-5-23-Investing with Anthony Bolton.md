@@ -2,7 +2,7 @@
 layout: post
 title:  Investing with Anthony Bolton
 categories: [Books, Finance]
-tags: [finance, value-investing]
+tags: [finance, value-investing, marriage]
 ---
 #### 我知道,对各行各业的人来说,幸福的家庭都是无比重要的,在情绪极容易受到影响的投资领域,它尤其是一个巨大的优势。在这一点上,和我生命中许多其他事情一样,我非常走运。
 #### 价值投资比成长投资更有可能在长期内获得高收益。但是,我并不是说成长投资不能有效地获得高于平均水平的收益。我只是认为,在更长期的时间段内,价值投资的成功率更大。
