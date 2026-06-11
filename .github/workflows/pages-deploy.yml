@@ -47,6 +47,14 @@ jobs:
         env:
           JEKYLL_ENV: "production"
 
+      # 生成 Pagefind 全文搜索索引（强制按中文切词，排除导航/侧栏等公共结构）
+      - name: Build search index (Pagefind)
+        run: >-
+          npx -y pagefind@^1
+          --site "_site${{ steps.pages.outputs.base_path }}"
+          --force-language zh
+          --exclude-selectors "#sidebar, #topbar-wrapper, footer, #panel-wrapper, #tail-wrapper, #search-results"
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
