@@ -52,9 +52,9 @@ jobs:
         with:
           node-version: 20
 
-      # 生成 Pagefind 全文搜索索引（强制按中文切词）
+      # 生成 Pagefind 全文搜索索引（站点 lang=zh-CN，Pagefind 自动按中文切词）
       - name: Build search index (Pagefind)
-        run: npx -y pagefind@latest --site "_site${{ steps.pages.outputs.base_path }}" --force-language zh --verbose
+        run: npx -y pagefind@latest --site "_site${{ steps.pages.outputs.base_path }}" --verbose
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
