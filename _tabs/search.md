@@ -32,6 +32,18 @@ order: 5
   #pagefind-search .pagefind-ui__message {
     color: var(--text-muted-color);
   }
+  /* Hide the "↳ heading" sub-result line; keep only the matching sentence */
+  #pagefind-search .pagefind-ui__result-nested .pagefind-ui__result-link {
+    display: none;
+  }
+  /* The matching sentence reads like text but is clickable (jumps to the term) */
+  #pagefind-search .pagefind-ui__result-excerpt a.result-jump {
+    color: var(--text-muted-color);
+    text-decoration: none;
+  }
+  #pagefind-search .pagefind-ui__result-excerpt a.result-jump:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <div id="pagefind-search"></div>
@@ -65,5 +77,33 @@ order: 5
         searching: "Searching for [SEARCH_TERM]..."
       }
     });
+
+    var root = document.getElementById("pagefind-search");
+    var observer = null;
+    function currentTerm() {
+      var inp = root.querySelector(".pagefind-ui__search-input") || root.querySelector("input");
+      return inp ? inp.value.trim().replace(/^"+|"+$/g, "") : "";
+    }
+    function decorate() {
+      if (observer) observer.disconnect();
+      var term = currentTerm();
+      root.querySelectorAll(".pagefind-ui__result-nested").forEach(function (nested) {
+        var excerpt = nested.querySelector(".pagefind-ui__result-excerpt");
+        var link = nested.querySelector(".pagefind-ui__result-link");
+        if (excerpt && link && !excerpt.querySelector("a.result-jump")) {
+          var base = link.href.split("#")[0];
+          var href = base + (term ? "#:~:text=" + encodeURIComponent(term) : "");
+          var a = document.createElement("a");
+          a.className = "result-jump";
+          a.href = href;
+          a.innerHTML = excerpt.innerHTML;
+          excerpt.innerHTML = "";
+          excerpt.appendChild(a);
+        }
+      });
+      if (observer) observer.observe(root, { childList: true, subtree: true });
+    }
+    observer = new MutationObserver(decorate);
+    observer.observe(root, { childList: true, subtree: true });
   });
 </script>
