@@ -1,0 +1,19 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Hide Chirpy's built-in topbar search — replaced by the Pagefind /search/ page */
+#search-trigger,
+#search,
+#search-cancel,
+#search-result-wrapper {
+  display: none !important;
+}
