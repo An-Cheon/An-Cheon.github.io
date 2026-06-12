@@ -52,9 +52,9 @@ jobs:
         with:
           node-version: 20
 
-      # 生成 Pagefind 全文搜索索引（索引 Chirpy 正文容器 .content；站点 UI 为英文，故强制按中文切词）
+      # 生成 Pagefind 全文搜索索引（以 main 为根以包含 h1 标题，排除文章元信息；站点 UI 为英文，故强制按中文切词）
       - name: Build search index (Pagefind)
-        run: npx -y pagefind@latest --site "_site${{ steps.pages.outputs.base_path }}" --root-selector ".content" --force-language zh --verbose
+        run: npx -y pagefind@latest --site "_site${{ steps.pages.outputs.base_path }}" --root-selector "main" --exclude-selectors ".post-meta" --force-language zh --verbose
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
