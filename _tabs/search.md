@@ -70,7 +70,7 @@ order: 5
   async function ensureSegmenter() {
     if (cjkSegOk()) return "native";
     try {
-      var mod = await import("https://cdn.jsdelivr.net/npm/jieba-wasm@2.4.0/pkg/web/jieba_rs_wasm.js");
+      var mod = await import("/assets/jieba/jieba_rs_wasm.js");
       await mod.default();
       Intl.Segmenter = makeJiebaSegmenter(mod.cut);
       return cjkSegOk() ? "jieba" : "jieba-nofix";
