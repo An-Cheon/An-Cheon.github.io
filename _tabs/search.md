@@ -128,28 +128,30 @@ order: 5
       statusEl.textContent = "Searching…";
       var ql = q.toLowerCase();
 
-      var words;
-      try {
-        words = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment(q)).map(function (p) { return p.segment; });
-      } catch (e) { words = [q]; }
-      words = words.map(function (w) { return w.trim(); }).filter(function (w) { return w.length > 0; });
-      var uniq = [], seenW = {};
-      for (var wi = 0; wi < words.length; wi++) { if (!seenW[words[wi]]) { seenW[words[wi]] = 1; uniq.push(words[wi]); } }
-      if (!uniq.length) uniq = [q];
+      var hasCJK = /[一-鿿]/.test(q);
+      var terms = [q];
+      if (hasCJK && q.length >= 2) {
+        for (var ti = 0; ti + 2 <= q.length; ti++) terms.push(q.substr(ti, 2));
+      }
+      var ut = [], st = {};
+      for (var tj = 0; tj < terms.length; tj++) { var tt = terms[tj].trim(); if (tt && !st[tt]) { st[tt] = 1; ut.push(tt); } }
 
-      var counts;
+      var lists;
       try {
-        counts = await Promise.all(uniq.map(async function (w) {
-          try { var r = await pagefind.search(w); return { n: r.results.length, results: r.results }; }
-          catch (e) { return { n: 0, results: [] }; }
+        lists = await Promise.all(ut.map(async function (t) {
+          try { var r = await pagefind.search(t); return r.results; } catch (e) { return []; }
         }));
       } catch (e) { statusEl.textContent = "Search error"; return; }
       if (myId !== runId) return;
 
-      var positive = counts.filter(function (c) { return c.n > 0; });
-      if (!positive.length) { statusEl.textContent = '0 results for "' + q + '"'; return; }
-      positive.sort(function (a, b) { return a.n - b.n; });
-      var cands = positive[0].results;
+      var byId = {}, cands = [];
+      for (var li = 0; li < lists.length; li++) {
+        for (var ri = 0; ri < lists[li].length; ri++) {
+          var it = lists[li][ri];
+          if (!byId[it.id]) { byId[it.id] = 1; cands.push(it); }
+        }
+      }
+      if (!cands.length) { statusEl.textContent = '0 results for "' + q + '"'; return; }
       var truncated = cands.length > MAX_ARTICLES;
       if (truncated) cands = cands.slice(0, MAX_ARTICLES);
 
