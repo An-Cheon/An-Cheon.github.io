@@ -106,5 +106,21 @@ order: 5
     }
     observer = new MutationObserver(decorate);
     observer.observe(root, { childList: true, subtree: true });
+
+    var diag = document.createElement("div");
+    diag.style.cssText = "margin-top:1.5rem;padding:.5rem;border:1px dashed var(--main-border-color);font-size:.8rem;color:var(--text-muted-color);word-break:break-all";
+    var hasSeg = typeof Intl !== "undefined" && !!Intl.Segmenter;
+    var segOut = "n/a";
+    if (hasSeg) {
+      try {
+        var s = new Intl.Segmenter("zh", { granularity: "word" });
+        var arr = [];
+        var it = s.segment("中国股市");
+        for (var p of it) { arr.push(p.segment); }
+        segOut = arr.join("|");
+      } catch (e) { segOut = "err:" + e.message; }
+    }
+    diag.textContent = "DIAG | Segmenter=" + hasSeg + " | seg(中国股市)=[" + segOut + "]";
+    root.appendChild(diag);
   });
 </script>
