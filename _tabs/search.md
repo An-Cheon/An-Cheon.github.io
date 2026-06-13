@@ -54,6 +54,7 @@ order: 5
     document.documentElement.lang = "zh";
     new PagefindUI({
       element: "#pagefind-search",
+      language: "zh",
       showSubResults: true,
       showImages: false,
       excerptLength: 30,
