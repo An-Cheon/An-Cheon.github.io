@@ -49,8 +49,24 @@ order: 5
 <div id="pagefind-search"></div>
 
 <script src="/pagefind/pagefind-ui.js"></script>
-<script>
-  window.addEventListener("DOMContentLoaded", function () {
+<script type="module">
+  function cjkSegOk() {
+    try {
+      if (!(typeof Intl !== "undefined" && Intl.Segmenter)) return false;
+      var parts = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment("中国")).map(function (p) { return p.segment; });
+      return parts.length === 1;
+    } catch (e) { return false; }
+  }
+  async function ensureSegmenter() {
+    if (cjkSegOk()) return "native";
+    try {
+      var mod = await import("https://unpkg.com/intl-segmenter-polyfill@0.4.4/dist/intl-segmenter-polyfill.js");
+      Intl.Segmenter = await mod.createIntlSegmenterPolyfill();
+      return cjkSegOk() ? "polyfill" : "polyfill-failed";
+    } catch (e) { return "polyfill-error:" + e.message; }
+  }
+  (async function () {
+    var segState = await ensureSegmenter();
     document.documentElement.lang = "zh";
     new PagefindUI({
       element: "#pagefind-search",
@@ -120,7 +136,7 @@ order: 5
         segOut = arr.join("|");
       } catch (e) { segOut = "err:" + e.message; }
     }
-    diag.textContent = "DIAG | Segmenter=" + hasSeg + " | seg(中国股市)=[" + segOut + "]";
+    diag.textContent = "DIAG | state=" + segState + " | Segmenter=" + hasSeg + " | seg(中国股市)=[" + segOut + "]";
     root.appendChild(diag);
-  });
+  })();
 </script>
