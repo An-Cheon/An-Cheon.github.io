@@ -136,18 +136,18 @@ order: 5
 
     var diag = document.createElement("div");
     diag.style.cssText = "margin-top:1.5rem;padding:.5rem;border:1px dashed var(--main-border-color);font-size:.8rem;color:var(--text-muted-color);word-break:break-all";
-    var hasSeg = typeof Intl !== "undefined" && !!Intl.Segmenter;
     var segOut = "n/a";
-    if (hasSeg) {
-      try {
-        var s = new Intl.Segmenter("zh", { granularity: "word" });
-        var arr = [];
-        var it = s.segment("中国股市");
-        for (var p of it) { arr.push(p.segment); }
-        segOut = arr.join("|");
-      } catch (e) { segOut = "err:" + e.message; }
-    }
-    diag.textContent = "DIAG | state=" + segState + " | Segmenter=" + hasSeg + " | seg(中国股市)=[" + segOut + "]";
+    try {
+      segOut = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment("中国股市")).map(function (p) { return p.segment; }).join("|");
+    } catch (e) { segOut = "err:" + e.message; }
+    var api = "n/a";
+    try {
+      var pf = await import("/pagefind/pagefind.js?cb=" + Date.now());
+      await pf.options({ language: "zh" });
+      var rr = await pf.search("中国");
+      api = (rr && rr.results) ? String(rr.results.length) : "0";
+    } catch (e) { api = "err:" + (e && e.message ? e.message : e); }
+    diag.textContent = "DIAG | state=" + segState + " | seg=[" + segOut + "] | apiSearch(中国)=" + api;
     root.appendChild(diag);
   })();
 </script>
