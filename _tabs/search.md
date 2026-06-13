@@ -86,11 +86,6 @@ order: 5
       showImages: false,
       excerptLength: 30,
       pageSize: 1000,
-      processTerm: function (term) {
-        term = term.trim();
-        if (!term) return term;
-        return '"' + term.replace(/^"+|"+$/g, "") + '"';
-      },
       translations: {
         placeholder: "Search...",
         clear_search: "Clear",
