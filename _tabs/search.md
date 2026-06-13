@@ -5,48 +5,40 @@ icon: fas fa-search
 order: 5
 ---
 
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-
 <style>
-  #pagefind-search {
-    --pagefind-ui-scale: 0.9;
-    --pagefind-ui-primary: var(--link-color);
-    --pagefind-ui-text: var(--text-color);
-    --pagefind-ui-background: var(--main-bg);
-    --pagefind-ui-border: var(--main-border-color);
-    --pagefind-ui-tag: var(--card-bg);
-    --pagefind-ui-font: inherit;
+  #cs-wrap { position: relative; margin-bottom: .25rem; }
+  #cs-input {
+    width: 100%;
+    padding: .6rem 1rem .6rem 2.4rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: var(--main-bg);
+    border: 1px solid var(--main-border-color);
+    border-radius: 1.5rem;
+    outline: none;
+    box-sizing: border-box;
   }
-  #pagefind-search .pagefind-ui__result-title .pagefind-ui__result-link {
-    color: var(--heading-color);
-  }
-  #pagefind-search .pagefind-ui__result-excerpt {
-    color: var(--text-muted-color);
-  }
-  #pagefind-search mark {
-    background: transparent;
-    color: var(--link-color);
-    font-weight: 700;
-    padding: 0;
-  }
-  #pagefind-search .pagefind-ui__message {
-    color: var(--text-muted-color);
-  }
-  #pagefind-search .pagefind-ui__result-nested .pagefind-ui__result-link {
-    display: none;
-  }
-  #pagefind-search .pagefind-ui__result-excerpt a.result-jump {
-    color: var(--text-muted-color);
-    text-decoration: none;
-  }
-  #pagefind-search .pagefind-ui__result-excerpt a.result-jump:hover {
-    text-decoration: underline;
-  }
+  #cs-input:focus { border-color: var(--link-color); }
+  #cs-icon { position: absolute; left: .95rem; top: 50%; transform: translateY(-50%); color: var(--text-muted-color); }
+  #cs-status { color: var(--text-muted-color); font-size: .9rem; margin: .9rem 0; }
+  .cs-result { padding: 1rem 0; border-top: 1px solid var(--main-border-color); }
+  .cs-title { font-size: 1.1rem; font-weight: 700; margin-bottom: .15rem; }
+  .cs-title a { color: var(--heading-color); text-decoration: none; }
+  .cs-title a:hover { text-decoration: underline; }
+  .cs-sentence { display: block; margin-top: .45rem; color: var(--text-muted-color); line-height: 1.7; text-decoration: none; }
+  .cs-sentence:hover { text-decoration: underline; }
+  .cs-sentence mark { background: transparent; color: var(--link-color); font-weight: 700; padding: 0; }
+  #cs-diag { margin-top: 1.5rem; padding: .5rem; border: 1px dashed var(--main-border-color); font-size: .8rem; color: var(--text-muted-color); word-break: break-all; }
 </style>
 
-<div id="pagefind-search"></div>
+<div id="cs-wrap">
+  <i id="cs-icon" class="fas fa-search"></i>
+  <input id="cs-input" type="search" autocomplete="off" placeholder="Search..." aria-label="Search" />
+</div>
+<div id="cs-status"></div>
+<div id="cs-results"></div>
+<div id="cs-diag"></div>
 
-<script src="/pagefind/pagefind-ui.js"></script>
 <script>
   function cjkSegOk() {
     try {
@@ -84,73 +76,97 @@ order: 5
       return cjkSegOk() ? "jieba" : "jieba-nofix";
     } catch (e) { return "jieba-error:" + (e && e.message ? e.message : e); }
   }
+
   (async function () {
+    var MAX_ARTICLES = 500;
     var segState = await ensureSegmenter();
     document.documentElement.lang = "zh";
-    new PagefindUI({
-      element: "#pagefind-search",
-      language: "zh",
-      showSubResults: true,
-      showImages: false,
-      excerptLength: 30,
-      pageSize: 1000,
-      translations: {
-        placeholder: "Search...",
-        clear_search: "Clear",
-        load_more: "Load more results",
-        search_label: "Search this site",
-        filters_label: "Filters",
-        zero_results: "No results for [SEARCH_TERM]",
-        many_results: "[COUNT] results for [SEARCH_TERM]",
-        one_result: "[COUNT] result for [SEARCH_TERM]",
-        alt_search: "No results for [SEARCH_TERM]. Showing results for [DIFFERENT_TERM] instead",
-        search_suggestion: "No results for [SEARCH_TERM]. Try one of the following searches:",
-        searching: "Searching for [SEARCH_TERM]..."
+
+    var pagefind = await import("/pagefind/pagefind.js");
+    await pagefind.options({ language: "zh" });
+
+    var inputEl = document.getElementById("cs-input");
+    var statusEl = document.getElementById("cs-status");
+    var resultsEl = document.getElementById("cs-results");
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+      });
+    }
+    function escapeRegex(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+    function highlight(text, q) {
+      var re = new RegExp(escapeRegex(q), "gi");
+      var out = "", last = 0, m;
+      while ((m = re.exec(text)) !== null) {
+        out += escapeHtml(text.slice(last, m.index)) + "<mark>" + escapeHtml(m[0]) + "</mark>";
+        last = m.index + m[0].length;
+        if (m.index === re.lastIndex) re.lastIndex++;
       }
+      return out + escapeHtml(text.slice(last));
+    }
+    function splitSentences(content) {
+      return content.match(/[^。！？!?；;.\n\r]+[。！？!?；;.]?/g) || [];
+    }
+    function textFragment(sentence) {
+      var s = sentence.trim();
+      if (s.length <= 60) return "#:~:text=" + encodeURIComponent(s);
+      return "#:~:text=" + encodeURIComponent(s.slice(0, 25)) + "," + encodeURIComponent(s.slice(-25));
+    }
+
+    var runId = 0, timer;
+    inputEl.addEventListener("input", function () {
+      clearTimeout(timer);
+      timer = setTimeout(run, 220);
     });
 
-    var root = document.getElementById("pagefind-search");
-    var observer = null;
-    function currentTerm() {
-      var inp = root.querySelector(".pagefind-ui__search-input") || root.querySelector("input");
-      return inp ? inp.value.trim().replace(/^"+|"+$/g, "") : "";
-    }
-    function decorate() {
-      if (observer) observer.disconnect();
-      var term = currentTerm();
-      root.querySelectorAll(".pagefind-ui__result-nested").forEach(function (nested) {
-        var excerpt = nested.querySelector(".pagefind-ui__result-excerpt");
-        var link = nested.querySelector(".pagefind-ui__result-link");
-        if (excerpt && link && !excerpt.querySelector("a.result-jump")) {
-          var base = link.href.split("#")[0];
-          var href = base + (term ? "#:~:text=" + encodeURIComponent(term) : "");
-          var a = document.createElement("a");
-          a.className = "result-jump";
-          a.href = href;
-          a.innerHTML = excerpt.innerHTML;
-          excerpt.innerHTML = "";
-          excerpt.appendChild(a);
-        }
-      });
-      if (observer) observer.observe(root, { childList: true, subtree: true });
-    }
-    observer = new MutationObserver(decorate);
-    observer.observe(root, { childList: true, subtree: true });
+    async function run() {
+      var myId = ++runId;
+      var q = inputEl.value.trim();
+      resultsEl.innerHTML = "";
+      if (!q) { statusEl.textContent = ""; return; }
+      statusEl.textContent = "Searching…";
+      var ql = q.toLowerCase();
 
-    var diag = document.createElement("div");
-    diag.style.cssText = "margin-top:1.5rem;padding:.5rem;border:1px dashed var(--main-border-color);font-size:.8rem;color:var(--text-muted-color);word-break:break-all";
-    var segOut = "n/a";
-    try {
-      segOut = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment("中国共产党")).map(function (p) { return p.segment; }).join("|");
-    } catch (e) { segOut = "err:" + e.message; }
-    var api = "n/a";
-    try {
-      var pf = await import("/pagefind/pagefind.js?cb=" + Date.now());
-      await pf.options({ language: "zh" });
-      var rr = await pf.search("中国共产党");
-      api = (rr && rr.results) ? String(rr.results.length) : "0";
-    } catch (e) { api = "err:" + (e && e.message ? e.message : e); }
-    diag.textContent = "DIAG | state=" + segState + " | seg(中国共产党)=[" + segOut + "] | plain(中国共产党)=" + api;
-    root.appendChild(diag);
+      var search;
+      try { search = await pagefind.search(q); } catch (e) { statusEl.textContent = "Search error"; return; }
+      if (myId !== runId) return;
+
+      var cands = search.results;
+      var truncated = cands.length > MAX_ARTICLES;
+      if (truncated) cands = cands.slice(0, MAX_ARTICLES);
+
+      var datas = await Promise.all(cands.map(function (c) { return c.data(); }));
+      if (myId !== runId) return;
+
+      var html = "", count = 0;
+      for (var i = 0; i < datas.length; i++) {
+        var content = datas[i].content || "";
+        if (content.toLowerCase().indexOf(ql) === -1) continue;
+        var seen = {}, uniq = [];
+        var sents = splitSentences(content);
+        for (var j = 0; j < sents.length; j++) {
+          var t = sents[j].trim();
+          if (t && t.toLowerCase().indexOf(ql) !== -1 && !seen[t]) { seen[t] = 1; uniq.push(t); }
+        }
+        if (!uniq.length) continue;
+        count++;
+        var url = datas[i].url;
+        var title = (datas[i].meta && datas[i].meta.title) ? datas[i].meta.title : url;
+        var block = '<div class="cs-result"><div class="cs-title"><a href="' + url + '">' + escapeHtml(title) + "</a></div>";
+        for (var k = 0; k < uniq.length; k++) {
+          block += '<a class="cs-sentence" href="' + url + textFragment(uniq[k]) + '">' + highlight(uniq[k], q) + "</a>";
+        }
+        html += block + "</div>";
+      }
+      if (myId !== runId) return;
+      resultsEl.innerHTML = html;
+      statusEl.textContent = count + (count === 1 ? " result" : " results") + ' for "' + q + '"' + (truncated ? " (scanned first " + MAX_ARTICLES + " matches)" : "");
+    }
+
+    var diag = document.getElementById("cs-diag");
+    var seg = "n/a";
+    try { seg = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment("自由市场")).map(function (p) { return p.segment; }).join("|"); } catch (e) { seg = "err"; }
+    diag.textContent = "DIAG | state=" + segState + " | seg(自由市场)=[" + seg + "]";
   })();
 </script>
