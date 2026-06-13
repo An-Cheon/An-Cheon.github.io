@@ -17,3 +17,17 @@
 #search-result-wrapper {
   display: none !important;
 }
+
+/* Truly center the mobile topbar title (otherwise the left hamburger pushes it right) */
+#topbar {
+  position: relative;
+}
+#topbar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 60%;
+  text-align: center;
+  margin: 0;
+}

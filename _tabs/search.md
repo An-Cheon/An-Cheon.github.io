@@ -32,11 +32,9 @@ order: 5
   #pagefind-search .pagefind-ui__message {
     color: var(--text-muted-color);
   }
-  /* Hide the "↳ heading" sub-result line; keep only the matching sentence */
   #pagefind-search .pagefind-ui__result-nested .pagefind-ui__result-link {
     display: none;
   }
-  /* The matching sentence reads like text but is clickable (jumps to the term) */
   #pagefind-search .pagefind-ui__result-excerpt a.result-jump {
     color: var(--text-muted-color);
     text-decoration: none;
@@ -57,24 +55,34 @@ order: 5
       return parts.length === 1;
     } catch (e) { return false; }
   }
-  function loadScript(src) {
-    return new Promise(function (resolve, reject) {
-      var s = document.createElement("script");
-      s.src = src;
-      s.onload = resolve;
-      s.onerror = function () { reject(new Error("failed to load " + src)); };
-      document.head.appendChild(s);
-    });
+  function makeJiebaSegmenter(cut) {
+    return class {
+      constructor(locales, options) { this.gran = (options && options.granularity) || "grapheme"; }
+      segment(input) {
+        var out = [];
+        if (this.gran === "word") {
+          var words = cut(input, true);
+          var idx = 0;
+          for (var i = 0; i < words.length; i++) {
+            out.push({ segment: words[i], index: idx, input: input, isWordLike: true });
+            idx += words[i].length;
+          }
+        } else {
+          var j = 0;
+          for (var ch of input) { out.push({ segment: ch, index: j, input: input, isWordLike: true }); j += ch.length; }
+        }
+        return out;
+      }
+    };
   }
   async function ensureSegmenter() {
     if (cjkSegOk()) return "native";
     try {
-      await loadScript("https://unpkg.com/intl-segmenter-polyfill@0.4.4/dist/bundled.js");
-      var f = window.IntlSegmenterPolyfillBundled;
-      if (!f || !f.createIntlSegmenterPolyfill) return "polyfill-noglobal";
-      Intl.Segmenter = await f.createIntlSegmenterPolyfill();
-      return cjkSegOk() ? "polyfill" : "polyfill-nofix";
-    } catch (e) { return "polyfill-error:" + (e && e.message ? e.message : e); }
+      var mod = await import("https://cdn.jsdelivr.net/npm/jieba-wasm@2.4.0/pkg/web/jieba_rs_wasm.js");
+      await mod.default();
+      Intl.Segmenter = makeJiebaSegmenter(mod.cut);
+      return cjkSegOk() ? "jieba" : "jieba-nofix";
+    } catch (e) { return "jieba-error:" + (e && e.message ? e.message : e); }
   }
   (async function () {
     var segState = await ensureSegmenter();
@@ -86,6 +94,11 @@ order: 5
       showImages: false,
       excerptLength: 30,
       pageSize: 1000,
+      processTerm: function (term) {
+        term = (term || "").trim();
+        if (!term) return term;
+        return '"' + term.replace(/^"+|"+$/g, "") + '"';
+      },
       translations: {
         placeholder: "Search...",
         clear_search: "Clear",
@@ -133,16 +146,16 @@ order: 5
     diag.style.cssText = "margin-top:1.5rem;padding:.5rem;border:1px dashed var(--main-border-color);font-size:.8rem;color:var(--text-muted-color);word-break:break-all";
     var segOut = "n/a";
     try {
-      segOut = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment("中国股市")).map(function (p) { return p.segment; }).join("|");
+      segOut = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment("中国共产党")).map(function (p) { return p.segment; }).join("|");
     } catch (e) { segOut = "err:" + e.message; }
     var api = "n/a";
     try {
       var pf = await import("/pagefind/pagefind.js?cb=" + Date.now());
       await pf.options({ language: "zh" });
-      var rr = await pf.search("中国");
+      var rr = await pf.search('"中国共产党"');
       api = (rr && rr.results) ? String(rr.results.length) : "0";
     } catch (e) { api = "err:" + (e && e.message ? e.message : e); }
-    diag.textContent = "DIAG | state=" + segState + " | seg=[" + segOut + "] | apiSearch(中国)=" + api;
+    diag.textContent = "DIAG | state=" + segState + " | seg(中国共产党)=[" + segOut + "] | exact=" + api;
     root.appendChild(diag);
   })();
 </script>
