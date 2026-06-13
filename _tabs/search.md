@@ -49,7 +49,7 @@ order: 5
 <div id="pagefind-search"></div>
 
 <script src="/pagefind/pagefind-ui.js"></script>
-<script type="module">
+<script>
   function cjkSegOk() {
     try {
       if (!(typeof Intl !== "undefined" && Intl.Segmenter)) return false;
@@ -57,13 +57,24 @@ order: 5
       return parts.length === 1;
     } catch (e) { return false; }
   }
+  function loadScript(src) {
+    return new Promise(function (resolve, reject) {
+      var s = document.createElement("script");
+      s.src = src;
+      s.onload = resolve;
+      s.onerror = function () { reject(new Error("failed to load " + src)); };
+      document.head.appendChild(s);
+    });
+  }
   async function ensureSegmenter() {
     if (cjkSegOk()) return "native";
     try {
-      var mod = await import("https://unpkg.com/intl-segmenter-polyfill@0.4.4/dist/intl-segmenter-polyfill.js");
-      Intl.Segmenter = await mod.createIntlSegmenterPolyfill();
-      return cjkSegOk() ? "polyfill" : "polyfill-failed";
-    } catch (e) { return "polyfill-error:" + e.message; }
+      await loadScript("https://unpkg.com/intl-segmenter-polyfill@0.4.4/dist/bundled.js");
+      var f = window.IntlSegmenterPolyfillBundled;
+      if (!f || !f.createIntlSegmenterPolyfill) return "polyfill-noglobal";
+      Intl.Segmenter = await f.createIntlSegmenterPolyfill();
+      return cjkSegOk() ? "polyfill" : "polyfill-nofix";
+    } catch (e) { return "polyfill-error:" + (e && e.message ? e.message : e); }
   }
   (async function () {
     var segState = await ensureSegmenter();
