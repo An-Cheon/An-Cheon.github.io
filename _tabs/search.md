@@ -128,11 +128,28 @@ order: 5
       statusEl.textContent = "Searching…";
       var ql = q.toLowerCase();
 
-      var search;
-      try { search = await pagefind.search(q); } catch (e) { statusEl.textContent = "Search error"; return; }
+      var words;
+      try {
+        words = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment(q)).map(function (p) { return p.segment; });
+      } catch (e) { words = [q]; }
+      words = words.map(function (w) { return w.trim(); }).filter(function (w) { return w.length > 0; });
+      var uniq = [], seenW = {};
+      for (var wi = 0; wi < words.length; wi++) { if (!seenW[words[wi]]) { seenW[words[wi]] = 1; uniq.push(words[wi]); } }
+      if (!uniq.length) uniq = [q];
+
+      var counts;
+      try {
+        counts = await Promise.all(uniq.map(async function (w) {
+          try { var r = await pagefind.search(w); return { n: r.results.length, results: r.results }; }
+          catch (e) { return { n: 0, results: [] }; }
+        }));
+      } catch (e) { statusEl.textContent = "Search error"; return; }
       if (myId !== runId) return;
 
-      var cands = search.results;
+      var positive = counts.filter(function (c) { return c.n > 0; });
+      if (!positive.length) { statusEl.textContent = '0 results for "' + q + '"'; return; }
+      positive.sort(function (a, b) { return a.n - b.n; });
+      var cands = positive[0].results;
       var truncated = cands.length > MAX_ARTICLES;
       if (truncated) cands = cands.slice(0, MAX_ARTICLES);
 
