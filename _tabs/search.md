@@ -94,11 +94,6 @@ order: 5
       showImages: false,
       excerptLength: 30,
       pageSize: 1000,
-      processTerm: function (term) {
-        term = (term || "").trim();
-        if (!term) return term;
-        return '"' + term.replace(/^"+|"+$/g, "") + '"';
-      },
       translations: {
         placeholder: "Search...",
         clear_search: "Clear",
@@ -152,10 +147,10 @@ order: 5
     try {
       var pf = await import("/pagefind/pagefind.js?cb=" + Date.now());
       await pf.options({ language: "zh" });
-      var rr = await pf.search('"中国共产党"');
+      var rr = await pf.search("中国共产党");
       api = (rr && rr.results) ? String(rr.results.length) : "0";
     } catch (e) { api = "err:" + (e && e.message ? e.message : e); }
-    diag.textContent = "DIAG | state=" + segState + " | seg(中国共产党)=[" + segOut + "] | exact=" + api;
+    diag.textContent = "DIAG | state=" + segState + " | seg(中国共产党)=[" + segOut + "] | plain(中国共产党)=" + api;
     root.appendChild(diag);
   })();
 </script>
