@@ -37,7 +37,6 @@ order: 5
 </div>
 <div id="cs-status"></div>
 <div id="cs-results"></div>
-<div id="cs-diag"></div>
 
 <script>
   function cjkSegOk() {
@@ -79,7 +78,7 @@ order: 5
 
   (async function () {
     var MAX_ARTICLES = 500;
-    var segState = await ensureSegmenter();
+    await ensureSegmenter();
     document.documentElement.lang = "zh";
 
     var pagefind = await import("/pagefind/pagefind.js");
@@ -177,10 +176,5 @@ order: 5
       resultsEl.innerHTML = html;
       statusEl.textContent = count + (count === 1 ? " result" : " results") + ' for "' + q + '"' + (truncated ? " (scanned first " + MAX_ARTICLES + " matches)" : "");
     }
-
-    var diag = document.getElementById("cs-diag");
-    var seg = "n/a";
-    try { seg = Array.from(new Intl.Segmenter("zh", { granularity: "word" }).segment("自由市场")).map(function (p) { return p.segment; }).join("|"); } catch (e) { seg = "err"; }
-    diag.textContent = "DIAG | state=" + segState + " | seg(自由市场)=[" + seg + "]";
   })();
 </script>
