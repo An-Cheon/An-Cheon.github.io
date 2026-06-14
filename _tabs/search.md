@@ -28,7 +28,6 @@ order: 5
   .cs-sentence { display: block; margin-top: .45rem; color: var(--text-muted-color); line-height: 1.7; text-decoration: none; }
   .cs-sentence:hover { text-decoration: underline; }
   .cs-sentence mark { background: transparent; color: var(--link-color); font-weight: 700; padding: 0; }
-  #cs-diag { margin-top: 1.5rem; padding: .5rem; border: 1px dashed var(--main-border-color); font-size: .8rem; color: var(--text-muted-color); word-break: break-all; }
 </style>
 
 <div id="cs-wrap">
