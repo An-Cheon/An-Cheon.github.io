@@ -29,3 +29,9 @@ assets/js/dist
 # Claude Code local settings
 .claude/
 
+# Local ID-photo image-processing scratch (not part of the blog)
+/_*.png
+/_idphoto.py
+/_idphoto_out.jpg
+/_idphoto_out.png
+
