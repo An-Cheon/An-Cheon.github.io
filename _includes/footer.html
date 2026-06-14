@@ -29,3 +29,37 @@
   </p>
 
 </footer>
+
+<!-- Custom search highlight: scroll to the matched sentence and offer a dismiss button -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (location.hash.indexOf("#h=") !== 0) return;
+    var raw = "";
+    try { raw = decodeURIComponent(location.hash.slice(3)); } catch (e) { return; }
+    var norm = function (s) { return (s || "").replace(/\s+/g, ""); };
+    var target = norm(raw);
+    if (!target) return;
+    var scope = document.querySelector(".content") || document.querySelector("article") || document.body;
+    var els = scope.querySelectorAll("p,h1,h2,h3,h4,h5,h6,li,blockquote,td,dd,figcaption");
+    var probe = target.slice(0, 14);
+    var hit = null;
+    for (var i = 0; i < els.length; i++) {
+      var tx = norm(els[i].textContent);
+      if (tx && (tx.indexOf(target) !== -1 || (probe && tx.indexOf(probe) !== -1))) { hit = els[i]; break; }
+    }
+    if (!hit) return;
+    hit.classList.add("cs-hl");
+    hit.scrollIntoView({ block: "center" });
+    var btn = document.createElement("button");
+    btn.id = "cs-hl-clear";
+    btn.type = "button";
+    btn.textContent = "✕ Clear highlight";
+    btn.addEventListener("click", function () {
+      var hs = document.querySelectorAll(".cs-hl");
+      for (var j = 0; j < hs.length; j++) hs[j].classList.remove("cs-hl");
+      if (btn.parentNode) btn.parentNode.removeChild(btn);
+      if (history.replaceState) { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} }
+    });
+    document.body.appendChild(btn);
+  });
+</script>

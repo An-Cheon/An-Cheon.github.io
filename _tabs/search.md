@@ -108,11 +108,6 @@ order: 5
     function splitSentences(content) {
       return content.match(/[^。！？!?；;.\n\r]+[。！？!?；;.]?/g) || [];
     }
-    function textFragment(sentence) {
-      var s = sentence.trim();
-      if (s.length <= 60) return "#:~:text=" + encodeURIComponent(s);
-      return "#:~:text=" + encodeURIComponent(s.slice(0, 25)) + "," + encodeURIComponent(s.slice(-25));
-    }
 
     var runId = 0, timer;
     inputEl.addEventListener("input", function () {
@@ -174,7 +169,7 @@ order: 5
         var title = (datas[i].meta && datas[i].meta.title) ? datas[i].meta.title : url;
         var block = '<div class="cs-result"><div class="cs-title"><a href="' + url + '">' + escapeHtml(title) + "</a></div>";
         for (var k = 0; k < uniq.length; k++) {
-          block += '<a class="cs-sentence" href="' + url + textFragment(uniq[k]) + '">' + highlight(uniq[k], q) + "</a>";
+          block += '<a class="cs-sentence" href="' + url + "#h=" + encodeURIComponent(uniq[k]) + '">' + highlight(uniq[k], q) + "</a>";
         }
         html += block + "</div>";
       }
