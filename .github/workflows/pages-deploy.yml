@@ -57,15 +57,9 @@ jobs:
             jekyll-cache-
 
       - name: Build site
-        run: |
-          ruby -e 'm = defined?(RubyVM::YJIT) ? "present" : "absent"; e = (RubyVM::YJIT.enabled? rescue "err"); puts "YJIT module=#{m} enabled=#{e}"'
-          bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
-          ruby -e 'd = "_site" + (ARGV[0] || ""); m = defined?(RubyVM::YJIT) ? "present" : "absent"; e = (RubyVM::YJIT.enabled? rescue "err"); File.write(d + "/yjit.txt", "module=#{m} enabled=#{e} ruby=#{RUBY_VERSION}\n")' "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
-          # 启用 Ruby 3.3 的 YJIT 即时编译，加速 Liquid 渲染。纯运行时优化，
-          # 产物逐字节不变（仅执行更快）。Ruby 未启用 YJIT 时此变量被忽略，不影响构建。
-          RUBY_YJIT_ENABLE: "1"
 
       # 生成 Pagefind 全文搜索索引（仅 /posts/ 文章页；只索引主文章标题+正文，
       # 排除日期/标签/版权/分享与相关文章；强制按中文切词）。
