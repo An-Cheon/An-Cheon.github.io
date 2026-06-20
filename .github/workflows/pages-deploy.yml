@@ -57,7 +57,10 @@ jobs:
             jekyll-cache-
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: |
+          ruby -e 'm = defined?(RubyVM::YJIT) ? "present" : "absent"; e = (RubyVM::YJIT.enabled? rescue "err"); puts "YJIT module=#{m} enabled=#{e}"'
+          bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+          ruby -e 'd = "_site" + (ARGV[0] || ""); m = defined?(RubyVM::YJIT) ? "present" : "absent"; e = (RubyVM::YJIT.enabled? rescue "err"); File.write(d + "/yjit.txt", "module=#{m} enabled=#{e} ruby=#{RUBY_VERSION}\n")' "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
           # 启用 Ruby 3.3 的 YJIT 即时编译，加速 Liquid 渲染。纯运行时优化，
