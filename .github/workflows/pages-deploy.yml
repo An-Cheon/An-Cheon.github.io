@@ -21,14 +21,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # 构建与部署合并为单个 job，省去第二个 runner 的启动/排队开销
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # posts-lastmod-hook 需要完整 git 历史
           submodules: recursive
 
       - name: Setup Pages
@@ -52,42 +56,22 @@ jobs:
           restore-keys: |
             jekyll-cache-
 
-      # 仅运行核心构建命令（临时加 --profile 定位渲染热点，结果写入运行摘要页）
       - name: Build site
-        run: |
-          bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}" --profile 2>&1 | tee build.log
-          {
-            echo '## Jekyll build profile (slowest templates)';
-            echo '';
-            echo '```';
-            sed -n '/Filename/,$p' build.log | head -n 60;
-            echo '```';
-          } >> "$GITHUB_STEP_SUMMARY"
+        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
       # 生成 Pagefind 全文搜索索引（仅 /posts/ 文章页；只索引主文章标题+正文，
-      # 排除日期/标签/版权/分享与相关文章；强制按中文切词）
+      # 排除日期/标签/版权/分享与相关文章；强制按中文切词）。
+      # runner 自带 Node，pagefind 为独立 Rust 二进制，无需 actions/setup-node。
       - name: Build search index (Pagefind)
-        run: npx -y pagefind@1 --site "_site${{ steps.pages.outputs.base_path }}" --glob "posts/**/*.html" --root-selector "article[data-toc]" --exclude-selectors ".post-meta,.post-tags,.post-tail-wrapper" --force-language zh --verbose
+        run: npx -y pagefind@1 --site "_site${{ steps.pages.outputs.base_path }}" --glob "posts/**/*.html" --root-selector "article[data-toc]" --exclude-selectors ".post-meta,.post-tags,.post-tail-wrapper" --force-language zh
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,9 +1,11 @@
 <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
 <!--
   NOTE: This is a project-level override of the Chirpy theme's
-  `_includes/related-posts.html`. It is byte-for-byte identical to the theme
-  version EXCEPT for the candidate-gathering loops, which now cap each
-  tag/category bucket to its newest N posts (RELATED_BUCKET_CAP).
+  `_includes/related-posts.html` (baseline: jekyll-theme-chirpy v7.5.0 —
+  re-diff against the theme if you bump the gem). It is byte-for-byte
+  identical to the theme version EXCEPT for the candidate-gathering loops,
+  which now cap each tag/category bucket to its newest N posts
+  (RELATED_BUCKET_CAP).
 
   Why: the scoring loop below is O(candidates × tags), and a broad category
   such as "Books" (present on ~90% of posts here) made every post scan the
