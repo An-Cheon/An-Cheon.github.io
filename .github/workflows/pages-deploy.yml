@@ -52,9 +52,17 @@ jobs:
           restore-keys: |
             jekyll-cache-
 
-      # 仅运行核心构建命令
+      # 仅运行核心构建命令（临时加 --profile 定位渲染热点，结果写入运行摘要页）
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: |
+          bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}" --profile 2>&1 | tee build.log
+          {
+            echo '## Jekyll build profile (slowest templates)';
+            echo '';
+            echo '```';
+            sed -n '/Filename/,$p' build.log | head -n 60;
+            echo '```';
+          } >> "$GITHUB_STEP_SUMMARY"
         env:
           JEKYLL_ENV: "production"
 
