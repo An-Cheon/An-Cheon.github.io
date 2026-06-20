@@ -42,6 +42,16 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true # 利用缓存加速
 
+      # 跨构建复用 Jekyll 缓存：未改动文章的 Markdown 转换结果会被命中，
+      # 增量提交时只需重新转换被修改的文章
+      - name: Cache Jekyll build
+        uses: actions/cache@v4
+        with:
+          path: .jekyll-cache
+          key: jekyll-cache-${{ github.run_id }}
+          restore-keys: |
+            jekyll-cache-
+
       # 仅运行核心构建命令
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
@@ -56,7 +66,7 @@ jobs:
       # 生成 Pagefind 全文搜索索引（仅 /posts/ 文章页；只索引主文章标题+正文，
       # 排除日期/标签/版权/分享与相关文章；强制按中文切词）
       - name: Build search index (Pagefind)
-        run: npx -y pagefind@latest --site "_site${{ steps.pages.outputs.base_path }}" --glob "posts/**/*.html" --root-selector "article[data-toc]" --exclude-selectors ".post-meta,.post-tags,.post-tail-wrapper" --force-language zh --verbose
+        run: npx -y pagefind@1 --site "_site${{ steps.pages.outputs.base_path }}" --glob "posts/**/*.html" --root-selector "article[data-toc]" --exclude-selectors ".post-meta,.post-tags,.post-tail-wrapper" --force-language zh --verbose
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
