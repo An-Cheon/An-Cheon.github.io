@@ -130,3 +130,17 @@ if __name__ == '__main__':
     print(f"Latest notes file: {input_file.name}\n")
 
     extract_notes(str(input_file), OUTPUT_FILE)
+
+
+'''
+
+---
+layout: post
+title:  book
+categories: [Books, Finance]
+tags: [finance]
+---
+
+<!-- more -->
+
+'''
