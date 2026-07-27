@@ -29,6 +29,9 @@ assets/js/dist
 # Claude Code local settings
 .claude/
 
+# Python cache
+__pycache__/
+
 # Local ID-photo image-processing scratch (not part of the blog)
 /_*.png
 /_idphoto.py

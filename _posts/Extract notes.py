@@ -17,11 +17,19 @@ from docx.oxml.ns import qn
 
 
 def find_latest_notes_docx(folder: str) -> Path:
-    """Find the most recently modified 'Notes from _*.docx' file in folder."""
-    candidates = list(Path(folder).glob("Notes from _*.docx"))
+    """Find the most recently modified 'Notes from *.docx' file in folder.
+
+    Play Books 的导出文件名有两种形式（书名两侧带/不带下划线）：
+        Notes from _书名_.docx
+        Notes from 书名.docx
+    """
+    candidates = [
+        p for p in Path(folder).glob("Notes from *.docx")
+        if not p.name.startswith('~$')          # 跳过 Word 临时锁文件
+    ]
     if not candidates:
         raise FileNotFoundError(
-            f"No 'Notes from _*.docx' file found in {folder}"
+            f"No 'Notes from *.docx' file found in {folder}"
         )
     return max(candidates, key=lambda p: p.stat().st_mtime)
 
@@ -61,6 +69,7 @@ def extract_notes(docx_path: str, output_path: str | None = None) -> list[dict]:
 
     notes = []
     current_chapter = ""
+    claimed_count = None   # Play Books 在文件头写的 "N notes/highlights"
 
     for child in body:
         tag = child.tag.split('}')[-1]
@@ -73,7 +82,10 @@ def extract_notes(docx_path: str, output_path: str | None = None) -> list[dict]:
 
             if 'Heading' in style and text:
                 # 过滤掉文件顶部的固定标题
-                if text not in ('All your annotations',) and not re.match(r'^\d+\s*notes', text):
+                m_count = re.match(r'^(\d+)\s*notes', text)
+                if m_count:
+                    claimed_count = int(m_count.group(1))
+                elif text != 'All your annotations':
                     current_chapter = text
 
         # ── 表格：提取笔记 ─────────────────────────────────────────────────
@@ -107,6 +119,19 @@ def extract_notes(docx_path: str, output_path: str | None = None) -> list[dict]:
                     "date":    date,
                     "page":    page,
                 })
+
+    # ── 自检：与 Play Books 声明的笔记数对比 ──────────────────────────────
+    if claimed_count is not None and claimed_count != len(notes):
+        print(
+            f"WARNING: 文档声明 {claimed_count} 条，实际解析出 {len(notes)} 条 —— "
+            f"解析可能遗漏，请检查格式变体。"
+        )
+    elif claimed_count is not None:
+        print(f"OK: {len(notes)}/{claimed_count} 条，与文档声明一致。")
+        print(
+            "  提示：若这个数字比你在 Play Books 里的实际笔记少，说明 Drive 上的 "
+            "docx 是旧快照 —— 先让 Play Books 同步一次，再重新下载。"
+        )
 
     # ── 格式化输出（纯笔记正文，每条之间空一行）────────────────────────────
     output_text = '\n\n'.join(note['text'] for note in notes)
