@@ -2,7 +2,7 @@
 layout: post
 title:  How to Get Lucky
 categories: [Books, Finance]
-tags: [finance, relationships, failure, marriage, psychology]
+tags: [finance, relationships, failure, marriage, psychology, career]
 ---
 #### 在《心灵、性与股票》一书中记录了“天生失败者”这一不幸群体。他们发现，无法放弃部分投资是失败者的显著特征之一。
 #### 如果你分析一下华尔街这家最大的赌场里那些持续赢家和输家之间的区别，你会发现一个显而易见的差异：输家更乐观。
