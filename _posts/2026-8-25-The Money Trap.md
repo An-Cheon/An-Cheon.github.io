@@ -2,7 +2,7 @@
 layout: post
 title:  The Money Trap
 categories: [Books, Business]
-tags: [finance, business, monopoly]
+tags: [finance, business, monopoly, failure]
 ---
 #### 软银最初是一家软件分销商，赶上了 80 年代的个人电脑革命。该公司随后进行了两次自我重塑，在 90 年代更强大的互联网颠覆中顺势而为，然后在 2000 年代后期再次迎来了智能手机浪潮。
 #### 孙正义回答了我的问题。 “嗯，对我来说，互联网商业模式就是理论上无限覆盖、零可变成本的平台，”他重复强调道。“无限覆盖。零可变成本。” 这是对互联网颠覆性力量的简洁描述。
