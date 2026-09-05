@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  What I Learned About Investing from Darwin
-categories: [Books, Finance, failure]
-tags: [finance, value-investing]
+categories: [Books, Finance]
+tags: [finance, value-investing, failure]
 ---
 #### 巴菲特是世界上最好的投资者，因为他是世界上最好的拒绝者。
 #### 学习如何不投资比学习如何投资更难，也更重要。
