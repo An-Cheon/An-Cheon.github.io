@@ -39,41 +39,48 @@ _NOTHING_TO_COMMIT = ("nothing to commit", "no changes added to commit",
 
 
 class ScanWorker(QThread):
-    """Read the working tree and build the commit plan."""
+    """Read the working tree and build the commit plan.
 
-    scanned = Signal(object, object, object)   # RepoState, [Group], contents
-    failed = Signal(str)
+    Carries the scan generation it was started for. A refresh clears and
+    rebuilds the tree, so a result from a superseded scan must be dropped
+    rather than applied to widgets that no longer exist.
+    """
 
-    def __init__(self, repo, parent=None):
+    scanned = Signal(int, object, object, object)   # gen, state, groups, texts
+    failed = Signal(int, str)
+
+    def __init__(self, repo, generation, parent=None):
         super().__init__(parent)
         self.repo = repo
+        self.generation = generation
 
     def run(self):
         try:
             state = model.scan(self.repo)
             contents = rules.titles_map(self.repo, state.changes)
             groups = rules.build_groups(self.repo, state.changes)
-            self.scanned.emit(state, groups, contents)
+            self.scanned.emit(self.generation, state, groups, contents)
         except Exception as exc:
-            self.failed.emit(str(exc))
+            self.failed.emit(self.generation, str(exc))
 
 
 class IgnoredWorker(QThread):
     """List what .gitignore is hiding, so the user can confirm it on purpose."""
 
-    listed = Signal(object, int)
-    failed = Signal(str)
+    listed = Signal(int, object, int)
+    failed = Signal(int, str)
 
-    def __init__(self, repo, parent=None):
+    def __init__(self, repo, generation, parent=None):
         super().__init__(parent)
         self.repo = repo
+        self.generation = generation
 
     def run(self):
         try:
             paths, total = model.scan_ignored(self.repo)
-            self.listed.emit(paths, total)
+            self.listed.emit(self.generation, paths, total)
         except Exception as exc:
-            self.failed.emit(str(exc))
+            self.failed.emit(self.generation, str(exc))
 
 
 class DiffWorker(QThread):
@@ -114,7 +121,7 @@ class DiffWorker(QThread):
                 check=False)
             text = result.text
             if result.code != 0 and not text:
-                note = result.err.strip() or "Could not read this file’s diff."
+                note = result.err.strip() or "Could not read this file's diff."
                 self.ready.emit(self.generation, change.path, "note", note)
                 return
             if not text.strip():
@@ -206,7 +213,11 @@ class CommitWorker(QThread):
     def _preflight(self) -> str:
         """Re-scan and confirm the plan still describes the working tree."""
         state = model.scan(self.repo)
-        if state.blocked:
+        # `blocked` answers "may I commit". Push-only runs carry an empty
+        # plan and must not be refused because the working tree happens to
+        # hold a conflict -- pushing history that is already committed is
+        # unaffected by the state of the tree.
+        if self.plan and state.blocked:
             return state.blocked
         current = {c.path: c.status for c in state.changes}
         for _message, paths in self.plan:
@@ -314,7 +325,10 @@ class CommitWorker(QThread):
 
         code = gitcmd.stream(self.repo, args, on_line,
                              cancelled=self.cancelled)
-        return self._explain_push(code, seen)
+        # (ok, summary) -- the same shape as the early return above. Returning
+        # the bare string here made `ok, summary = self._push()` unpack a
+        # sentence into two names.
+        return code == 0, self._explain_push(code, seen)
 
     @staticmethod
     def _explain_push(code, lines):
@@ -330,8 +344,9 @@ class CommitWorker(QThread):
                 "rejected" in lowered:
             return ("Push rejected: the remote has commits you do not. Run "
                     "`git pull --rebase` on the command line, then retry.")
-        if "could not read" in lowered or "authentication" in lowered or \
-                "terminal prompts disabled" in lowered or "403" in lowered:
+        if ("could not read" in lowered or "authentication" in lowered
+                or "terminal prompts disabled" in lowered
+                or "returned error: 403" in lowered):
             return ("Push failed on credentials. Run `git push` once on the "
                     "command line to authenticate, then come back here.")
         if "could not resolve host" in lowered or "unable to access" in lowered:

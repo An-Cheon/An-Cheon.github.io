@@ -152,11 +152,12 @@ def run(repo, args, timeout=DEFAULT_TIMEOUT, check=True) -> Result:
         completed = subprocess.run(
             argv, cwd=str(repo), env=_env(), capture_output=True,
             timeout=timeout, creationflags=_flags())
-    except subprocess.TimeoutExpired:
-        raise GitFailed(args, -1,
-                        f"Timed out after {timeout}s: git {' '.join(args[:3])}")
+    except subprocess.TimeoutExpired as exc:
+        raise GitFailed(
+            args, -1,
+            f"Timed out after {timeout}s: git {' '.join(args[:3])}") from exc
     except OSError as exc:
-        raise GitFailed(args, -1, str(exc))
+        raise GitFailed(args, -1, str(exc)) from exc
     result = Result(args, completed.returncode, completed.stdout,
                     decode_text(completed.stderr))
     return result.check() if check else result
@@ -189,7 +190,7 @@ def stream(repo, args, on_line, timeout=PUSH_TIMEOUT, cancelled=None):
             stderr=subprocess.STDOUT, stdin=subprocess.DEVNULL,
             creationflags=_flags())
     except OSError as exc:
-        raise GitFailed(args, -1, str(exc))
+        raise GitFailed(args, -1, str(exc)) from exc
 
     timer = threading.Timer(timeout, proc.kill)
     timer.daemon = True

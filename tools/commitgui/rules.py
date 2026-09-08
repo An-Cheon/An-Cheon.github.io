@@ -202,8 +202,10 @@ def _attach_images(images, posts, contents):
     unattached = []
     by_norm = {}
     for post in posts:
-        by_norm.setdefault(_normalise(os.path.basename(post.path)), post)
-        by_norm.setdefault(_normalise(contents.get(post.path, ("", ""))[1]), post)
+        for key in (_normalise(os.path.basename(post.path)),
+                    _normalise(contents.get(post.path, ("", ""))[1])):
+            if key:                   # `images/_1.png` normalises to "", and
+                by_norm.setdefault(key, post)   # so does a missing title
 
     for image in images:
         base = os.path.basename(image.path)
@@ -214,7 +216,7 @@ def _attach_images(images, posts, contents):
                 owner = post
                 break
         if owner is None:
-            owner = by_norm.get(_normalise(base))
+            owner = by_norm.get(_normalise(base)) if _normalise(base) else None
         if owner is not None:
             attached[image.path] = owner
         else:
@@ -301,9 +303,9 @@ def build_groups(repo, changes) -> list[Group]:
     for kind, members in (("config", config), ("other", other),
                           ("remove", removed)):
         if members:
-            members = sorted(members, key=lambda c: c.path.lower())
-            groups.append(Group(kind=kind, changes=members, auto=False,
-                                message=KIND_PREFIX[kind]))
+            groups.append(Group(
+                kind=kind, auto=False, message=KIND_PREFIX[kind],
+                changes=sorted(members, key=lambda c: c.path.lower())))
 
     groups.sort(key=lambda g: KIND_ORDER.get(g.kind, 99))
     for group in groups:

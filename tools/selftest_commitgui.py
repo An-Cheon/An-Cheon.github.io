@@ -309,6 +309,177 @@ def test_repo():
         shutil.rmtree(root, ignore_errors=True)
 
 
+def test_push():
+    """Push against a bare repository in the temp directory.
+
+    No network involved. This is the path that shipped broken once: `_push`
+    returned a string where the caller unpacked a pair, and every check here
+    would have caught it, because all of them go through that return value.
+    """
+    print("\n[push, against a local bare remote]")
+    root = tempfile.mkdtemp(prefix="commitgui-push-")
+    remote = tempfile.mkdtemp(prefix="commitgui-remote-")
+    clone = tempfile.mkdtemp(prefix="commitgui-clone-")
+    try:
+        git(remote, "init", "--bare", "-q", "--initial-branch=master")
+        build_repo(root)
+        git(root, "remote", "add", "origin", remote)
+
+        # ---- first push: also sets the upstream ----
+        write(root, "_posts/2026-9-9-Pushed Book.md", post("Pushed Book"))
+        state = model.scan(root)
+        equal(state.upstream, "", "no upstream before the first push")
+        worker = CommitWorker(
+            root, [("post: Pushed Book", ["_posts/2026-9-9-Pushed Book.md"])],
+            push=True, expected={c.path: c.status for c in state.changes})
+        got = {}
+        worker.done.connect(lambda ok, text: got.update(ok=ok, text=text))
+        worker.log.connect(lambda line: None)
+        worker.run()
+
+        check(got.get("ok") is True, "push reported success",
+              str(got.get("text")))
+        check("Push succeeded" in got.get("text", ""),
+              "success is explained in words", got.get("text", ""))
+        equal(git(remote, "log", "--pretty=%s", "-1").strip(),
+              "post: Pushed Book", "the bare remote received the commit")
+
+        after = model.scan(root)
+        equal(after.upstream, "origin/master", "--set-upstream took effect")
+        equal((after.ahead, after.behind), (0, 0), "in sync after pushing")
+
+        # ---- second push with nothing new ----
+        idle = CommitWorker(root, [], push=True, expected={})
+        got2 = {}
+        idle.done.connect(lambda ok, text: got2.update(ok=ok, text=text))
+        idle.log.connect(lambda line: None)
+        idle.run()
+        check(got2.get("ok") is True, "a no-op push is not a failure",
+              str(got2.get("text")))
+        check("up to date" in got2.get("text", ""),
+              "no-op push says the remote is up to date",
+              got2.get("text", ""))
+
+        # ---- a genuine non-fast-forward rejection ----
+        subprocess.run(["git", "clone", "-q", remote, clone],
+                       capture_output=True, check=True)
+        git(clone, "config", "user.email", "other@example.com")
+        git(clone, "config", "user.name", "Someone Else")
+        write(clone, "_posts/2026-9-10-Their Book.md", post("Their Book"))
+        git(clone, "add", "-A")
+        git(clone, "commit", "-qm", "post: Their Book")
+        git(clone, "push", "-q", "origin", "master")
+
+        write(root, "_posts/2026-9-11-My Book.md", post("My Book"))
+        state3 = model.scan(root)
+        rejected = CommitWorker(
+            root, [("post: My Book", ["_posts/2026-9-11-My Book.md"])],
+            push=True, expected={c.path: c.status for c in state3.changes})
+        got3 = {}
+        rejected.done.connect(lambda ok, text: got3.update(ok=ok, text=text))
+        rejected.log.connect(lambda line: None)
+        rejected.run()
+        equal(got3.get("ok"), False, "non-fast-forward push fails")
+        check("rejected" in got3.get("text", "").lower(),
+              "rejection is named as such", got3.get("text", ""))
+        check("pull --rebase" in got3.get("text", ""),
+              "rejection says what to do next", got3.get("text", ""))
+        equal(git(root, "log", "--pretty=%s", "-1").strip(), "post: My Book",
+              "the commit is kept even though the push failed")
+    finally:
+        for path in (root, remote, clone):
+            shutil.rmtree(path, ignore_errors=True)
+
+
+def test_edges():
+    """The states that are rare here but wrong in an obvious way when hit."""
+    print("\n[edge cases]")
+    root = tempfile.mkdtemp(prefix="commitgui-edge-")
+    remote = tempfile.mkdtemp(prefix="commitgui-edge-remote-")
+    try:
+        # ---- a repository with no commits at all ----
+        git(root, "init", "-q", "-b", "master")
+        git(root, "config", "user.email", "test@example.com")
+        git(root, "config", "user.name", "Selftest")
+        write(root, "_posts/2026-9-9-First Post.md", post("First Post"))
+
+        state = model.scan(root)
+        equal(state.branch, "master", "unborn branch is named, not blank")
+        equal(state.unborn, True, "unborn is reported")
+        equal(state.detached, False, "an unborn branch is NOT a detached HEAD")
+        equal(state.blocked, "", "an empty repository does not block committing")
+
+        groups = rules.build_groups(root, state.changes)
+        equal([g.kind for g in groups], ["post"], "the first post groups as post")
+        worker = CommitWorker(
+            root, [(groups[0].message, [c.path for c in groups[0].changes])],
+            push=False, expected={c.path: c.status for c in state.changes})
+        got = {}
+        worker.done.connect(lambda ok, text: got.update(ok=ok, text=text))
+        worker.log.connect(lambda line: None)
+        worker.run()
+        check(got.get("ok") is True, "the root commit is made",
+              str(got.get("text")))
+        equal(git(root, "log", "--pretty=%s", "-1").strip(),
+              "post: First Post", "root commit subject")
+        equal(model.scan(root).unborn, False, "no longer unborn afterwards")
+
+        # ---- a big text file is large, not binary ----
+        write(root, "_posts/2026-9-9-Huge.md",
+              post("Huge", "x" * (model.MAX_PREVIEW_BYTES + 10)))
+        huge = {c.path: c for c in model.scan(root).changes}[
+            "_posts/2026-9-9-Huge.md"]
+        equal(huge.too_large, True, "an oversized file is flagged as large")
+        equal(huge.binary, False, "an oversized text file is NOT called binary")
+        equal(huge.churn(), "large file", "and says so in the Lines column")
+        os.unlink(os.path.join(root, "_posts", "2026-9-9-Huge.md"))
+
+        # ---- an image whose name normalises to nothing stays unattached ----
+        write(root, "_posts/2026-9-10-Second Post.md", post("Second Post"))
+        write_png(root, "images/_1.png")
+        state2 = model.scan(root)
+        groups2 = {g.kind: g for g in rules.build_groups(root, state2.changes)}
+        post_paths = {c.path for c in groups2["post"].changes}
+        check("images/_1.png" not in post_paths,
+              "an image that normalises to an empty name is not swept into a post",
+              str(post_paths))
+        check("images/_1.png" in {c.path for c in groups2["other"].changes},
+              "it lands in the group that asks for a description instead")
+        os.unlink(os.path.join(root, "images", "_1.png"))
+
+        # ---- push-only is not refused by a commit-only guard ----
+        git(remote, "init", "--bare", "-q", "--initial-branch=master")
+        git(root, "remote", "add", "origin", remote)
+        with open(os.path.join(root, ".git", "MERGE_HEAD"), "w") as handle:
+            handle.write("0" * 40 + "\n")
+        check(model.scan(root).blocked != "", "the merge marker does block commits")
+
+        pusher = CommitWorker(root, [], push=True, expected={})
+        got2 = {}
+        pusher.done.connect(lambda ok, text: got2.update(ok=ok, text=text))
+        pusher.log.connect(lambda line: None)
+        pusher.run()
+        check(got2.get("ok") is True,
+              "but push-only goes through anyway", str(got2.get("text")))
+        equal(git(remote, "log", "--pretty=%s", "-1").strip(),
+              "post: First Post", "the remote got the already-committed work")
+
+        # and a real commit IS still refused while the marker is there
+        blocked_run = CommitWorker(
+            root, [("post: Second Post", ["_posts/2026-9-10-Second Post.md"])],
+            push=False,
+            expected={c.path: c.status for c in model.scan(root).changes})
+        got3 = {}
+        blocked_run.done.connect(lambda ok, text: got3.update(ok=ok, text=text))
+        blocked_run.log.connect(lambda line: None)
+        blocked_run.run()
+        equal(got3.get("ok"), False, "committing mid-merge is still refused")
+        os.unlink(os.path.join(root, ".git", "MERGE_HEAD"))
+    finally:
+        shutil.rmtree(root, ignore_errors=True)
+        shutil.rmtree(remote, ignore_errors=True)
+
+
 def test_helpers():
     print("\n[helpers]")
     equal(gitcmd.literal("a*b.md"), ":(literal)a*b.md", "pathspec is literal")
@@ -329,6 +500,8 @@ def main():
     test_is_ready()
     test_helpers()
     test_repo()
+    test_push()
+    test_edges()
 
     print()
     if FAILURES:

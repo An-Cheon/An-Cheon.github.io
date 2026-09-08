@@ -34,6 +34,10 @@ UNMERGED = {"DD", "AU", "UD", "UA", "DU", "AA", "UU"}
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp", ".svg",
                   ".ico", ".avif"}
 
+# Sentinels for `Change.added`, which is a line count everywhere else.
+BINARY = -1
+TOO_LARGE = -2
+
 # Reading a whole file to render it as a diff has to stop somewhere.
 MAX_PREVIEW_BYTES = 512 * 1024
 MAX_PREVIEW_LINES = 3000
@@ -73,7 +77,13 @@ class Change:
 
     @property
     def binary(self) -> bool:
-        return self.added < 0
+        return self.added == BINARY
+
+    @property
+    def too_large(self) -> bool:
+        """Skipped for size, not because it is binary. The two used to share
+        one sentinel, and a 600 KB Markdown post read as `binary`."""
+        return self.added == TOO_LARGE
 
     def churn(self) -> str:
         """`+12 -3`, or a word when there are no line counts to show."""
@@ -81,6 +91,8 @@ class Change:
             return "deleted"
         if self.binary:
             return "binary"
+        if self.too_large:
+            return "large file"
         bits = []
         if self.added:
             bits.append(f"+{self.added}")
@@ -100,6 +112,7 @@ class RepoState:
     ahead: int = 0
     behind: int = 0
     head_subject: str = ""
+    unborn: bool = False           # on a branch, but it has no commits yet
     in_progress: str = ""          # "merge" / "rebase" / "cherry-pick" / ""
     changes: list[Change] = field(default_factory=list)
 
@@ -199,8 +212,8 @@ def _parse_porcelain(raw: bytes):
 def _numstat(repo) -> dict[str, tuple[int, int]]:
     """Per-path (added, deleted) between HEAD and the working tree.
 
-    Binary files come back as `-` for both counts and are recorded as (-1, -1)
-    so `Change.binary` can tell "no lines" from "zero lines".
+    Binary files come back as `-` for both counts and are recorded as
+    (BINARY, BINARY) so `Change.binary` can tell "no lines" from "zero lines".
     """
     counts: dict[str, tuple[int, int]] = {}
     try:
@@ -218,7 +231,7 @@ def _numstat(repo) -> dict[str, tuple[int, int]]:
         try:
             pair = (int(added), int(deleted))
         except ValueError:
-            pair = (-1, -1)      # "-" means binary
+            pair = (BINARY, BINARY)      # "-" means binary
         counts[gitcmd.decode_path(path)] = pair
     return counts
 
@@ -232,14 +245,14 @@ def _untracked_counts(repo, changes):
         try:
             size = os.path.getsize(full)
             if size > MAX_PREVIEW_BYTES:
-                change.added = -1        # too big to count; treat as opaque
+                change.added = TOO_LARGE
                 continue
             with open(full, "rb") as handle:
                 data = handle.read()
         except OSError:
             continue
         if b"\0" in data[:BINARY_SNIFF_BYTES]:
-            change.added = -1
+            change.added = BINARY
         else:
             change.added = data.count(b"\n") + (
                 1 if data and not data.endswith(b"\n") else 0)
@@ -261,14 +274,21 @@ def _submodule_paths(repo) -> set[str]:
 
 
 def _branch_info(repo, state: RepoState) -> None:
-    branch = gitcmd.run(repo, ["rev-parse", "--abbrev-ref", "HEAD"],
+    # `symbolic-ref` is the authority on "am I on a branch", and it is the
+    # only one that answers before the first commit: on an unborn branch
+    # `rev-parse --abbrev-ref HEAD` fails outright (measured on git 2.53),
+    # which an earlier version read as a detached HEAD and then refused to
+    # commit to a repository that was merely empty.
+    branch = gitcmd.run(repo, ["symbolic-ref", "--short", "-q", "HEAD"],
                         check=False).text.strip()
-    if branch == "HEAD" or not branch:
+    if branch:
+        state.branch = branch
+        state.unborn = gitcmd.run(repo, ["rev-parse", "--verify", "-q", "HEAD"],
+                                  check=False).code != 0
+    else:
         state.detached = True
         state.branch = gitcmd.run(repo, ["rev-parse", "--short", "HEAD"],
                                   check=False).text.strip()
-    else:
-        state.branch = branch
 
     upstream = gitcmd.run(repo, ["rev-parse", "--abbrev-ref",
                                  "--symbolic-full-name", "@{u}"],
