@@ -67,6 +67,27 @@ def extract_notes(docx_path: str, output_path: str | None = None) -> list[dict]:
 
     date_pattern = re.compile(r'(\d{4}年\d{1,2}月\d{1,2}日|[A-Z][a-z]+ \d{1,2}, \d{4})$')
 
+    # Play Books 的导出把同一批笔记写了两遍，分在两个区块：
+    #     "Annotations by color"  —— 按高亮颜色分组，章节只有颜色名（Yellow）
+    #     "All your annotations"  —— 按书中章节分组，信息完整
+    # 两边都收会正好翻倍（实测 53 条 -> 106 条）。只取后者；
+    # 导出变体里若没有后者，则退回到“全收”。
+    SECTION_ALL = 'All your annotations'
+    SECTION_BY_COLOR = 'Annotations by color'
+
+    def heading_texts():
+        out = []
+        for ch in body:
+            if ch.tag.split('}')[-1] != 'p':
+                continue
+            st = ch.find('.//' + qn('w:pStyle'))
+            if st is None or 'Heading' not in st.get(qn('w:val'), ''):
+                continue
+            out.append(''.join(e.text or '' for e in ch.iter(qn('w:t'))).strip())
+        return out
+
+    collecting = SECTION_ALL not in heading_texts()
+
     notes = []
     current_chapter = ""
     claimed_count = None   # Play Books 在文件头写的 "N notes/highlights"
@@ -81,15 +102,27 @@ def extract_notes(docx_path: str, output_path: str | None = None) -> list[dict]:
             text = ''.join(e.text or '' for e in child.iter(qn('w:t'))).strip()
 
             if 'Heading' in style and text:
+                # 区块开关：只在 "All your annotations" 里收笔记
+                if text == SECTION_ALL:
+                    collecting = True
+                    continue
+                if text == SECTION_BY_COLOR:
+                    collecting = False
+                    current_chapter = ""
+                    continue
+
                 # 过滤掉文件顶部的固定标题
                 m_count = re.match(r'^(\d+)\s*notes', text)
                 if m_count:
                     claimed_count = int(m_count.group(1))
-                elif text != 'All your annotations':
+                elif collecting:
                     current_chapter = text
 
         # ── 表格：提取笔记 ─────────────────────────────────────────────────
         elif tag == 'tbl':
+            if not collecting:
+                continue
+
             tcs = get_tc_texts(child)
 
             if not tcs:
@@ -124,7 +157,8 @@ def extract_notes(docx_path: str, output_path: str | None = None) -> list[dict]:
     if claimed_count is not None and claimed_count != len(notes):
         print(
             f"WARNING: 文档声明 {claimed_count} 条，实际解析出 {len(notes)} 条 —— "
-            f"解析可能遗漏，请检查格式变体。"
+            f"若正好是声明数的整数倍，说明两个区块都被收了；"
+            f"否则是解析遗漏，请检查格式变体。"
         )
     elif claimed_count is not None:
         print(f"OK: {len(notes)}/{claimed_count} 条，与文档声明一致。")
