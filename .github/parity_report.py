@@ -38,3 +38,27 @@ for a, b in pairs:
         i = next((k for k in range(n) if x[k] != y[k]), n)
         print(NL + f"`{f}` first diff at {i} (len {len(x)} vs {len(y)})")
         print(FENCE + NL + "A: " + snippet(x, i) + NL + "---" + NL + "B: " + snippet(y, i) + NL + FENCE)
+
+
+# Also emit GitHub annotations (visible on the run page without signing in).
+def annotate(level, title, msg):
+    msg = msg.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+    title = title.replace("%", "%25").replace(":", "%3A").replace(",", "%2C")
+    print(f"::{level} title={title}::{msg[:3500]}", flush=True)
+
+
+for a, b in pairs:
+    fa, fb = walk(a), walk(b)
+    diff = sorted(f for f in fa & fb if not filecmp.cmp(f"{a}/{f}", f"{b}/{f}", shallow=False))
+    head = (f"{a} vs {b}: files {len(fa)}/{len(fb)}, only-left {sorted(fa - fb)[:10]}, "
+            f"only-right {sorted(fb - fa)[:10]}, differing {len(diff)}: {diff[:60]}")
+    annotate("notice", f"{a} vs {b}", head)
+    if (a, b) != ("_serial", "_parallel"):
+        continue
+    for f in diff[:8]:
+        x = open(f"{a}/{f}", "rb").read().decode("utf-8", "replace")
+        y = open(f"{b}/{f}", "rb").read().decode("utf-8", "replace")
+        n = min(len(x), len(y))
+        i = next((k for k in range(n) if x[k] != y[k]), n)
+        annotate("warning", f"{f} @{i} len {len(x)} vs {len(y)}",
+                 "SERIAL: " + x[max(0, i - 200):i + 400] + "\n=====\nPARALLEL: " + y[max(0, i - 200):i + 400])
