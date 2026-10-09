@@ -58,11 +58,5 @@ jobs:
         env: { JEKYLL_ENV: production, JEKYLL_RENDER_WORKERS: auto }
 
       - name: Compare outputs
-        run: |
-          python3 .github/parity_report.py _serial:_serial2 _serial:_parallel _parallel:_parallel2 | tee -a "$GITHUB_STEP_SUMMARY"
-          if diff -rq _serial _parallel > /dev/null; then
-            echo "::notice::serial vs parallel IDENTICAL"
-          else
-            echo "::error::serial vs parallel DIFFER (see job summary)"
-            exit 1
-          fi
+        shell: bash # 显式指定以启用 pipefail，让脚本的退出码穿过 tee
+        run: python3 .github/parity_report.py _serial:_serial2 _serial:_parallel _parallel:_parallel2 | tee -a "$GITHUB_STEP_SUMMARY"

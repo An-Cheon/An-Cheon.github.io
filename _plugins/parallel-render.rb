@@ -41,17 +41,25 @@ module ParallelRender
     payload = site_payload
     Jekyll::Hooks.trigger :site, :pre_render, self, payload
 
-    # Same items, same order as Site#render_docs followed by Site#render_pages.
-    items = []
-    collections.each_value { |c| c.docs.each { |d| items << d } }
-    pages.each { |p| items << p }
-    items.select! { |item| regenerator.regenerate?(item) }
-
+    # Phase 1: same items, same order as Site#render_docs + Site#render_pages.
+    # Converting a page can append new pages (jekyll-sass-converter adds the
+    # .css.map page while converting the .scss); like the serial loop,
+    # Array#each also visits those appended pages.
     started = Process.clock_gettime(Process::CLOCK_MONOTONIC)
-    raw = items.map(&:content)
-    items.each { |item| ParallelRender.convert_content(item, payload) }
-    converted = items.map(&:content)
-    phase1 = Process.clock_gettime(Process::CLOCK_MONOTONIC) - started
+    items = []
+    raw = []
+    converted = []
+    phase1 = lambda do |item|
+      next unless regenerator.regenerate?(item)
+
+      items << item
+      raw << item.content
+      ParallelRender.convert_content(item, payload)
+      converted << item.content
+    end
+    collections.each_value { |c| c.docs.each(&phase1) }
+    pages.each(&phase1)
+    phase1_time = Process.clock_gettime(Process::CLOCK_MONOTONIC) - started
 
     outputs = ParallelRender.render_layouts_in_workers(items, raw, converted, payload, workers)
 
@@ -63,7 +71,7 @@ module ParallelRender
     total = Process.clock_gettime(Process::CLOCK_MONOTONIC) - started
     Jekyll.logger.info "Parallel render:",
                        format("%d items, %d workers, convert %.1fs, total %.1fs",
-                              items.size, workers, phase1, total)
+                              items.size, workers, phase1_time, total)
 
     Jekyll::Hooks.trigger :site, :post_render, self, payload
     nil
@@ -126,13 +134,18 @@ module ParallelRender
     end
 
     # The second half of Jekyll::Renderer#run: wrap already-converted content
-    # in its layouts.
-    def render_layout(item, payload)
+    # in its layouts. payload["page"] is assigned while the item still holds
+    # its raw source, exactly as in Renderer#run: a Page's to_liquid is a
+    # snapshot, so its layouts see the raw `page.content` in a serial build.
+    def render_layout(items, raw, converted, i, payload)
+      item = items[i]
       renderer = item.renderer
       renderer.payload = payload
+      item.content = raw[i]
       renderer.send(:assign_pages!)
       renderer.send(:assign_current_document!)
       renderer.send(:assign_highlighter_options!)
+      item.content = converted[i]
       return item.content unless item.place_in_layout?
 
       renderer.place_in_layouts(item.content, payload, info_for(renderer.site, payload))
@@ -200,11 +213,10 @@ module ParallelRender
 
       # Warm-up: re-render the item before this slice so cached layout
       # templates hold the same leftover assigns as in a serial build.
-      render_layout(items[start], payload) if first.positive?
+      render_layout(items, raw, converted, start, payload) if first.positive?
 
       slice.each_with_object({}) do |i, out|
-        items[i].content = converted[i]
-        out[i] = render_layout(items[i], payload)
+        out[i] = render_layout(items, raw, converted, i, payload)
       end
     end
   end

@@ -62,3 +62,18 @@ for a, b in pairs:
         i = next((k for k in range(n) if x[k] != y[k]), n)
         annotate("warning", f"{f} @{i} len {len(x)} vs {len(y)}",
                  "SERIAL: " + x[max(0, i - 200):i + 400] + "\n=====\nPARALLEL: " + y[max(0, i - 200):i + 400])
+
+
+# Gate: serial vs parallel may only differ in files that also differ between
+# two serial builds (e.g. swconf.js embeds the wall-clock build time).
+def differing(a, b):
+    fa, fb = walk(a), walk(b)
+    return (fa ^ fb) | {f for f in fa & fb if not filecmp.cmp(f"{a}/{f}", f"{b}/{f}", shallow=False)}
+
+
+noise = differing("_serial", "_serial2")
+bad = sorted(differing("_serial", "_parallel") - noise)
+if bad:
+    annotate("error", "PARITY FAILED", f"{len(bad)} files differ beyond serial noise {sorted(noise)}: {bad[:60]}")
+    sys.exit(1)
+annotate("notice", "PARITY OK", f"serial and parallel identical except serial-vs-serial noise {sorted(noise)}")
