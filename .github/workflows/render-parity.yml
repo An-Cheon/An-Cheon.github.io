@@ -59,15 +59,31 @@ jobs:
 
       - name: Compare outputs
         run: |
-          echo "files: $(find _serial -type f | wc -l) vs $(find _parallel -type f | wc -l)"
-          echo "== serial vs serial2 (baseline noise)"; diff -rq _serial _serial2 | head -20 || true
-          echo "== serial vs parallel"
-          if diff -rq _serial _parallel > parity.txt; then
-            echo "IDENTICAL"
-          else
-            wc -l < parity.txt; head -30 parity.txt
-            f=$(head -1 parity.txt | awk '{print $2}'); g=${f/_serial/_parallel}
-            diff <(fold -w 200 "$f") <(fold -w 200 "$g") | head -40
-            exit 1
-          fi
-          diff -rq _parallel _parallel2 && echo "parallel runs IDENTICAL"
+          python3 - <<'PY' | tee -a "$GITHUB_STEP_SUMMARY"
+          import filecmp, os
+          def walk(root):
+              out = set()
+              for d, _, fs in os.walk(root):
+                  for f in fs:
+                      out.add(os.path.relpath(os.path.join(d, f), root))
+              return out
+          for a, b in [("_serial", "_serial2"), ("_serial", "_parallel"), ("_parallel", "_parallel2")]:
+              fa, fb = walk(a), walk(b)
+              diff = sorted(f for f in fa & fb if not filecmp.cmp(f"{a}/{f}", f"{b}/{f}", shallow=False))
+              print(f"### {a} vs {b}: files {len(fa)} / {len(fb)}, only-left {len(fa-fb)}, only-right {len(fb-fa)}, differing {len(diff)}")
+              for f in sorted(fa - fb)[:10]: print(f"- only in {a}: `{f}`")
+              for f in sorted(fb - fa)[:10]: print(f"- only in {b}: `{f}`")
+              for f in diff[:40]: print(f"- differs: `{f}`")
+              for f in diff[:6]:
+                  x = open(f"{a}/{f}", "rb").read().decode("utf-8", "replace")
+                  y = open(f"{b}/{f}", "rb").read().decode("utf-8", "replace")
+                  i = next((k for k in range(min(len(x), len(y))) if x[k] != y[k]), min(len(x), len(y)))
+                  print(f"
+`{f}` first diff at {i} (len {len(x)} vs {len(y)})
+```
+A: {x[max(0,i-300):i+300]}
+---
+B: {y[max(0,i-300):i+300]}
+```")
+          PY
+          diff -rq _serial _parallel > /dev/null && echo "::notice::serial vs parallel IDENTICAL" || { echo "::error::serial vs parallel DIFFER (see job summary)"; exit 1; }
