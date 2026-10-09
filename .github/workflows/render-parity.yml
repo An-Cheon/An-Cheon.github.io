@@ -1,0 +1,73 @@
+name: "Render parity (serial vs parallel)"
+# 仅用于验证 _plugins/parallel-render.rb：同一 runner 上分别串行/并行构建，
+# 固定 site.time 后逐字节比对 _site，并输出两者耗时。不部署。
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - perf/parallel-render
+
+permissions:
+  contents: read
+
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3
+          bundler-cache: true
+
+      # 只恢复不保存，避免污染正式部署用的缓存
+      - uses: actions/cache/restore@v4
+        with:
+          path: .jekyll-cache
+          key: jekyll-cache-${{ github.run_id }}
+          restore-keys: |
+            jekyll-cache-
+
+      - name: Fixed build time
+        run: |
+          echo "time: 2026-01-01 00:00:00 +0000" > "$RUNNER_TEMP/parity.yml"
+          nproc
+
+      - name: Serial build (warm-up, also fills cache)
+        run: bundle exec jekyll b -d _serial0 --config "_config.yml,$RUNNER_TEMP/parity.yml"
+        env: { JEKYLL_ENV: production }
+
+      - name: Serial build
+        run: time bundle exec jekyll b -d _serial --config "_config.yml,$RUNNER_TEMP/parity.yml"
+        env: { JEKYLL_ENV: production }
+
+      - name: Parallel build
+        run: time bundle exec jekyll b -d _parallel --config "_config.yml,$RUNNER_TEMP/parity.yml"
+        env: { JEKYLL_ENV: production, JEKYLL_RENDER_WORKERS: auto }
+
+      - name: Serial build (again)
+        run: time bundle exec jekyll b -d _serial2 --config "_config.yml,$RUNNER_TEMP/parity.yml"
+        env: { JEKYLL_ENV: production }
+
+      - name: Parallel build (again)
+        run: time bundle exec jekyll b -d _parallel2 --config "_config.yml,$RUNNER_TEMP/parity.yml"
+        env: { JEKYLL_ENV: production, JEKYLL_RENDER_WORKERS: auto }
+
+      - name: Compare outputs
+        run: |
+          echo "files: $(find _serial -type f | wc -l) vs $(find _parallel -type f | wc -l)"
+          echo "== serial vs serial2 (baseline noise)"; diff -rq _serial _serial2 | head -20 || true
+          echo "== serial vs parallel"
+          if diff -rq _serial _parallel > parity.txt; then
+            echo "IDENTICAL"
+          else
+            wc -l < parity.txt; head -30 parity.txt
+            f=$(head -1 parity.txt | awk '{print $2}'); g=${f/_serial/_parallel}
+            diff <(fold -w 200 "$f") <(fold -w 200 "$g") | head -40
+            exit 1
+          fi
+          diff -rq _parallel _parallel2 && echo "parallel runs IDENTICAL"
