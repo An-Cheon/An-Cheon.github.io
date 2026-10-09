@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  The Power of a Positive No
-categories: [Books, Finance]
-tags: [finance]
+categories: [Books, Relationships]
+tags: [relationships, psychology]
 ---
 #### 沃伦·巴菲特天早餐时，他向我吐露，他创造财富的秘诀在于他善于说“不”。“我整天坐在那里，看着投资方案。我说不，不，不，不，不，不，不——直到我看到一个正是我想要的。然后我说是。我一生中只需要说几次“是”，就能创造财富。”每一个重要的“是”，背后都有一千个“不”的支撑。
 #### “永远不要剥夺一个人的尊严：这对他们来说意义重大，但对你来说却毫无意义。” —弗兰克·巴伦
