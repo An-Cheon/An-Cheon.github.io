@@ -18,9 +18,9 @@ tags: [politics, economics]
 #### 目前全球资产组合中 31% 投资于股票，非常接近 1990 年以来 28% 的长期趋势；40% 投资于债券，29% 投资于流动资产。全球股票配置在全球金融危机爆发前的2007 年 10 月达到 36.4% 的峰值，高出平均水平两个标准差以上（即 2 × 4%），并在 2000 年 8 月千年虫泡沫期间达到类似的极端偏差峰值 38.1% 。
 #### 3 pics
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Liquidity1.png)    
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Liquidity2.png)    
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Liquidity3.png)    
+![](/images/Liquidity1.png)    
+![](/images/Liquidity2.png)    
+![](/images/Liquidity3.png)    
 本书的核心思想是，经济周期是由金融流动（即储蓄和信贷数量）驱动的，而不是由通货膨胀或利率水平驱动的。其巨大的破坏力通过全球流动性（130 万亿美元的流动资金池）表现出来。
 
 一个支离破碎、充满不确定性的世界鼓励投资者持有过多的“安全”资产，如现金和政府债券，尤其是美元资产，而不是将资金用于生产性工作。当国家无法生产足够的安全资产时，私营部门就会介入，提供质量较差的替代品，不幸的是，这些替代品的价值会顺周期变动。从这个角度来看，政府的紧缩政策和量化紧缩计划可能听起来并不是一个好主意？

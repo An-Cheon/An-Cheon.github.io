@@ -58,7 +58,7 @@ tags: [finance, failure, value-investing]
 #### 另一个帮助巴菲特以有利可图的价格进入交易并节省资源的因素是伯克希尔公司强大的财务地位:首先,巴菲特能够以现金支付 100%的购买价格;其次,卖方得到了巴菲特的保证,只要他出价,交易就会完全按照出价的条款进行。
 #### 他是他利基市场中唯一广为人知的投资人,所以他入主一家公司的成本相对适中。巴菲特的名字就是一个品牌。
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/wb.png) 
+![](/images/wb.png) 
 
 
 巴菲特那些不同于格雷厄姆的观点在现代投资界颇有争议,而正是这些观点对他的成功起到了积极的作用。

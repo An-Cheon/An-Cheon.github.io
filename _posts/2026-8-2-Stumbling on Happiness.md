@@ -23,7 +23,7 @@ tags: [psychology]
 #### 记忆对结局的迷信解释了为什么女性记忆中生孩子的过程通常都不如实际感受的那么痛苦，而那些感情破裂的夫妻常常会记得他们从来就没有真正幸福过。
 #### 我们日常思考中有12%的内容是同未来相关的。
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Stumbling_on_Happiness.png)
+![](/images/Stumbling_on_Happiness.png)
 
 一个忘恩负义的孩子比毒蛇的牙齿更让人痛彻心扉。 ——莎士比亚《李尔王》
 

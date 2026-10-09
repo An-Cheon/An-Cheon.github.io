@@ -33,7 +33,7 @@ tags: [finance, value-investing, psychology]
 #### 没有了性欲，我们便开始在一个更理性的层面上评估自己的决定，可能会后悔前一天晚上做出的那个选择，或者质疑我们对于伴侣的选择。
 <!-- more -->
 
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Behavioral_Investor.png) 
+![](/images/The_Behavioral_Investor.png) 
 
 有时我在早餐前会相信多达6件不可能的事情。 ——刘易斯·卡罗尔，《爱丽丝梦游仙境》
 

@@ -29,11 +29,11 @@ tags: [finance, value-investing, monopoly, politics, confidence]
 #### 高薪行业，比如投资行业，会毫不犹豫地给你远超所需的薪水。你的工作难度、工作的社会价值和工作的实际回报之间，根本没有任何关联。
 #### 研究表明，一项法案在国会获得通过的概率几乎不受公众对其热情或厌恶程度的影响。简而言之，我们人民对一项法律是否通过没有任何影响力。另一方面，精英阶层可以使法案通过的几率翻倍，更令人不安的是，他们甚至可以彻底阻止法案通过。
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Making_of_a_Permabear3.png)
+![](/images/The_Making_of_a_Permabear3.png)
 (标普500指数利润率的新范式。)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Making_of_a_Permabear.png)
+![](/images/The_Making_of_a_Permabear.png)
 (所有泡沫都会破裂。以下摘自GMO针对互联网泡沫时期对各类资产历史重大泡沫的研究，展示了前所未有的资产估值增长最终如何趋于完全均值回归。数据来自GMO，2001年。)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Making_of_a_Permabear2.png)
+![](/images/The_Making_of_a_Permabear2.png)
 (对盈利能力的疯狂重复计算。1926年至2006年美国股市的滚动1年市盈率表明，高盈利能力和高估值往往相伴而生。)
 
 在我滔滔不绝的演讲结束后，洛克菲勒先生压低声音说：“嗯，说了这么多，到底是什么意思？”

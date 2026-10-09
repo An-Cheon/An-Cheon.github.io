@@ -218,5 +218,5 @@ void MainWindow::setupEditor()
 ```
 
 效果：
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/qscintilla_demo.png)  
+![](/images/qscintilla_demo.png)  
 

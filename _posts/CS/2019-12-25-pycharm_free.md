@@ -9,13 +9,13 @@ pycharm2018.3.3下载链接
 https://download.jetbrains.8686c.com/python/pycharm-professional-2018.3.3.exe        
 https://download.jetbrains.com/python/pycharm-professional-2018.3.3.exe      
 补丁下载链接     
-https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/JetbrainsCrack-release-enc.jar     
+/images/JetbrainsCrack-release-enc.jar     
 安装pycharm之后找到pycharm安装路径,将补丁 JetbrainsCrack-release-enc.jar 复制到bin文件夹中        
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/pycharm_1.png)          
+![](/images/pycharm_1.png)          
 在bin目录中的pycharm64.exe.vmoptions和pycharm.exe.vmoptions文件末尾增添-javaagent:D:\Applications\PyCharm 2018.3.3\bin\JetbrainsCrack-release-enc.jar        
 ## (视实际安装路径而定)       
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/pycharm_2.png)       
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/pycharm_3.png)       
+![](/images/pycharm_2.png)       
+![](/images/pycharm_3.png)       
 激活30天试用后在程序中Help->Register->Activation code 输入以下激活码        
 或者直接安装完激活时Activation code
 ```shell
@@ -46,5 +46,5 @@ ThisCrackLicenseId-{
 ```
 激活成功!   
 2100年到期...    
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/pycharm_4.png) 
-![](https://raw.githubusercontent.com/ac-ancheon/ac-ancheon.github.io/master/images/pycharm_5.jpg) 
+![](/images/pycharm_4.png) 
+![](/images/pycharm_5.jpg) 

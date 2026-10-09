@@ -29,7 +29,7 @@ tags: [finance, psychology, value-investing]
 <!-- more -->
 分析师滞后于现实
 
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/prediction.png)    
+![](/images/prediction.png)    
 
 十几岁的年轻人总是在今天只做简单的决策，把艰巨而困难的事情拖到明天。一些人长大后，这种能力日益熟练，成年后他们往往会做出更糟糕的选择。
 

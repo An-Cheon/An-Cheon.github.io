@@ -8,10 +8,10 @@ Find the difference of two pics.<!-- more -->
      
 eg.   
 from:      
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/pic1-comparison.png)    
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/pic2-comparison.png)    
+![](/images/pic1-comparison.png)    
+![](/images/pic2-comparison.png)    
 to:       
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/compression_end.jpg)    
+![](/images/compression_end.jpg)    
 Delta.java    
 ```java
 package compression;

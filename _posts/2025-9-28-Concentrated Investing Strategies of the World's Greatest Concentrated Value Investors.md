@@ -20,7 +20,7 @@ tags: [finance, value-investing]
 <!-- more -->
 香农的恶魔
 
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Demon.png)    
+![](/images/Demon.png)    
 
 那些我十分钦佩的投资家们 （这种钦佩只有一部分是源于他们取得的惊人成绩） 都拥有一个特征——他们都是集中投资者。他们在构造投资组合的时候，都遵循高专注度的原则，只在少数几只股票上进行投资，而不是建立广泛分散的投资组合。
 

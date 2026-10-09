@@ -18,7 +18,7 @@ tags: [psychology]
 #### 许多坏决策都源于不恰当的诱因，而不是错误。
 #### 《财富》1000名高管中有近一半的人表示，他们是依靠直觉来做决策的。
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/think-twice.png) 
+![](/images/think-twice.png) 
 
 齐思·史坦诺维奇是多伦多大学的一位心理学家，他认为，我们判断一个人是否聪明的智商测试，并不能测量优质决策所需的关键要素。
 

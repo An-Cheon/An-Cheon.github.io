@@ -29,8 +29,8 @@ tags: [finance, value-investing]
 #### 为了衡量投资的每一个美元是否值得，我们把总回报率除以市盈率，由此得到一个简洁明了的参考标准。但是我们不知道起一个怎样的名字好，最后只能定为总报酬率（total return ratio）。
 #### 我们打算另辟蹊径，那些总回报率除以市盈率得到的数值超过市场平均值两倍的股票就是我们的首选。
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/john.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/john0.png)
+![](/images/john.png)
+![](/images/john0.png)
 我的投资包括三大元素：个人修养、目标设定和实际经验。
 
 价值投资（也就是注重市盈率，像我一直身体力行的一样）需要能够冷静地反省市场。证券市场一开始就缺乏冷静，到了牛市如火如荼之际，这种冷静就显得越发稀罕了。

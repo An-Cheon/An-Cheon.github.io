@@ -33,10 +33,10 @@ tags: [finance, value-investing, business]
 #### 迪克报告中他反复提到现金收益即净收益加折旧是评估公司业绩的关键指标，而不是净利润。
 #### 对回报的要求是他们耐心的来源，他们中的绝大多数都愿意为了合适的机会等待漫长的时间。
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/juwairen.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/juwairen2.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/juwairen3.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/juwairen4.png)
+![](/images/juwairen.png)
+![](/images/juwairen2.png)
+![](/images/juwairen3.png)
+![](/images/juwairen4.png)
 比恩是常年缺钱的奥克兰棒球队的总经理，以统计分析为基础，他获得了超越那些有钱的竞争对手的优势。比恩的方法聚焦新指标，比如上垒率和长打率，与传统统计全垒打、打击率和打点“三驾马车”相比，前者与球队的胜率相关性更高。
 
 “狐狸”通晓很多事，“刺猬”只知道一件事，但了解得很深入。

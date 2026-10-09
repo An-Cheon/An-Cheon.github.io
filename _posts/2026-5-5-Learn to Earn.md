@@ -29,7 +29,7 @@ tags: [finance, value-investing]
 #### 如果可能的话，某个行业的所有企业，比如面包店，将会结为联盟，决定对它们的饼干和蛋糕收取同样的高价。它们可能会签订协议来避免相互竞争，它们可能会形成战略联盟。
 <!-- more -->
 
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Learn_to_Earn.png) 
+![](/images/Learn_to_Earn.png) 
 
 金融理财的原理实际上很简单，也很容易掌握。第一项原理就是：储蓄等于投资。
 

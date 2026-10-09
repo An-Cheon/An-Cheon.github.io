@@ -30,9 +30,9 @@ tags: [finance, value-investing, failure]
 #### 达美乐是特许经营商。如果你将高资本回报率视为优质公司的最重要标志，那么几乎没有比通过特许权经营的企业更好的了，因为大部分资本是由加盟商提供的。
 #### 牛市范围不会随着时间推移而扩大——而是缩小。当前的牛市始于2009年，当时的股票不加区别地上涨。然后在发达市场中，美国处于领涨地位。然后是美国的科技行业。然后就是“FAANG”（Facebook，Amazon，Apple，Netflix和Google）。
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/growth_roce.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/growth_legou.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/growth_yao.png)
+![](/images/growth_roce.png)
+![](/images/growth_legou.png)
+![](/images/growth_yao.png)
 让乔·弗雷泽如此伟大的原因在于他的对手——乔治·福尔曼和穆罕默德·阿里——以及他们的较量所具有的意义。我们最好记住，我们是由我们的竞争对手定义的。
 
 尽管这个成功公式还不太流行。或者用他更简洁的话说是： ……一家拥有好产品或服务，强大市场份额，好的盈利能力、现金流和产品开发的好公司。

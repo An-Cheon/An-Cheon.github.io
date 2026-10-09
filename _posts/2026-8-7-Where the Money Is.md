@@ -47,12 +47,12 @@ tags: [finance, value-investing, monopoly, failure]
 #### 股价暴跌时，所有消息都是坏消息，这个时候把钱投入股市，买入你选择的企业的股票，这种事从来都不会容易做到。
 #### 尽管每一次市场暴跌期发生的具体事件都有所不同，但是每次市场暴跌在本质上完全相同：人们认为世界正在走向灭亡。金融体系将会完全崩溃，新型冠状病毒将会永远持续，人类活动将会永远停止。
 <!-- more -->
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Where_the_Money_Is.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Where_the_Money_Is_1.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Where_the_Money_Is_2.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Where_the_Money_Is_3.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Where_the_Money_Is_4.png)
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/Where_the_Money_Is_5.png)
+![](/images/Where_the_Money_Is.png)
+![](/images/Where_the_Money_Is_1.png)
+![](/images/Where_the_Money_Is_2.png)
+![](/images/Where_the_Money_Is_3.png)
+![](/images/Where_the_Money_Is_4.png)
+![](/images/Where_the_Money_Is_5.png)
 
 我这个投资新手能胜过很多比我年纪大得多又资格老得多的投资老手， 因为那些老手过于迷信老经验而昏了头。- 本杰明•格雷厄姆，《格雷厄姆：华尔街教父回忆录》
 

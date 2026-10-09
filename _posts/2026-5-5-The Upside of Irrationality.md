@@ -18,7 +18,7 @@ tags: [psychology, career]
 #### 人们通常以自己的魅力水平作为出发点来考虑是否与对方约会。事实表明，人们不大可能与比自己差的人约会，即使确信对方比自己差一点点；相反，他们急于寻找比自己容貌稍强的人。
 <!-- more -->
 
-![](https://raw.githubusercontent.com/An-Cheon/An-Cheon.github.io/master/images/The_Upside_of_Irrationality.png) 
+![](/images/The_Upside_of_Irrationality.png) 
 
 可悲的是，我们多数人宁可享受即时满足而放弃长远目标。②每天的行为表明我们似乎相信，不远的未来，我们会有更多时间、感觉更好、更有钱、精力更充沛、感觉不到压力。“未来”的时光似乎无比美妙，生活中所有令人厌烦的事情到那时都能解决
 
