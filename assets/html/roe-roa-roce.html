@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>回报率拖拽实验室</title>
+<style>body{margin:0;padding:0}</style>
+</head>
+<body>
+<style>
+/* Layout: a ledger workbench. Balance sheet (left) and income statement (right) are
+   physical blocks you drag; the three ratio cards read from them live. */
+:root {
+  --bg: #edf0f3;
+  --panel: #ffffff;
+  --panel-2: #f6f8fa;
+  --ink: #17202b;
+  --muted: #5a6776;
+  --line: #d3d9e0;
+  --accent: #2f4f7a;
+  --cash: #8cbcdb;
+  --op: #3f5f8c;
+  --pay: #a9b0ba;
+  --debt: #d58a2a;
+  --eq: #2a9a74;
+  --ebit: #6a58b0;
+  --cost: #c9ced6;
+  --ni: #1e7d5d;
+  --tax: #8d96a2;
+  --good: #1e7d5d;
+  --bad: #b4412e;
+  --on-block: #ffffff;
+  --font-display: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --font-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-num: "JetBrains Mono", ui-monospace, "Consolas", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --panel: #19202a; --panel-2: #1f2732; --ink: #e2e7ed; --muted: #95a2b1;
+    --line: #2d3744; --accent: #8fb0dc; --cash: #5f93b8; --op: #4f72a6; --pay: #6c7581;
+    --debt: #d9973f; --eq: #33ad84; --ebit: #8b7ad0; --cost: #3a4452; --ni: #3cbf90;
+    --tax: #6f7a88; --good: #3cbf90; --bad: #e0705c; --on-block: #ffffff;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --panel: #19202a; --panel-2: #1f2732; --ink: #e2e7ed; --muted: #95a2b1;
+  --line: #2d3744; --accent: #8fb0dc; --cash: #5f93b8; --op: #4f72a6; --pay: #6c7581;
+  --debt: #d9973f; --eq: #33ad84; --ebit: #8b7ad0; --cost: #3a4452; --ni: #3cbf90;
+  --tax: #6f7a88; --good: #3cbf90; --bad: #e0705c; --on-block: #ffffff;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body);
+  font-size: 15px; line-height: 1.65;
+}
+.wrap {
+  max-width: 1120px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 64px;
+  display: flex; flex-direction: column; gap: 36px;
+}
+h1, h2 { font-family: var(--font-display); text-wrap: balance; margin: 0; letter-spacing: .01em; }
+h1 { font-size: clamp(26px, 4.4vw, 40px); font-weight: 800; line-height: 1.2; }
+h2 { font-size: clamp(20px, 2.6vw, 26px); font-weight: 800; }
+p { margin: 0; }
+.lede { color: var(--muted); max-width: 62ch; }
+.eyebrow { font-size: 12px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; font-weight: 700; }
+.num { font-family: var(--font-num); font-variant-numeric: tabular-nums; }
+header { display: flex; flex-direction: column; gap: 10px; }
+.principle {
+  border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; max-width: 70ch;
+}
+.principle b { color: var(--accent); }
+
+section { display: flex; flex-direction: column; gap: 14px; }
+.sec-head { display: flex; flex-direction: column; gap: 4px; }
+
+/* Workbench */
+.bench { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 16px; }
+@media (max-width: 860px) { .bench { grid-template-columns: minmax(0, 1fr); } }
+.sheet {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+  padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0;
+}
+.sheet-title { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.sheet-title h3 { margin: 0; font-size: 16px; font-weight: 700; }
+.hint { font-size: 12.5px; color: var(--muted); }
+svg.drag { width: 100%; height: auto; display: block; touch-action: none; user-select: none; -webkit-user-select: none; }
+svg text { font-family: var(--font-body); }
+svg .v { font-family: var(--font-num); }
+.handle-hit { cursor: ns-resize; fill: transparent; }
+.handle-hit.h { cursor: ew-resize; }
+.handle-hit:focus { outline: none; }
+.handle-hit:focus + .grip rect, .grip.active rect { stroke: var(--ink); stroke-width: 2; }
+.legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 4px 14px; font-size: 13px; }
+.legend div { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+.legend span.sw { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+.legend .lab { display: flex; align-items: center; gap: 7px; color: var(--muted); }
+.scrubs { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13.5px; color: var(--muted); align-items: center; }
+.scrub {
+  display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px;
+  border: 1px dashed var(--muted); color: var(--ink); cursor: ew-resize; touch-action: none;
+  user-select: none; -webkit-user-select: none; font-family: var(--font-num);
+}
+.scrub:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.scrub::before { content: "‹"; color: var(--muted); }
+.scrub::after { content: "›"; color: var(--muted); }
+
+/* Ratio cards */
+.ratios { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 680px) { .ratios { grid-template-columns: minmax(0, 1fr); } }
+.ratio {
+  text-align: left; font: inherit; color: inherit; background: var(--panel);
+  border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; cursor: pointer;
+  display: flex; flex-direction: column; gap: 6px; min-width: 0;
+}
+.ratio:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ratio.on { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.ratio .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.ratio .name { font-weight: 700; }
+.ratio .name small { font-weight: 400; color: var(--muted); margin-left: 6px; font-size: 12.5px; }
+.ratio .big { font-family: var(--font-num); font-size: 34px; font-weight: 600; line-height: 1.1; }
+.ratio .frac { font-size: 13px; color: var(--muted); }
+.ratio .frac .num { color: var(--ink); }
+.ratio .q { font-size: 13px; }
+.delta { font-family: var(--font-num); font-size: 12px; color: var(--muted); }
+.tag-on { font-size: 11px; color: var(--accent); letter-spacing: .08em; }
+
+/* DuPont */
+.dupont {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.chain { display: flex; flex-wrap: wrap; align-items: stretch; gap: 8px; }
+.factor { background: var(--panel-2); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; min-width: 128px; flex: 1 1 128px; }
+.factor .fv { font-family: var(--font-num); font-size: 22px; font-weight: 600; }
+.factor .fn { font-size: 13px; font-weight: 700; }
+.factor .ff { font-size: 12px; color: var(--muted); }
+.op-sym { align-self: center; font-family: var(--font-num); font-size: 20px; color: var(--muted); }
+.factor.result { background: transparent; border: 1px solid var(--eq); }
+.dupont-note { font-size: 13.5px; color: var(--muted); max-width: 80ch; }
+
+/* Scenarios */
+.scen-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn {
+  font: inherit; font-size: 14px; color: var(--ink); background: var(--panel);
+  border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer;
+}
+.btn:hover { border-color: var(--accent); }
+.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn.on { background: var(--accent); color: var(--panel); border-color: var(--accent); }
+.btn.ghost { color: var(--muted); }
+.scen-out {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px;
+  display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 18px;
+}
+@media (max-width: 760px) { .scen-out { grid-template-columns: minmax(0, 1fr); } }
+.scen-out h4 { margin: 0 0 6px; font-size: 16px; }
+.scen-out p { font-size: 14px; }
+.scen-out p + p { margin-top: 8px; }
+.dtable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.dtable th, .dtable td { padding: 6px 4px; text-align: right; border-bottom: 1px solid var(--line); }
+.dtable th:first-child, .dtable td:first-child { text-align: left; }
+.dtable th { font-weight: 500; color: var(--muted); font-size: 12px; }
+.up { color: var(--good); } .down { color: var(--bad); } .flat { color: var(--muted); }
+
+/* Quiz */
+.quiz { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+.qtabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.qboard { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 20px; align-items: center; }
+@media (max-width: 760px) { .qboard { grid-template-columns: minmax(0, 1fr); } }
+.fraction { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.fraction .lhs { font-family: var(--font-display); font-weight: 800; font-size: 20px; }
+.slot {
+  width: min(260px, 100%); min-height: 46px; border: 2px dashed var(--line); border-radius: 8px;
+  display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px;
+  cursor: pointer; padding: 4px 8px; text-align: center;
+}
+.slot.hover { border-color: var(--accent); background: var(--panel-2); }
+.slot.filled { border-style: solid; color: var(--ink); font-weight: 700; }
+.slot.right { border-color: var(--good); }
+.slot.wrong { border-color: var(--bad); }
+.bar-line { width: min(280px, 100%); height: 2px; background: var(--ink); }
+.tray { display: flex; flex-wrap: wrap; gap: 8px; }
+.card {
+  padding: 8px 12px; border-radius: 8px; background: var(--panel-2); border: 1px solid var(--line);
+  cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; font-size: 14px;
+  display: inline-flex; gap: 8px; align-items: baseline;
+}
+.card .num { font-size: 12px; color: var(--muted); }
+.card.sel { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.card.used { opacity: .45; }
+.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ghost-card { position: fixed; pointer-events: none; z-index: 50; transform: translate(-50%, -60%); box-shadow: 0 6px 18px rgba(0,0,0,.18); cursor: grabbing; }
+.qfeedback { font-size: 14px; min-height: 2.2em; }
+.qfeedback b.ok { color: var(--good); } .qfeedback b.no { color: var(--bad); }
+
+/* Comparison table */
+.tablewrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+table.cmp { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; }
+table.cmp th, table.cmp td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+table.cmp th { font-size: 12px; color: var(--muted); font-weight: 500; letter-spacing: .06em; }
+table.cmp td:first-child { font-weight: 700; white-space: nowrap; }
+table.cmp tr:last-child td { border-bottom: none; }
+footer { font-size: 12.5px; color: var(--muted); max-width: 90ch; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">ROE · ROA · ROCE</div>
+    <h1>回报率拖拽实验室</h1>
+    <p class="lede">下面是一家虚构的空调制造商（单位：亿元）。左边是资产负债表，右边是利润表，色块的边界都可以用鼠标或手指上下、左右拖动。三个回报率跟着实时变化，点哪张卡片，图上就标出它的分子和分母。</p>
+    <p class="principle">一句话记住三者的区别：<b>分子是谁赚的，分母就该是谁投的本。</b>净利润已经付完利息，只属于股东；营业利润（EBIT）还没付利息，属于股东和债主两家。</p>
+  </header>
+
+  <section>
+    <div class="bench">
+      <div class="sheet">
+        <div class="sheet-title"><h3>资产负债表</h3><span class="hint">拖动色块边界的把手</span></div>
+        <svg id="bs" class="drag" viewBox="0 0 460 420" role="img" aria-label="资产负债表，可拖动"></svg>
+        <div class="legend" id="bsLegend"></div>
+      </div>
+      <div class="sheet">
+        <div class="sheet-title"><h3>利润表</h3><span class="hint">左右拖动竖把手</span></div>
+        <svg id="is" class="drag" viewBox="0 0 520 300" role="img" aria-label="利润表，可拖动"></svg>
+        <div class="scrubs">
+          <span>有息负债利率 <span class="scrub" id="scrubRate" tabindex="0" role="slider" aria-label="利率"></span></span>
+          <span>所得税率 <span class="scrub" id="scrubTax" tabindex="0" role="slider" aria-label="税率"></span></span>
+          <span class="hint">这两个数按住左右拖</span>
+        </div>
+      </div>
+    </div>
+    <div class="ratios" id="ratios"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">ROE 拆成三块</div>
+      <h2>杜邦分析：ROE 从哪来</h2>
+    </div>
+    <div class="dupont">
+      <div class="chain" id="dupont"></div>
+      <p class="dupont-note">前两项相乘就是 ROA。同样 20% 的 ROE，可能来自高利润率（茅台型）、高周转（超市型），或者高杠杆（银行型）。第三项是借来的，前两项才是生意本身的。拖一下右边那根「有息负债」，只有第三项在动。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">一键情景</div>
+      <h2>同一家公司，五种操作，三个数怎么动</h2>
+      <p class="lede">每个按钮都从起点出发，只做一件事。看哪个指标被骗了、哪个没被骗。</p>
+    </div>
+    <div class="scen-btns" id="scenBtns"></div>
+    <div class="scen-out" id="scenOut"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">自测</div>
+      <h2>把卡片拖进分子和分母</h2>
+      <p class="lede">拖错了也会告诉你拼出来的是什么，以及为什么不配对。手机上也可以先点卡片、再点格子。</p>
+    </div>
+    <div class="quiz">
+      <div class="qtabs" id="qtabs"></div>
+      <div class="qboard">
+        <div class="fraction">
+          <div class="lhs" id="qlhs">ROE =</div>
+          <div class="slot" id="slotNum" data-slot="num">分子拖到这里</div>
+          <div class="bar-line"></div>
+          <div class="slot" id="slotDen" data-slot="den">分母拖到这里</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+          <div class="tray" id="tray"></div>
+          <div class="qfeedback" id="qfb"></div>
+          <div><button class="btn ghost" id="qclear">清空重来</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">对照</div>
+      <h2>三个数各自回答什么、会被什么骗</h2>
+    </div>
+    <div class="tablewrap">
+      <table class="cmp">
+        <thead><tr><th>指标</th><th>公式</th><th>回答的问题</th><th>会被什么抬高或压低</th><th>什么时候用</th></tr></thead>
+        <tbody>
+          <tr><td>ROE 净资产收益率</td><td>净利润 ÷ 股东权益</td><td>股东每投 1 块钱，一年赚回多少</td><td>借钱、回购、亏损或减值冲掉权益都会抬高它；权益为负时（麦当劳、部分回购大户）这个数没有意义</td><td>股东视角的最终结果；配合杜邦拆解看来源</td></tr>
+          <tr><td>ROA 总资产收益率</td><td>净利润 ÷ 总资产</td><td>公司手里每 1 块钱资产，最后给股东剩多少</td><td>分子只属于股东、分母却是全部资产，口径不配对；闲置现金和供应商的免费占款都会压低它</td><td>银行、保险等资产就是生意本身的行业（银行 ROA 1% 左右算正常）</td></tr>
+          <tr><td>ROCE 已动用资本回报率</td><td>营业利润 EBIT ÷（总资产 − 流动负债）</td><td>生意本身用掉的长期资本，赚回多少（不管钱是借的还是股东的）</td><td>不受借钱多少影响；但闲置现金算进分母会压低它，供应商占款被扣掉会抬高它</td><td>比较负债结构不同的公司；判断生意本身好不好</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>为了让图看得清楚，这里做了几处简化：期初期末不取平均，直接用期末值；流动负债只放了应付账款这类无息负债（真实报表里短期借款也在流动负债里，算 ROCE 时有人会加回去）；现金不产生利息收入；亏损时不交税。不同数据源对 ROCE 的分母口径不完全一致，比较时要先看清口径。</footer>
+</div>
+
+<script>
+// Generated by Claude
+(function () {
+  "use strict";
+  const DEFAULT = { cash: 150, op: 850, pay: 150, debt: 250, rev: 1200, ebit: 180, rate: 5, tax: 25 };
+  const MIN_EQ = 20;
+  const S = Object.assign({}, DEFAULT);
+  let sel = "roe";
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const f0 = (v) => (Math.round(v)).toLocaleString("zh-CN");
+  const f1 = (v) => (Math.round(v * 10) / 10).toLocaleString("zh-CN", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const pct = (v) => (isFinite(v) ? f1(v * 100) + "%" : "—");
+
+  function D(st) {
+    st = st || S;
+    const ta = st.cash + st.op;
+    const eq = ta - st.pay - st.debt;
+    const interest = st.debt * st.rate / 100;
+    const pretax = st.ebit - interest;
+    const taxAmt = pretax > 0 ? pretax * st.tax / 100 : 0;
+    const ni = pretax - taxAmt;
+    const ce = ta - st.pay;
+    return { ta, eq, interest, pretax, taxAmt, ni, ce,
+      roe: ni / eq, roa: ni / ta, roce: st.ebit / ce,
+      margin: ni / st.rev, turn: st.rev / ta, lev: ta / eq };
+  }
+  const BASE = D(Object.assign({}, DEFAULT));
+
+  // ---------- setters with constraints ----------
+  function setCash(v) {
+    v = clamp(v, 0, 500);
+    v = Math.max(v, MIN_EQ - S.op + S.pay + S.debt);
+    S.cash = clamp(v, 0, 500);
+  }
+  function setOp(v) {
+    v = clamp(v, 150, 900);
+    v = Math.max(v, MIN_EQ - S.cash + S.pay + S.debt);
+    S.op = clamp(v, 150, 900);
+  }
+  function setEquity(eqNew) { // equity/debt boundary: swaps debt for equity
+    const d = D();
+    eqNew = clamp(eqNew, MIN_EQ, d.ta - S.pay);
+    S.debt = d.ta - S.pay - eqNew;
+  }
+  function setEqPlusDebt(v) { // debt/payables boundary
+    const d = D();
+    v = clamp(v, d.eq, d.ta);
+    S.pay = d.ta - v;
+    S.debt = v - d.eq;
+  }
+  function setRev(v) {
+    v = clamp(v, 300, 2000);
+    const m = S.ebit / S.rev;
+    S.rev = v;
+    S.ebit = Math.min(m * v, 550, v * 0.5);
+  }
+  function setEbit(v) { S.ebit = clamp(v, 0, Math.min(550, S.rev * 0.5)); }
+
+  // ---------- SVG helpers ----------
+  function svgPoint(svg, e) {
+    const pt = svg.createSVGPoint();
+    pt.x = e.clientX; pt.y = e.clientY;
+    return pt.matrixTransform(svg.getScreenCTM().inverse());
+  }
+  function grip(x, y, horiz, id, active) {
+    // visible pill + larger invisible hit area
+    const w = horiz ? 12 : 44, h = horiz ? 34 : 12;
+    const hit = horiz
+      ? `<rect class="handle-hit h" data-h="${id}" tabindex="0" x="${x - 12}" y="${y - 22}" width="24" height="44"></rect>`
+      : `<rect class="handle-hit" data-h="${id}" tabindex="0" x="${x - 75}" y="${y - 10}" width="150" height="20"></rect>`;
+    const lines = horiz
+      ? `<line x1="${x - 2}" y1="${y - 7}" x2="${x - 2}" y2="${y + 7}" stroke="var(--muted)" stroke-width="1.5"/><line x1="${x + 2}" y1="${y - 7}" x2="${x + 2}" y2="${y + 7}" stroke="var(--muted)" stroke-width="1.5"/>`
+      : `<line x1="${x - 7}" y1="${y - 2}" x2="${x + 7}" y2="${y - 2}" stroke="var(--muted)" stroke-width="1.5"/><line x1="${x - 7}" y1="${y + 2}" x2="${x + 7}" y2="${y + 2}" stroke="var(--muted)" stroke-width="1.5"/>`;
+    return hit + `<g class="grip${active ? " active" : ""}" pointer-events="none"><rect x="${x - w / 2}" y="${y - h / 2}" width="${w}" height="${h}" rx="5" fill="var(--panel)" stroke="var(--muted)" stroke-width="1"/>${lines}</g>`;
+  }
+
+  // ---------- balance sheet ----------
+  const bs = document.getElementById("bs");
+  const BS = { base: 400, k: 0.27, lx: 70, rx: 250, w: 140 };
+  const DEN = { roe: ["eq"], roa: ["cash", "op"], roce: ["eq", "debt"] };
+  let dragging = null;
+
+  function block(x, yTop, h, color, key, name, val) {
+    const den = DEN[sel].includes(key);
+    const op = den ? 1 : 0.45;
+    let label = "";
+    if (h >= 34) {
+      label = `<text x="${x + BS.w / 2}" y="${yTop + h / 2 - 3}" text-anchor="middle" font-size="13" fill="var(--on-block)" font-weight="700">${name}</text>
+               <text class="v" x="${x + BS.w / 2}" y="${yTop + h / 2 + 14}" text-anchor="middle" font-size="12.5" fill="var(--on-block)">${f0(val)}</text>`;
+    } else if (h >= 16) {
+      label = `<text x="${x + BS.w / 2}" y="${yTop + h / 2 + 4.5}" text-anchor="middle" font-size="11.5" fill="var(--on-block)" font-weight="700">${name} <tspan class="v">${f0(val)}</tspan></text>`;
+    }
+    return `<g opacity="${op}"><rect x="${x}" y="${yTop}" width="${BS.w}" height="${Math.max(h, 0)}" fill="${color}" stroke="var(--panel)" stroke-width="1.5"></rect>${label}</g>`;
+  }
+  function bracket(xEdge, yTop, yBot, side) {
+    const dx = side === "left" ? -10 : 10;
+    const x2 = xEdge + dx;
+    const tx = side === "left" ? x2 - 6 : x2 + 6;
+    const anchor = side === "left" ? "end" : "start";
+    const ym = (yTop + yBot) / 2;
+    return `<path d="M${xEdge + dx / 3} ${yTop} H${x2} V${yBot} H${xEdge + dx / 3}" fill="none" stroke="var(--accent)" stroke-width="2"/>
+            <text x="${tx}" y="${ym + 5}" text-anchor="${anchor}" font-size="13" font-weight="700" fill="var(--accent)">分母</text>`;
+  }
+  function renderBS() {
+    const d = D(), { base, k, lx, rx, w } = BS;
+    const yOp = base - S.op * k, yCash = yOp - S.cash * k;
+    const yEq = base - d.eq * k, yDebt = yEq - S.debt * k, yPay = yDebt - S.pay * k;
+    let s = "";
+    s += `<text x="${lx + w / 2}" y="${yCash - 10}" text-anchor="middle" font-size="12.5" fill="var(--muted)">资产 <tspan class="v" fill="var(--ink)">${f0(d.ta)}</tspan></text>`;
+    s += `<text x="${rx + w / 2}" y="${yPay - 10}" text-anchor="middle" font-size="12.5" fill="var(--muted)">负债+权益 <tspan class="v" fill="var(--ink)">${f0(d.ta)}</tspan></text>`;
+    s += `<line x1="${lx - 20}" y1="${base}" x2="${rx + w + 20}" y2="${base}" stroke="var(--line)" stroke-width="1"/>`;
+    s += `<text x="${(lx + w + rx) / 2}" y="${(yCash + base) / 2}" text-anchor="middle" font-size="20" fill="var(--muted)">=</text>`;
+    s += block(lx, yCash, S.cash * k, "var(--cash)", "cash", "现金", S.cash);
+    s += block(lx, yOp, S.op * k, "var(--op)", "op", "经营资产", S.op);
+    s += block(rx, yPay, S.pay * k, "var(--pay)", "pay", "应付款(无息)", S.pay);
+    s += block(rx, yDebt, S.debt * k, "var(--debt)", "debt", "有息负债", S.debt);
+    s += block(rx, yEq, d.eq * k, "var(--eq)", "eq", "股东权益", d.eq);
+    if (sel === "roa") s += bracket(lx, yCash, base, "left");
+    if (sel === "roe") s += bracket(rx + w, yEq, base, "right");
+    if (sel === "roce") s += bracket(rx + w, yDebt, base, "right");
+    // handles
+    s += grip(lx + w / 2, yCash, false, "cash", dragging === "cash");
+    s += grip(lx + w / 2, yOp, false, "op", dragging === "op");
+    s += grip(rx + w / 2, yEq, false, "eq", dragging === "eq");
+    s += grip(rx + w / 2, yDebt, false, "debtpay", dragging === "debtpay");
+    bs.innerHTML = s;
+
+    const L = [
+      ["var(--cash)", "现金", S.cash], ["var(--op)", "经营资产", S.op], ["var(--pay)", "应付款(无息流动负债)", S.pay],
+      ["var(--debt)", "有息负债", S.debt], ["var(--eq)", "股东权益", d.eq], ["transparent", "总资产 − 流动负债", d.ce]
+    ];
+    document.getElementById("bsLegend").innerHTML = L.map(([c, n, v]) =>
+      `<div><span class="lab"><span class="sw" style="background:${c};${c === "transparent" ? "border:1px solid var(--muted)" : ""}"></span>${n}</span><span class="num">${f0(v)}</span></div>`).join("");
+  }
+
+  // ---------- income statement ----------
+  const is = document.getElementById("is");
+  const IS = { x0: 100, kr: 0.2, kp: 0.7 };
+  const NUM = { roe: "ni", roa: "ni", roce: "ebit" };
+  function renderIS() {
+    const d = D(), { x0, kr, kp } = IS;
+    const num = NUM[sel];
+    const dimE = num === "ebit" ? 1 : 0.4, dimN = num === "ni" ? 1 : 0.4;
+    const revW = S.rev * kr, ebW = S.ebit * kr;
+    let s = "";
+    // revenue bar
+    s += `<text x="0" y="30" font-size="13" fill="var(--ink)" font-weight="700">营业收入</text>`;
+    s += `<text x="0" y="47" font-size="11.5" fill="var(--muted)">营业利润率 ${pct(S.ebit / S.rev)}</text>`;
+    s += `<rect x="${x0}" y="18" width="${revW - ebW}" height="30" fill="var(--cost)"/>`;
+    s += `<rect x="${x0 + revW - ebW}" y="18" width="${ebW}" height="30" fill="var(--ebit)" opacity="${dimE}"/>`;
+    if (revW - ebW > 90) s += `<text x="${x0 + 8}" y="38" font-size="12" fill="var(--muted)">成本费用 <tspan class="v">${f0(S.rev - S.ebit)}</tspan></text>`;
+    s += `<text class="v" x="${Math.min(x0 + revW + 14, 486)}" y="38" font-size="12.5" fill="var(--ink)">${f0(S.rev)}</text>`;
+    // waterfall
+    const xE = x0 + S.ebit * kp, xP = x0 + Math.max(d.pretax, 0) * kp, xN = x0 + Math.max(d.ni, 0) * kp;
+    s += `<text x="${x0}" y="80" font-size="11.5" fill="var(--muted)">↓ 把紫色那段放大 3.5 倍：利润去哪了</text>`;
+    s += `<path d="M${x0 + revW - ebW} 48 L${x0} 96 M${x0 + revW} 48 L${xE} 96" stroke="var(--ebit)" stroke-width="1" stroke-dasharray="3 3" fill="none" opacity=".6"/>`;
+    const rows = [
+      { y: 98, name: "营业利润 EBIT", sub: "股东+债主的", x1: x0, x2: xE, c: "var(--ebit)", v: S.ebit, op: dimE },
+      { y: 146, name: "− 利息", sub: "付给债主", x1: Math.max(x0 + d.pretax * kp, x0), x2: xE, c: "var(--debt)", v: -d.interest, op: 0.85 },
+      { y: 194, name: "− 所得税", sub: "交给政府", x1: xN, x2: xP, c: "var(--tax)", v: -d.taxAmt, op: 0.85 },
+      { y: 242, name: "净利润", sub: "只属于股东", x1: x0, x2: xN, c: "var(--ni)", v: d.ni, op: dimN },
+    ];
+    rows.forEach((r, i) => {
+      s += `<text x="0" y="${r.y + 14}" font-size="13" fill="var(--ink)" font-weight="700">${r.name}</text>`;
+      s += `<text x="0" y="${r.y + 30}" font-size="11.5" fill="var(--muted)">${r.sub}</text>`;
+      s += `<rect x="${r.x1}" y="${r.y}" width="${Math.max(r.x2 - r.x1, 0)}" height="28" fill="${r.c}" opacity="${r.op}"/>`;
+      const tx = Math.min(Math.max(r.x2, r.x1) + 10, 470);
+      s += `<text class="v" x="${tx}" y="${r.y + 19}" font-size="12.5" fill="var(--ink)">${r.v < 0 ? "−" : ""}${f1(Math.abs(r.v))}</text>`;
+      if (i < 3) {
+        const xx = i === 0 ? xE : (i === 1 ? Math.max(x0 + d.pretax * kp, x0) : xN);
+        s += `<line x1="${xx}" y1="${r.y + 28}" x2="${xx}" y2="${r.y + 48}" stroke="var(--muted)" stroke-dasharray="2 3"/>`;
+      }
+    });
+    if (d.ni < 0) s += `<text x="${x0 + 6}" y="${242 + 19}" font-size="12" fill="var(--bad)" font-weight="700">亏损</text>`;
+    // numerator tag
+    const tagRow = num === "ebit" ? rows[0] : rows[3];
+    s += `<g><rect x="${474}" y="${tagRow.y + 2}" width="40" height="24" rx="12" fill="var(--accent)"/><text x="494" y="${tagRow.y + 19}" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--panel)">分子</text></g>`;
+    // handles
+    s += grip(x0 + revW, 33, true, "rev", dragging === "rev");
+    s += grip(x0 + revW - ebW, 33, true, "margin", dragging === "margin");
+    s += grip(xE, 112, true, "ebit", dragging === "ebit");
+    is.innerHTML = s;
+  }
+
+  // ---------- ratio cards ----------
+  const CARDS = [
+    { id: "roe", name: "ROE", cn: "净资产收益率", q: "股东投的每 1 块钱，一年赚回多少",
+      frac: (d) => `净利润 <span class="num">${f1(d.ni)}</span> ÷ 股东权益 <span class="num">${f0(d.eq)}</span>` },
+    { id: "roa", name: "ROA", cn: "总资产收益率", q: "公司手里每 1 块钱资产，最后给股东剩多少",
+      frac: (d) => `净利润 <span class="num">${f1(d.ni)}</span> ÷ 总资产 <span class="num">${f0(d.ta)}</span>` },
+    { id: "roce", name: "ROCE", cn: "已动用资本回报率", q: "生意本身用掉的长期资本赚回多少（不管钱从哪来）",
+      frac: (d) => `EBIT <span class="num">${f1(S.ebit)}</span> ÷ (总资产 − 流动负债) <span class="num">${f0(d.ce)}</span>` },
+  ];
+  const ratiosEl = document.getElementById("ratios");
+  ratiosEl.innerHTML = CARDS.map(c => `<button class="ratio" data-r="${c.id}" aria-pressed="false">
+      <div class="top"><span class="name">${c.name}<small>${c.cn}</small></span><span class="tag-on"></span></div>
+      <div class="big" data-big></div>
+      <div class="frac" data-frac></div>
+      <div class="delta" data-delta></div>
+      <div class="q">${c.q}</div></button>`).join("");
+  ratiosEl.addEventListener("click", (e) => {
+    const b = e.target.closest(".ratio"); if (!b) return;
+    sel = b.dataset.r; renderAll();
+  });
+  function renderRatios() {
+    const d = D();
+    CARDS.forEach(c => {
+      const el = ratiosEl.querySelector(`[data-r="${c.id}"]`);
+      el.classList.toggle("on", sel === c.id);
+      el.setAttribute("aria-pressed", sel === c.id ? "true" : "false");
+      el.querySelector(".tag-on").textContent = sel === c.id ? "图上已标出" : "点我看分子分母";
+      el.querySelector("[data-big]").textContent = pct(d[c.id]);
+      el.querySelector("[data-frac]").innerHTML = c.frac(d);
+      const dd = (d[c.id] - BASE[c.id]) * 100;
+      el.querySelector("[data-delta]").textContent = Math.abs(dd) < 0.05 ? "与起点相同" : `较起点 ${dd > 0 ? "+" : "−"}${f1(Math.abs(dd))} 个百分点`;
+    });
+  }
+
+  // ---------- DuPont ----------
+  function renderDupont() {
+    const d = D();
+    document.getElementById("dupont").innerHTML = `
+      <div class="factor"><span class="fn">净利率</span><span class="fv">${pct(d.margin)}</span><span class="ff">净利润 ÷ 营业收入<br>每卖 100 块剩多少</span></div>
+      <span class="op-sym">×</span>
+      <div class="factor"><span class="fn">资产周转率</span><span class="fv">${d.turn.toFixed(2)}</span><span class="ff">营业收入 ÷ 总资产<br>每块资产一年卖出几块</span></div>
+      <span class="op-sym">×</span>
+      <div class="factor"><span class="fn">权益乘数</span><span class="fv">${(Math.round(d.lev * 100) / 100).toFixed(2)}</span><span class="ff">总资产 ÷ 股东权益<br>股东 1 块钱撬动几块资产</span></div>
+      <span class="op-sym">=</span>
+      <div class="factor result"><span class="fn">ROE</span><span class="fv">${pct(d.roe)}</span><span class="ff">前两项相乘 = ROA ${pct(d.roa)}</span></div>`;
+  }
+
+  // ---------- scrubbers (rate / tax) ----------
+  function scrubber(el, key, min, max, perPx, fmt) {
+    let startX = 0, startV = 0, active = false;
+    const paint = () => { el.textContent = fmt(S[key]); el.setAttribute("aria-valuenow", S[key]); };
+    el.setAttribute("aria-valuemin", min); el.setAttribute("aria-valuemax", max);
+    el.addEventListener("pointerdown", (e) => { active = true; startX = e.clientX; startV = S[key]; el.setPointerCapture(e.pointerId); e.preventDefault(); });
+    el.addEventListener("pointermove", (e) => {
+      if (!active) return;
+      S[key] = clamp(Math.round((startV + (e.clientX - startX) * perPx) * 10) / 10, min, max);
+      renderAll();
+    });
+    const end = () => { active = false; };
+    el.addEventListener("pointerup", end); el.addEventListener("pointercancel", end);
+    el.addEventListener("keydown", (e) => {
+      const step = e.shiftKey ? 2 : 0.5;
+      if (e.key === "ArrowRight" || e.key === "ArrowUp") { S[key] = clamp(S[key] + step, min, max); renderAll(); e.preventDefault(); }
+      if (e.key === "ArrowLeft" || e.key === "ArrowDown") { S[key] = clamp(S[key] - step, min, max); renderAll(); e.preventDefault(); }
+    });
+    return paint;
+  }
+  const paintRate = scrubber(document.getElementById("scrubRate"), "rate", 0, 15, 0.05, (v) => f1(v) + "%");
+  const paintTax = scrubber(document.getElementById("scrubTax"), "tax", 0, 40, 0.1, (v) => f1(v) + "%");
+
+  // ---------- dragging on both SVGs ----------
+  function applyDrag(h, p) {
+    const { base, k } = BS, d = D();
+    switch (h) {
+      case "cash": setCash((base - p.y) / k - S.op); break;
+      case "op": setOp((base - p.y) / k); break;
+      case "eq": setEquity((base - p.y) / k); break;
+      case "debtpay": setEqPlusDebt((base - p.y) / k); break;
+      case "rev": setRev((p.x - IS.x0) / IS.kr); break;
+      case "margin": setEbit((IS.x0 + S.rev * IS.kr - p.x) / IS.kr); break;
+      case "ebit": setEbit((p.x - IS.x0) / IS.kp); break;
+    }
+  }
+  function nudge(h, dir) { // keyboard: dir = +1 means "bigger" in the dragged quantity
+    const d = D(), st = 10 * dir;
+    switch (h) {
+      case "cash": setCash(S.cash + st); break;
+      case "op": setOp(S.op + st); break;
+      case "eq": setEquity(d.eq + st); break;
+      case "debtpay": setEqPlusDebt(d.eq + S.debt + st); break;
+      case "rev": setRev(S.rev + st * 2); break;
+      case "margin": setEbit(S.ebit + st / 2); break;
+      case "ebit": setEbit(S.ebit + st / 2); break;
+    }
+  }
+  [bs, is].forEach(svg => {
+    svg.addEventListener("pointerdown", (e) => {
+      const h = e.target.dataset && e.target.dataset.h; if (!h) return;
+      dragging = h; svg.setPointerCapture(e.pointerId); e.preventDefault();
+      clearScenario(); renderAll();
+    });
+    svg.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      applyDrag(dragging, svgPoint(svg, e)); renderAll();
+    });
+    const end = () => { if (dragging) { dragging = null; renderAll(); } };
+    svg.addEventListener("pointerup", end); svg.addEventListener("pointercancel", end);
+    svg.addEventListener("keydown", (e) => {
+      const h = e.target.dataset && e.target.dataset.h; if (!h) return;
+      const horiz = ["rev", "margin", "ebit"].includes(h);
+      let dir = 0;
+      if (e.key === (horiz ? "ArrowRight" : "ArrowUp")) dir = 1;
+      if (e.key === (horiz ? "ArrowLeft" : "ArrowDown")) dir = -1;
+      if (h === "margin" && dir) dir = -dir; // dragging the divider right shrinks EBIT
+      if (!dir) return;
+      e.preventDefault(); clearScenario(); nudge(h, dir); renderAll();
+      const again = svg.querySelector(`[data-h="${h}"]`); if (again) again.focus();
+    });
+  });
+
+  // ---------- scenarios ----------
+  const SCEN = [
+    { id: "lever", label: "借 200 亿回购股票",
+      apply: (s) => { s.debt += 200; },
+      title: "借钱回购：ROE 涨了，生意一点没变",
+      text: ["有息负债 +200，股东权益 −200，总资产不变。卖空调赚的营业利润一分没多。",
+             "ROE 明显上升，因为分母（股东的钱）变小了；ROA 略降，因为多付了利息；ROCE 纹丝不动，因为它的分子分母都不管钱是借的还是股东的。看到 ROE 高，先拆杜邦看第三项。"] },
+    { id: "cash", label: "增发 300 亿放在账上",
+      apply: (s) => { s.cash += 300; },
+      title: "囤现金：三个数一起变难看",
+      text: ["现金 +300，股东权益 +300。生意本身没变。",
+             "三个指标全降。ROCE 也被拖累，因为闲置现金算在已动用资本里。这就是为什么有人改用 ROIC，或者在 ROCE 的分母里扣掉多余现金：想看生意本身的回报，就不能让一堆躺着的钱稀释它。"] },
+    { id: "writeoff", label: "减值 250 亿资产",
+      apply: (s) => { s.op -= 250; },
+      title: "资产减值：回报率突然变漂亮",
+      text: ["经营资产 −250（比如收购来的商誉、闲置厂房一次性冲掉），股东权益同步 −250。假设被冲掉的资产本来就不产生利润，所以营业利润不变。",
+             "三个数都大涨，但没有任何人多赚一块钱：只是过去花掉的冤枉钱从分母里消失了。看一家公司的高 ROE/ROCE，要翻翻它过去有没有大额减值、有没有连年亏损吃掉权益。"] },
+    { id: "price", label: "提价 5%",
+      apply: (s) => { s.ebit += s.rev * 0.05; s.rev *= 1.05; },
+      title: "提价：这才是真的变好",
+      text: ["收入 +5%，量不变，多出来的钱全部落到营业利润。资产负债表一个格子都没动。",
+             "三个数一起上升，而且杜邦里涨的是第一项（利润率），不是第三项（杠杆）。巴菲特说的定价权，体现在报表上就是这种变化。"] },
+    { id: "payables", label: "多欠供应商 150 亿",
+      apply: (s) => { s.pay += 150; s.cash += 150; },
+      title: "拖欠供应商：ROA 被骗，ROE 和 ROCE 没被骗",
+      text: ["应付账款 +150，现金 +150。这笔钱不要利息，股东也没多掏钱。",
+             "ROE 和 ROCE 都不变；ROA 下降，因为总资产变大了。其实拿供应商的免费资金做生意是本事（Costco、亚马逊都靠这个），ROA 却把它当成拖累。这也是 ROCE 要扣掉流动负债的原因。"] },
+  ];
+  const scenBtns = document.getElementById("scenBtns");
+  scenBtns.innerHTML = SCEN.map(s => `<button class="btn" data-s="${s.id}">${s.label}</button>`).join("") +
+    `<button class="btn ghost" data-s="reset">回到起点</button>`;
+  const scenOut = document.getElementById("scenOut");
+  let curScen = null;
+
+  function tweenTo(target, done) {
+    const from = Object.assign({}, S);
+    if (reduceMotion) { Object.assign(S, target); renderAll(); done && done(); return; }
+    const t0 = performance.now(), dur = 550;
+    function step(t) {
+      const u = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - u, 3);
+      for (const key in target) S[key] = from[key] + (target[key] - from[key]) * e;
+      renderAll();
+      if (u < 1) requestAnimationFrame(step); else { Object.assign(S, target); renderAll(); done && done(); }
+    }
+    requestAnimationFrame(step);
+  }
+  function dRow(name, a, b) {
+    const dd = (b - a) * 100;
+    const cls = Math.abs(dd) < 0.05 ? "flat" : (dd > 0 ? "up" : "down");
+    const sym = Math.abs(dd) < 0.05 ? "不变" : `${dd > 0 ? "▲ +" : "▼ −"}${f1(Math.abs(dd))}`;
+    return `<tr><td>${name}</td><td class="num">${pct(a)}</td><td class="num">${pct(b)}</td><td class="num ${cls}">${sym}</td></tr>`;
+  }
+  function showScenario(sc) {
+    const target = Object.assign({}, DEFAULT); sc.apply(target);
+    const after = D(target);
+    scenOut.innerHTML = `<div><h4>${sc.title}</h4>${sc.text.map(t => `<p>${t}</p>`).join("")}</div>
+      <div><table class="dtable"><thead><tr><th>指标</th><th>起点</th><th>操作后</th><th>变化(百分点)</th></tr></thead><tbody>
+      ${dRow("ROE", BASE.roe, after.roe)}${dRow("ROA", BASE.roa, after.roa)}${dRow("ROCE", BASE.roce, after.roce)}
+      </tbody></table></div>`;
+    return target;
+  }
+  function clearScenario() {
+    if (!curScen) return;
+    curScen = null;
+    scenBtns.querySelectorAll(".btn").forEach(b => b.classList.remove("on"));
+  }
+  scenBtns.addEventListener("click", (e) => {
+    const b = e.target.closest(".btn"); if (!b) return;
+    scenBtns.querySelectorAll(".btn").forEach(x => x.classList.remove("on"));
+    if (b.dataset.s === "reset") {
+      curScen = null; introScenario(); tweenTo(Object.assign({}, DEFAULT)); return;
+    }
+    const sc = SCEN.find(x => x.id === b.dataset.s);
+    b.classList.add("on");
+    const target = showScenario(sc);
+    Object.assign(S, DEFAULT); renderAll();
+    tweenTo(target, () => { curScen = sc.id; });
+  });
+  function introScenario() {
+    const b = BASE;
+    scenOut.innerHTML = `<div><h4>起点</h4><p>收入 1,200，营业利润 180，现金 150，有息负债 250，股东权益 600。点上面任一按钮，图和卡片会一起动，下面列出三个数的变化。</p>
+      <p>动手拖过之后再按按钮，会先回到起点再执行，方便对比。</p></div>
+      <div><table class="dtable"><thead><tr><th>指标</th><th>起点</th></tr></thead><tbody>
+      <tr><td>ROE</td><td class="num">${pct(b.roe)}</td></tr><tr><td>ROA</td><td class="num">${pct(b.roa)}</td></tr><tr><td>ROCE</td><td class="num">${pct(b.roce)}</td></tr>
+      </tbody></table></div>`;
+  }
+
+  // ---------- quiz ----------
+  const QCARDS = [
+    { k: "ni", n: "净利润", v: (d) => d.ni }, { k: "ebit", n: "营业利润 EBIT", v: () => S.ebit },
+    { k: "rev", n: "营业收入", v: () => S.rev }, { k: "ta", n: "总资产", v: (d) => d.ta },
+    { k: "eq", n: "股东权益", v: (d) => d.eq }, { k: "ce", n: "总资产 − 流动负债", v: (d) => d.ce },
+    { k: "debt", n: "有息负债", v: () => S.debt },
+  ];
+  const ANSWER = { roe: ["ni", "eq"], roa: ["ni", "ta"], roce: ["ebit", "ce"] };
+  const KNOWN = {
+    "ni/eq": "这是 ROE：股东赚的 ÷ 股东投的，口径配对。",
+    "ni/ta": "这是 ROA：净利润 ÷ 总资产。分子只属于股东，分母却包括债主和供应商的钱，所以口径略不配对。",
+    "ebit/ce": "这是 ROCE：付息前的利润 ÷ 股东和债主一起投的长期资本，口径配对，而且不受借钱多少影响。",
+    "ni/rev": "这是净利率（每卖 100 块剩多少），杜邦的第一项，不是回报率。",
+    "ebit/rev": "这是营业利润率，衡量的是卖东西赚不赚钱，不是投入的本钱赚不赚钱。",
+    "rev/ta": "这是资产周转率，杜邦的第二项。",
+    "ta/eq": "这是权益乘数，杜邦的第三项（杠杆）。",
+    "ebit/eq": "分子分母不配对：EBIT 还没付利息，有一部分要给债主，却只除以股东的钱。借得越多，这个数就越虚高。",
+    "ni/ce": "分子分母不配对：净利润已经付完利息、只属于股东，分母却把债主的钱也算进去，会低估股东回报。",
+    "ebit/ta": "接近「税前、付息前的 ROA」，有人这么用，但它把供应商的免费占款也当成了资本。",
+  };
+  let qTarget = "roe", qSel = null; const qFill = { num: null, den: null };
+  const tray = document.getElementById("tray"), qfb = document.getElementById("qfb");
+  const qtabs = document.getElementById("qtabs");
+  qtabs.innerHTML = ["roe", "roa", "roce"].map(r => `<button class="btn" data-q="${r}">拼 ${r.toUpperCase()}</button>`).join("");
+  qtabs.addEventListener("click", (e) => {
+    const b = e.target.closest(".btn"); if (!b) return;
+    qTarget = b.dataset.q; qFill.num = qFill.den = null; qSel = null; renderQuiz();
+  });
+  document.getElementById("qclear").addEventListener("click", () => { qFill.num = qFill.den = null; qSel = null; renderQuiz(); });
+
+  function renderQuiz() {
+    const d = D();
+    qtabs.querySelectorAll(".btn").forEach(b => b.classList.toggle("on", b.dataset.q === qTarget));
+    document.getElementById("qlhs").textContent = qTarget.toUpperCase() + " =";
+    tray.innerHTML = QCARDS.map(c => `<span class="card${qSel === c.k ? " sel" : ""}${(qFill.num === c.k || qFill.den === c.k) ? " used" : ""}" data-k="${c.k}" tabindex="0" role="button">${c.n}<span class="num">${f0(c.v(d))}</span></span>`).join("");
+    ["num", "den"].forEach(slot => {
+      const el = document.getElementById(slot === "num" ? "slotNum" : "slotDen");
+      const k = qFill[slot];
+      el.classList.remove("right", "wrong");
+      el.classList.toggle("filled", !!k);
+      el.textContent = k ? QCARDS.find(c => c.k === k).n : (slot === "num" ? "分子拖到这里" : "分母拖到这里");
+    });
+    if (qFill.num && qFill.den) {
+      const [an, ad] = ANSWER[qTarget];
+      const ok = qFill.num === an && qFill.den === ad;
+      const nv = QCARDS.find(c => c.k === qFill.num).v(d), dv = QCARDS.find(c => c.k === qFill.den).v(d);
+      document.getElementById("slotNum").classList.add(qFill.num === an ? "right" : "wrong");
+      document.getElementById("slotDen").classList.add(qFill.den === ad ? "right" : "wrong");
+      const msg = KNOWN[qFill.num + "/" + qFill.den] || "这两个数放在一起没有常用的含义。记住：分子是谁赚的，分母就该是谁投的本。";
+      qfb.innerHTML = `${ok ? '<b class="ok">对了。</b>' : '<b class="no">不是 ' + qTarget.toUpperCase() + '。</b>'} ${msg} <span class="num">（${f1(nv)} ÷ ${f0(dv)} = ${pct(nv / dv)}）</span>`;
+    } else {
+      qfb.textContent = qSel ? "已选中一张卡片，点分子或分母格子放进去。" : "从右边拖一张卡片到分子，再拖一张到分母。";
+    }
+  }
+  function place(slot, k) {
+    const other = slot === "num" ? "den" : "num";
+    if (qFill[other] === k) qFill[other] = null;
+    qFill[slot] = k; qSel = null; renderQuiz();
+  }
+  ["slotNum", "slotDen"].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener("click", () => {
+      const slot = el.dataset.slot;
+      if (qSel) place(slot, qSel);
+      else if (qFill[slot]) { qFill[slot] = null; renderQuiz(); }
+    });
+  });
+  // pointer-based drag so it also works on touch screens
+  let qDrag = null;
+  tray.addEventListener("pointerdown", (e) => {
+    const c = e.target.closest(".card"); if (!c) return;
+    qDrag = { k: c.dataset.k, x: e.clientX, y: e.clientY, ghost: null, src: c };
+    c.setPointerCapture(e.pointerId);
+  });
+  tray.addEventListener("pointermove", (e) => {
+    if (!qDrag) return;
+    if (!qDrag.ghost && Math.hypot(e.clientX - qDrag.x, e.clientY - qDrag.y) > 5) {
+      const g = qDrag.src.cloneNode(true); g.classList.add("ghost-card"); g.classList.remove("used", "sel");
+      document.body.appendChild(g); qDrag.ghost = g;
+    }
+    if (qDrag.ghost) {
+      qDrag.ghost.style.left = e.clientX + "px"; qDrag.ghost.style.top = e.clientY + "px";
+      document.querySelectorAll(".slot").forEach(s => s.classList.remove("hover"));
+      const under = document.elementFromPoint(e.clientX, e.clientY);
+      const slot = under && under.closest(".slot"); if (slot) slot.classList.add("hover");
+    }
+  });
+  function endQDrag(e) {
+    if (!qDrag) return;
+    const d = qDrag; qDrag = null;
+    document.querySelectorAll(".slot").forEach(s => s.classList.remove("hover"));
+    if (d.ghost) {
+      d.ghost.remove();
+      const under = document.elementFromPoint(e.clientX, e.clientY);
+      const slot = under && under.closest(".slot");
+      if (slot) place(slot.dataset.slot, d.k);
+    } else {
+      qSel = qSel === d.k ? null : d.k; renderQuiz();
+    }
+  }
+  tray.addEventListener("pointerup", endQDrag);
+  tray.addEventListener("pointercancel", () => { if (qDrag && qDrag.ghost) qDrag.ghost.remove(); qDrag = null; });
+  tray.addEventListener("keydown", (e) => {
+    const c = e.target.closest(".card"); if (!c) return;
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      if (!qFill.num) place("num", c.dataset.k); else if (!qFill.den) place("den", c.dataset.k);
+      else { qSel = c.dataset.k; renderQuiz(); }
+    }
+  });
+
+  // ---------- render loop ----------
+  function renderAll() {
+    renderBS(); renderIS(); renderRatios(); renderDupont(); paintRate(); paintTax();
+    if (!qDrag) renderQuiz();
+  }
+  introScenario();
+  renderAll();
+})();
+</script>
+
+</body></html>
