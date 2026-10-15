@@ -29,51 +29,51 @@ tags: [quotes, investing, finance]
 ### 一、耐心与无所事事
 {: #theme-1}
 
-要想成为一名成功的投资者，需要的不是智力这种可以随意支配的资源，而是耐心这种不可或缺的资源。[^1]
+耐心，不仅仅是等待我们所投资的股票上涨，更多的是能够耐心等待高价股票调整至更具吸引力的价格区域。这种等待更加艰难。[^1]
 
-我们在 2020 年 3 月至 5 月期间投资了八家企业。我们多年来一直期待着投资这八家企业。对于其中几家，我们等待的时间甚至超过了十年。[^2]
+投资主要是等待难得的时机出现，即赚钱概率大大高于赔钱概率的时机。[^2]
 
-有人问巴菲特，他与普通投资者之间的主要区别是什么，巴菲特回答说：“耐心”。如今，耐心似乎已经荡然无存：还有人听说过“慢慢致富”吗？[^3]
+如果市场没有合适的交易机会，就不要参与市场的交易，要在场外等待观望，这点很重要。[^3]
 
-查理·芒格曾被问及如何致富，提问者想必是一位年轻且家境一般的人。我和扎克虽然年纪不小，家境也相对一般，因此很想知道答案：“等待机会并投资。”[^4]
+要避免设定每年的回报目标。交易每年的盈利目标应该根据交易机会的大小来确定，而不是由交易者人为来设定。[^4]
 
-乔治·索罗斯：“如果你觉得投资是一种娱乐，并且感觉很有趣，那你可能赚不到钱。真正的投资是很乏味的东西。”[^5]
+要想成为一名成功的投资者，需要的不是智力这种可以随意支配的资源，而是耐心这种不可或缺的资源。[^5]
 
-查理·芒格说：“理解复利的魔力和获得它的困难，是理解很多事情的核心和灵魂。”[^6]
+我们在 2020 年 3 月至 5 月期间投资了八家企业。我们多年来一直期待着投资这八家企业。对于其中几家，我们等待的时间甚至超过了十年。[^6]
 
-对我来说回报最高的股票，是在我持有它们的第三年或第四年实现最大涨幅的。 ——彼得·林奇[^7]
+有人问巴菲特，他与普通投资者之间的主要区别是什么，巴菲特回答说：“耐心”。如今，耐心似乎已经荡然无存：还有人听说过“慢慢致富”吗？[^7]
 
-不论你使用什么方法选股或挑选股票投资基金，最终的成功与否取决于一种能力，即不理睬环境的压力而坚持到投资成功的能力；决定选股人命运的不是头脑，而是耐力。 ——彼得·林奇[^8]
+查理·芒格曾被问及如何致富，提问者想必是一位年轻且家境一般的人。我和扎克虽然年纪不小，家境也相对一般，因此很想知道答案：“等待机会并投资。”[^8]
 
-本·格雷厄姆说：“耐⼼，耐⼼，再耐⼼。” 价值投资就是耐⼼，耐⼼，以及更多耐⼼。⼤多数投资者没有耐⼼。[^9]
+乔治·索罗斯：“如果你觉得投资是一种娱乐，并且感觉很有趣，那你可能赚不到钱。真正的投资是很乏味的东西。”[^9]
 
-如果市场没有合适的交易机会，就不要参与市场的交易，要在场外等待观望，这点很重要。[^10]
+查理·芒格说：“理解复利的魔力和获得它的困难，是理解很多事情的核心和灵魂。”[^10]
 
-要避免设定每年的回报目标。交易每年的盈利目标应该根据交易机会的大小来确定，而不是由交易者人为来设定。[^11]
+对我来说回报最高的股票，是在我持有它们的第三年或第四年实现最大涨幅的。 ——彼得·林奇[^11]
 
-最好的投资法则就是投资时要学会无所事事，绝对的无所事事，直到确实该做某些事的时候再动手去做。- 吉姆·罗杰斯[^12]
+不论你使用什么方法选股或挑选股票投资基金，最终的成功与否取决于一种能力，即不理睬环境的压力而坚持到投资成功的能力；决定选股人命运的不是头脑，而是耐力。 ——彼得·林奇[^12]
 
-无所事事也是一种境界。[^13]
+本·格雷厄姆说：“耐⼼，耐⼼，再耐⼼。” 价值投资就是耐⼼，耐⼼，以及更多耐⼼。⼤多数投资者没有耐⼼。[^13]
 
-巴菲特的前五大持仓股票平均持有时间超过20年。[^14]
+最好的投资法则就是投资时要学会无所事事，绝对的无所事事，直到确实该做某些事的时候再动手去做。- 吉姆·罗杰斯[^14]
 
-对回报的要求是他们耐心的来源，他们中的绝大多数都愿意为了合适的机会等待漫长的时间。[^15]
+无所事事也是一种境界。[^15]
 
-布莱兹·帕斯卡的名言：“人类的所有问题，都源于人们不能安静地坐在一个房间里。”[^16]
+巴菲特的前五大持仓股票平均持有时间超过20年。[^16]
 
-炒股和减肥一样，决定最终结果的不是头脑，而是毅力。[^17]
+对回报的要求是他们耐心的来源，他们中的绝大多数都愿意为了合适的机会等待漫长的时间。[^17]
 
-沃伦·巴菲特拥有的金融净资产为845亿，其中的842亿是在50岁之后赚到的，其中的815亿则是在65岁后赚到的。[^18]
+布莱兹·帕斯卡的名言：“人类的所有问题，都源于人们不能安静地坐在一个房间里。”[^18]
 
-从1970年到1972年，巴菲特几乎没有买入任何股票。[^19]
+炒股和减肥一样，决定最终结果的不是头脑，而是毅力。[^19]
 
-投资主要是等待难得的时机出现，即赚钱概率大大高于赔钱概率的时机。[^20]
+沃伦·巴菲特拥有的金融净资产为845亿，其中的842亿是在50岁之后赚到的，其中的815亿则是在65岁后赚到的。[^20]
 
-专业投资者最难掌握的技能之一：日复一日地工作，却一无所获。[^21]
+从1970年到1972年，巴菲特几乎没有买入任何股票。[^21]
 
-列夫·托尔斯泰在其史诗般的巨著《战争与和平》中，做出了如此深刻的观察：“天下勇士中，最为强大者莫过于两个——时间和耐心。”[^22]
+专业投资者最难掌握的技能之一：日复一日地工作，却一无所获。[^22]
 
-耐心，不仅仅是等待我们所投资的股票上涨，更多的是能够耐心等待高价股票调整至更具吸引力的价格区域。这种等待更加艰难。[^23]
+列夫·托尔斯泰在其史诗般的巨著《战争与和平》中，做出了如此深刻的观察：“天下勇士中，最为强大者莫过于两个——时间和耐心。”[^23]
 
 ### 二、说“不”、机会成本与集中投资
 {: #theme-2}
@@ -832,51 +832,51 @@ A股市场在过去15年的大部分时间里，都是处在高估值状态（�
 
 在这个世界中，有很多好人。多结交好人，多和好人来往，不好的人，离他们远远的。[^373]
 
-[^1]: 《What I Learned About Investing from Darwin》
+[^1]: 《Investing for the Long Term》
 
-[^2]: 《What I Learned About Investing from Darwin》
+[^2]: 《Richer, Wiser, Happier》
 
-[^3]: 《Nomad Investment Partnership Letters to Partners》
+[^3]: 《Market Wizards Interviews With Top Traders》
 
-[^4]: 《Nomad Investment Partnership Letters to Partners》
+[^4]: 《Market Wizards Interviews With Top Traders》
 
-[^5]: 《The Laws of Wealth》
+[^5]: 《What I Learned About Investing from Darwin》
 
-[^6]: 《提升认知的33个经济学常识》
+[^6]: 《What I Learned About Investing from Darwin》
 
-[^7]: 《The Joys of Compounding The Passionate Pursuit of Lifelong Learning》
+[^7]: 《Nomad Investment Partnership Letters to Partners》
 
-[^8]: 《The Joys of Compounding The Passionate Pursuit of Lifelong Learning》
+[^8]: 《Nomad Investment Partnership Letters to Partners》
 
-[^9]: 《There's Always Something to Do》
+[^9]: 《The Laws of Wealth》
 
-[^10]: 《Market Wizards Interviews With Top Traders》
+[^10]: 《提升认知的33个经济学常识》
 
-[^11]: 《Market Wizards Interviews With Top Traders》
+[^11]: 《The Joys of Compounding The Passionate Pursuit of Lifelong Learning》
 
-[^12]: 《Market Wizards Interviews With Top Traders》
+[^12]: 《The Joys of Compounding The Passionate Pursuit of Lifelong Learning》
 
-[^13]: 《The Little Book of Sideways Markets》
+[^13]: 《There's Always Something to Do》
 
-[^14]: 《The Outsiders》
+[^14]: 《Market Wizards Interviews With Top Traders》
 
-[^15]: 《The Outsiders》
+[^15]: 《The Little Book of Sideways Markets》
 
-[^16]: 《The Education of a Value Investor》
+[^16]: 《The Outsiders》
 
-[^17]: 《Beating the Street》
+[^17]: 《The Outsiders》
 
-[^18]: 《The Psychology of Money》
+[^18]: 《The Education of a Value Investor》
 
-[^19]: 《Richer, Wiser, Happier》
+[^19]: 《Beating the Street》
 
-[^20]: 《Richer, Wiser, Happier》
+[^20]: 《The Psychology of Money》
 
-[^21]: 《The Most Important Thing Illuminated》
+[^21]: 《Richer, Wiser, Happier》
 
-[^22]: 《The Warren Buffett Way》
+[^22]: 《The Most Important Thing Illuminated》
 
-[^23]: 《Investing for the Long Term》
+[^23]: 《The Warren Buffett Way》
 
 [^24]: 《What I Learned About Investing from Darwin》
 
