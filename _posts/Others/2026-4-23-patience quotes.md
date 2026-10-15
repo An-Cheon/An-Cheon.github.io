@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Patience Quotes
-categories: [Others, Investing]
+categories: [Others, Quotes]
 tags: [investing, quotes, business, failure, value-investing]
 ---
 

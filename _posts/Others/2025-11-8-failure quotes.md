@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Failure Quotes
-categories: [Others, Investing]
+categories: [Others, Quotes]
 tags: [investing, quotes, business, failure, value-investing]
 ---
 ### 沃伦·巴菲特
