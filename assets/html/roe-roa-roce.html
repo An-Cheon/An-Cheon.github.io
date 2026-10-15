@@ -334,14 +334,14 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 90ch; }
 
   // ---------- setters with constraints ----------
   function setCash(v) {
-    v = clamp(v, 0, 500);
+    v = clamp(v, 0, Math.min(500, 1400 - S.op)); // assets column must fit the chart
     v = Math.max(v, MIN_EQ - S.op + S.pay + S.debt);
     S.cash = clamp(v, 0, 500);
   }
-  function setOp(v) {
-    v = clamp(v, 150, 900);
-    v = Math.max(v, MIN_EQ - S.cash + S.pay + S.debt);
-    S.op = clamp(v, 150, 900);
+  function setCashOp(opNew) { // cash/operating-assets boundary: swaps cash for operating assets
+    const ta = S.cash + S.op;
+    S.op = clamp(opNew, Math.max(150, ta - 500), ta);
+    S.cash = ta - S.op;
   }
   function setEquity(eqNew) { // equity/debt boundary: swaps debt for equity
     const d = D();
@@ -425,8 +425,9 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 90ch; }
     if (sel === "roe") s += bracket(rx + w, yEq, base, "right");
     if (sel === "roce") s += bracket(rx + w, yDebt, base, "right");
     // handles
-    s += grip(lx + w / 2, yCash, false, "cash", dragging === "cash");
+    // cash drawn last so its handle stays on top when cash is 0 and the two coincide
     s += grip(lx + w / 2, yOp, false, "op", dragging === "op");
+    s += grip(lx + w / 2, yCash, false, "cash", dragging === "cash");
     s += grip(rx + w / 2, yEq, false, "eq", dragging === "eq");
     s += grip(rx + w / 2, yDebt, false, "debtpay", dragging === "debtpay");
     bs.innerHTML = s;
@@ -563,7 +564,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 90ch; }
     const { base, k } = BS, d = D();
     switch (h) {
       case "cash": setCash((base - p.y) / k - S.op); break;
-      case "op": setOp((base - p.y) / k); break;
+      case "op": setCashOp((base - p.y) / k); break;
       case "eq": setEquity((base - p.y) / k); break;
       case "debtpay": setEqPlusDebt((base - p.y) / k); break;
       case "rev": setRev((p.x - IS.x0) / IS.kr); break;
@@ -575,7 +576,7 @@ footer { font-size: 12.5px; color: var(--muted); max-width: 90ch; }
     const d = D(), st = 10 * dir;
     switch (h) {
       case "cash": setCash(S.cash + st); break;
-      case "op": setOp(S.op + st); break;
+      case "op": setCashOp(S.op + st); break;
       case "eq": setEquity(d.eq + st); break;
       case "debtpay": setEqPlusDebt(d.eq + S.debt + st); break;
       case "rev": setRev(S.rev + st * 2); break;
