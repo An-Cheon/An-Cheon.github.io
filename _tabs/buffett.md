@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 巴菲特信件
+title: Buffett Letters
 icon: fas fa-envelope-open-text
 order: 6
 ---
