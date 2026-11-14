@@ -90,7 +90,7 @@ letter_type: berkshire
 |  | 其他\*\* | 1,395 | (175) |  |
 |  | 经营收益合计 | $47,437 | $37,350 |  |
 
-\ 包括伯克希尔持股比例在20%至50%之间的企业，例如卡夫亨氏 (Kraft Heinz)、西方石油 (Occidental Petroleum) 和Berkadia。\*
+\* *包括伯克希尔持股比例在20%至50%之间的企业，例如卡夫亨氏 (Kraft Heinz)、西方石油 (Occidental Petroleum) 和Berkadia。*
 
 \*\* *包括我们使用非美元计价债务所产生的外汇收益，2024年约为11亿美元，2023年约为2.11亿美元。*
 
