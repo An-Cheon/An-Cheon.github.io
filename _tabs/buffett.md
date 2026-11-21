@@ -9,6 +9,7 @@ order: 6
 {% assign partnership = letters | where: "letter_type", "partnership" | sort: "date" %}
 {% assign berkshire = letters | where: "letter_type", "berkshire" | sort: "letter_year" %}
 {% assign special = letters | where: "letter_type", "special" | sort: "date" %}
+{% assign partnership_guide = site.posts | where: "letter_guide", "partnership" | first %}
 
 <style>
   .bl-intro { color: var(--text-muted-color); margin-bottom: 1.5rem; }
@@ -18,11 +19,16 @@ order: 6
   .bl-grid a { display: block; padding: .55rem .75rem; border: 1px solid var(--main-border-color); border-radius: .5rem; background: var(--card-bg); color: var(--text-color); text-decoration: none; border-bottom: 1px solid var(--main-border-color); line-height: 1.35; transition: border-color .15s, color .15s; }
   .bl-grid a:hover { border-color: var(--link-color); color: var(--link-color); }
   .bl-grid small { display: block; color: var(--text-muted-color); font-size: .75rem; margin-top: .15rem; }
+  .bl-guide { display: block; margin: .75rem 0 0; padding: .8rem 1rem; border: 1px solid var(--main-border-color); border-left: 3px solid var(--link-color); border-radius: .5rem; background: var(--card-bg); color: var(--text-color); text-decoration: none; border-bottom: 1px solid var(--main-border-color); line-height: 1.4; transition: border-color .15s, color .15s; }
+  .bl-guide:hover { border-color: var(--link-color); color: var(--link-color); }
+  .bl-guide strong { display: block; }
+  .bl-guide small { display: block; color: var(--text-muted-color); font-size: .8rem; margin-top: .2rem; }
 </style>
 
-<p class="bl-intro">共收录 {{ letters.size }} 篇：合伙人信 {{ partnership.size }} 篇、伯克希尔股东信 {{ berkshire.size }} 篇、特别信件 {{ special.size }} 篇。只收原文译文，不含概括。</p>
+<p class="bl-intro">共收录 {{ letters.size }} 篇：合伙人信 {{ partnership.size }} 篇、伯克希尔股东信 {{ berkshire.size }} 篇、特别信件 {{ special.size }} 篇。均为原文译文；合伙人时期另附一篇主题导读。</p>
 
 <h2 id="partnership">合伙人时期（1956–1970）</h2>
+{% if partnership_guide %}<a class="bl-guide" href="{{ partnership_guide.url | relative_url }}"><strong>导读：合伙人信主题摘录</strong><small>按投资类别、安全边际、市场、心理等主题整理，附 1957–1968 年收益率表</small></a>{% endif %}
 <ul class="bl-grid">
 {% for p in partnership %}<li><a href="{{ p.url | relative_url }}">{{ p.title | remove: " 巴菲特致合伙人信" }}<small>{{ p.date | date: "%Y-%m-%d" }}</small></a></li>
 {% endfor %}</ul>
